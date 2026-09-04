@@ -1,0 +1,1003 @@
+{
+  "space": "reduced",
+  "space_spec": {
+    "10": 0,
+    "9": 10,
+    "8": 2,
+    "7": 1,
+    "6": 1,
+    "5": 1,
+    "4": 1
+  },
+  "n_structures": 57728,
+  "runtime_s": 13.023170948028564,
+  "n_books": 70,
+  "n_digits": 11263,
+  "provenance": "books.json",
+  "max_books_parsed_overall": 70,
+  "max_books_parsed_in_band": 58,
+  "n_structures_in_band": 20124,
+  "best_per_length_bin": [
+    {
+      "parsed": 70,
+      "s1mask": 1023,
+      "tcode": 0,
+      "ntok": 11263,
+      "toklen": 11263,
+      "V": 10,
+      "slot": "any",
+      "bin_center": 1.01,
+      "mean_len": 1.0,
+      "S1": "0123456789",
+      "prefixes": "",
+      "T": [],
+      "codebook_size": 10
+    },
+    {
+      "parsed": 66,
+      "s1mask": 1015,
+      "tcode": 0,
+      "ntok": 10617,
+      "toklen": 11263,
+      "V": 19,
+      "slot": "any",
+      "bin_center": 1.07,
+      "mean_len": 1.0608458133182632,
+      "S1": "012456789",
+      "prefixes": "3",
+      "T": [],
+      "codebook_size": 19
+    },
+    {
+      "parsed": 66,
+      "s1mask": 1015,
+      "tcode": 4294967296,
+      "ntok": 10616,
+      "toklen": 11263,
+      "V": 20,
+      "slot": "V_in_20_40",
+      "bin_center": 1.07,
+      "mean_len": 1.0609457422758102,
+      "S1": "012456789",
+      "prefixes": "3",
+      "T": [
+        "32"
+      ],
+      "codebook_size": 28
+    },
+    {
+      "parsed": 66,
+      "s1mask": 1015,
+      "tcode": 51539607552,
+      "ntok": 10424,
+      "toklen": 11263,
+      "V": 31,
+      "slot": "any",
+      "bin_center": 1.09,
+      "mean_len": 1.080487336914812,
+      "S1": "012456789",
+      "prefixes": "3",
+      "T": [
+        "34",
+        "35"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 66,
+      "s1mask": 1015,
+      "tcode": 51539607552,
+      "ntok": 10424,
+      "toklen": 11263,
+      "V": 31,
+      "slot": "V_in_20_40",
+      "bin_center": 1.09,
+      "mean_len": 1.080487336914812,
+      "S1": "012456789",
+      "prefixes": "3",
+      "T": [
+        "34",
+        "35"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 68,
+      "s1mask": 959,
+      "tcode": 0,
+      "ntok": 10141,
+      "toklen": 11263,
+      "V": 19,
+      "slot": "any",
+      "bin_center": 1.11,
+      "mean_len": 1.110639976333695,
+      "S1": "012345789",
+      "prefixes": "6",
+      "T": [],
+      "codebook_size": 19
+    },
+    {
+      "parsed": 68,
+      "s1mask": 959,
+      "tcode": 4611686018427387904,
+      "ntok": 10102,
+      "toklen": 11263,
+      "V": 24,
+      "slot": "V_in_20_40",
+      "bin_center": 1.11,
+      "mean_len": 1.114927737081766,
+      "S1": "012345789",
+      "prefixes": "6",
+      "T": [
+        "62"
+      ],
+      "codebook_size": 28
+    },
+    {
+      "parsed": 67,
+      "s1mask": 959,
+      "tcode": 1152921504606846976,
+      "ntok": 10049,
+      "toklen": 11263,
+      "V": 23,
+      "slot": "any",
+      "bin_center": 1.13,
+      "mean_len": 1.1208080406010548,
+      "S1": "012345789",
+      "prefixes": "6",
+      "T": [
+        "60"
+      ],
+      "codebook_size": 28
+    },
+    {
+      "parsed": 67,
+      "s1mask": 959,
+      "tcode": 1152921504606846976,
+      "ntok": 10049,
+      "toklen": 11263,
+      "V": 23,
+      "slot": "V_in_20_40",
+      "bin_center": 1.13,
+      "mean_len": 1.1208080406010548,
+      "S1": "012345789",
+      "prefixes": "6",
+      "T": [
+        "60"
+      ],
+      "codebook_size": 28
+    },
+    {
+      "parsed": 67,
+      "s1mask": 959,
+      "tcode": 6917529027641081856,
+      "ntok": 9867,
+      "toklen": 11263,
+      "V": 30,
+      "slot": "any",
+      "bin_center": 1.15,
+      "mean_len": 1.141481706699098,
+      "S1": "012345789",
+      "prefixes": "6",
+      "T": [
+        "61",
+        "62"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 67,
+      "s1mask": 959,
+      "tcode": 6917529027641081856,
+      "ntok": 9867,
+      "toklen": 11263,
+      "V": 30,
+      "slot": "V_in_20_40",
+      "bin_center": 1.15,
+      "mean_len": 1.141481706699098,
+      "S1": "012345789",
+      "prefixes": "6",
+      "T": [
+        "61",
+        "62"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 65,
+      "s1mask": 959,
+      "tcode": 6917529027641081864,
+      "ntok": 9682,
+      "toklen": 11263,
+      "V": 36,
+      "slot": "any",
+      "bin_center": 1.17,
+      "mean_len": 1.1632927081181574,
+      "S1": "012345789",
+      "prefixes": "6",
+      "T": [
+        "03",
+        "61",
+        "62"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 65,
+      "s1mask": 959,
+      "tcode": 6917529027641081864,
+      "ntok": 9682,
+      "toklen": 11263,
+      "V": 36,
+      "slot": "V_in_20_40",
+      "bin_center": 1.17,
+      "mean_len": 1.1632927081181574,
+      "S1": "012345789",
+      "prefixes": "6",
+      "T": [
+        "03",
+        "61",
+        "62"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 65,
+      "s1mask": 1007,
+      "tcode": 114349209288704,
+      "ntok": 9495,
+      "toklen": 11263,
+      "V": 38,
+      "slot": "any",
+      "bin_center": 1.19,
+      "mean_len": 1.1862032648762506,
+      "S1": "012356789",
+      "prefixes": "4",
+      "T": [
+        "43",
+        "45",
+        "46"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 65,
+      "s1mask": 1007,
+      "tcode": 114349209288704,
+      "ntok": 9495,
+      "toklen": 11263,
+      "V": 38,
+      "slot": "V_in_20_40",
+      "bin_center": 1.19,
+      "mean_len": 1.1862032648762506,
+      "S1": "012356789",
+      "prefixes": "4",
+      "T": [
+        "43",
+        "45",
+        "46"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 65,
+      "s1mask": 1007,
+      "tcode": 119846767427584,
+      "ntok": 9378,
+      "toklen": 11263,
+      "V": 43,
+      "slot": "any",
+      "bin_center": 1.21,
+      "mean_len": 1.2010023459159735,
+      "S1": "012356789",
+      "prefixes": "4",
+      "T": [
+        "40",
+        "42",
+        "43",
+        "45",
+        "46"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 65,
+      "s1mask": 703,
+      "tcode": 0,
+      "ntok": 9280,
+      "toklen": 11263,
+      "V": 28,
+      "slot": "V_in_20_40",
+      "bin_center": 1.21,
+      "mean_len": 1.2136853448275862,
+      "S1": "01234579",
+      "prefixes": "68",
+      "T": [],
+      "codebook_size": 28
+    },
+    {
+      "parsed": 65,
+      "s1mask": 1007,
+      "tcode": 558551906910208,
+      "ntok": 9215,
+      "toklen": 11263,
+      "V": 49,
+      "slot": "any",
+      "bin_center": 1.23,
+      "mean_len": 1.2222463374932175,
+      "S1": "012356789",
+      "prefixes": "4",
+      "T": [
+        "42",
+        "43",
+        "44",
+        "45",
+        "46",
+        "47",
+        "48"
+      ],
+      "codebook_size": 82
+    },
+    {
+      "parsed": 65,
+      "s1mask": 703,
+      "tcode": 524288,
+      "ntok": 9191,
+      "toklen": 11263,
+      "V": 32,
+      "slot": "V_in_20_40",
+      "bin_center": 1.23,
+      "mean_len": 1.2254379284082255,
+      "S1": "01234579",
+      "prefixes": "68",
+      "T": [
+        "19"
+      ],
+      "codebook_size": 28
+    },
+    {
+      "parsed": 64,
+      "s1mask": 703,
+      "tcode": 2305843009213693952,
+      "ntok": 9060,
+      "toklen": 11263,
+      "V": 34,
+      "slot": "any",
+      "bin_center": 1.25,
+      "mean_len": 1.2431567328918323,
+      "S1": "01234579",
+      "prefixes": "68",
+      "T": [
+        "61"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 64,
+      "s1mask": 703,
+      "tcode": 2305843009213693952,
+      "ntok": 9060,
+      "toklen": 11263,
+      "V": 34,
+      "slot": "V_in_20_40",
+      "bin_center": 1.25,
+      "mean_len": 1.2431567328918323,
+      "S1": "01234579",
+      "prefixes": "68",
+      "T": [
+        "61"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 63,
+      "s1mask": 703,
+      "tcode": 2305843009230471168,
+      "ntok": 8925,
+      "toklen": 11263,
+      "V": 37,
+      "slot": "any",
+      "bin_center": 1.27,
+      "mean_len": 1.2619607843137255,
+      "S1": "01234579",
+      "prefixes": "68",
+      "T": [
+        "24",
+        "61"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 63,
+      "s1mask": 703,
+      "tcode": 2305843009230471168,
+      "ntok": 8925,
+      "toklen": 11263,
+      "V": 37,
+      "slot": "V_in_20_40",
+      "bin_center": 1.27,
+      "mean_len": 1.2619607843137255,
+      "S1": "01234579",
+      "prefixes": "68",
+      "T": [
+        "24",
+        "61"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 62,
+      "s1mask": 927,
+      "tcode": 76561193665298432,
+      "ntok": 8696,
+      "toklen": 11263,
+      "V": 40,
+      "slot": "any",
+      "bin_center": 1.29,
+      "mean_len": 1.295193192272309,
+      "S1": "01234789",
+      "prefixes": "56",
+      "T": [
+        "52",
+        "56"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 62,
+      "s1mask": 927,
+      "tcode": 76561193665298432,
+      "ntok": 8696,
+      "toklen": 11263,
+      "V": 40,
+      "slot": "V_in_20_40",
+      "bin_center": 1.29,
+      "mean_len": 1.295193192272309,
+      "S1": "01234789",
+      "prefixes": "56",
+      "T": [
+        "52",
+        "56"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 61,
+      "s1mask": 927,
+      "tcode": 6755399441055744,
+      "ntok": 8618,
+      "toklen": 11263,
+      "V": 45,
+      "slot": "any",
+      "bin_center": 1.31,
+      "mean_len": 1.3069157577164074,
+      "S1": "01234789",
+      "prefixes": "56",
+      "T": [
+        "51",
+        "52"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 61,
+      "s1mask": 927,
+      "tcode": 74309393851613184,
+      "ntok": 8650,
+      "toklen": 11263,
+      "V": 40,
+      "slot": "V_in_20_40",
+      "bin_center": 1.31,
+      "mean_len": 1.3020809248554914,
+      "S1": "01234789",
+      "prefixes": "56",
+      "T": [
+        "51",
+        "56"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 60,
+      "s1mask": 191,
+      "tcode": 4294967296,
+      "ntok": 8475,
+      "toklen": 11263,
+      "V": 42,
+      "slot": "any",
+      "bin_center": 1.33,
+      "mean_len": 1.3289675516224189,
+      "S1": "0123457",
+      "prefixes": "689",
+      "T": [
+        "32"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 60,
+      "s1mask": 699,
+      "tcode": 4194304,
+      "ntok": 8510,
+      "toklen": 11263,
+      "V": 38,
+      "slot": "V_in_20_40",
+      "bin_center": 1.33,
+      "mean_len": 1.3235017626321974,
+      "S1": "0134579",
+      "prefixes": "268",
+      "T": [
+        "22"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 62,
+      "s1mask": 671,
+      "tcode": 0,
+      "ntok": 8353,
+      "toklen": 11263,
+      "V": 37,
+      "slot": "any",
+      "bin_center": 1.35,
+      "mean_len": 1.3483778283251526,
+      "S1": "0123479",
+      "prefixes": "568",
+      "T": [],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 62,
+      "s1mask": 671,
+      "tcode": 0,
+      "ntok": 8353,
+      "toklen": 11263,
+      "V": 37,
+      "slot": "V_in_20_40",
+      "bin_center": 1.35,
+      "mean_len": 1.3483778283251526,
+      "S1": "0123479",
+      "prefixes": "568",
+      "T": [],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 62,
+      "s1mask": 671,
+      "tcode": 72057594037927936,
+      "ntok": 8237,
+      "toklen": 11263,
+      "V": 40,
+      "slot": "any",
+      "bin_center": 1.37,
+      "mean_len": 1.3673667597426247,
+      "S1": "0123479",
+      "prefixes": "568",
+      "T": [
+        "56"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 62,
+      "s1mask": 671,
+      "tcode": 72057594037927936,
+      "ntok": 8237,
+      "toklen": 11263,
+      "V": 40,
+      "slot": "V_in_20_40",
+      "bin_center": 1.37,
+      "mean_len": 1.3673667597426247,
+      "S1": "0123479",
+      "prefixes": "568",
+      "T": [
+        "56"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 62,
+      "s1mask": 671,
+      "tcode": 4503599627370496,
+      "ntok": 8149,
+      "toklen": 11263,
+      "V": 45,
+      "slot": "any",
+      "bin_center": 1.3900000000000001,
+      "mean_len": 1.3821327770278562,
+      "S1": "0123479",
+      "prefixes": "568",
+      "T": [
+        "52"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 55,
+      "s1mask": 701,
+      "tcode": 0,
+      "ntok": 8067,
+      "toklen": 11263,
+      "V": 37,
+      "slot": "V_in_20_40",
+      "bin_center": 1.3900000000000001,
+      "mean_len": 1.396181975951407,
+      "S1": "0234579",
+      "prefixes": "168",
+      "T": [],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 59,
+      "s1mask": 543,
+      "tcode": 0,
+      "ntok": 7964,
+      "toklen": 11263,
+      "V": 46,
+      "slot": "any",
+      "bin_center": 1.4100000000000001,
+      "mean_len": 1.4142390758412857,
+      "S1": "012349",
+      "prefixes": "5678",
+      "T": [],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 56,
+      "s1mask": 941,
+      "tcode": 8796093022208,
+      "ntok": 8044,
+      "toklen": 11263,
+      "V": 40,
+      "slot": "V_in_20_40",
+      "bin_center": 1.4100000000000001,
+      "mean_len": 1.4001740427647937,
+      "S1": "0235789",
+      "prefixes": "146",
+      "T": [
+        "43"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 60,
+      "s1mask": 543,
+      "tcode": 288230376151711744,
+      "ntok": 7906,
+      "toklen": 11263,
+      "V": 51,
+      "slot": "any",
+      "bin_center": 1.43,
+      "mean_len": 1.4246142170503415,
+      "S1": "012349",
+      "prefixes": "5678",
+      "T": [
+        "58"
+      ],
+      "codebook_size": 55
+    },
+    {
+      "parsed": 54,
+      "s1mask": 701,
+      "tcode": 16777216,
+      "ntok": 7930,
+      "toklen": 11263,
+      "V": 40,
+      "slot": "V_in_20_40",
+      "bin_center": 1.43,
+      "mean_len": 1.4203026481715006,
+      "S1": "0234579",
+      "prefixes": "168",
+      "T": [
+        "24"
+      ],
+      "codebook_size": 37
+    },
+    {
+      "parsed": 59,
+      "s1mask": 543,
+      "tcode": 4503599627370496,
+      "ntok": 7782,
+      "toklen": 11263,
+      "V": 54,
+      "slot": "any",
+      "bin_center": 1.45,
+      "mean_len": 1.447314315086096,
+      "S1": "012349",
+      "prefixes": "5678",
+      "T": [
+        "52"
+      ],
+      "codebook_size": 55
+    },
+    {
+      "parsed": 46,
+      "s1mask": 973,
+      "tcode": 4398046511104,
+      "ntok": 7806,
+      "toklen": 11263,
+      "V": 38,
+      "slot": "V_in_20_40",
+      "bin_center": 1.45,
+      "mean_len": 1.4428644632334102,
+      "S1": "0236789",
+      "prefixes": "145",
+      "T": [
+        "42"
+      ],
+      "codebook_size": 46
+    },
+    {
+      "parsed": 57,
+      "s1mask": 159,
+      "tcode": 4503599627370496,
+      "ntok": 7649,
+      "toklen": 11263,
+      "V": 52,
+      "slot": "any",
+      "bin_center": 1.47,
+      "mean_len": 1.472480062753301,
+      "S1": "012347",
+      "prefixes": "5689",
+      "T": [
+        "52"
+      ],
+      "codebook_size": 55
+    },
+    {
+      "parsed": 57,
+      "s1mask": 667,
+      "tcode": 2251799813685248,
+      "ntok": 7580,
+      "toklen": 11263,
+      "V": 54,
+      "slot": "any",
+      "bin_center": 1.49,
+      "mean_len": 1.4858839050131927,
+      "S1": "013479",
+      "prefixes": "2568",
+      "T": [
+        "51"
+      ],
+      "codebook_size": 55
+    },
+    {
+      "parsed": 58,
+      "s1mask": 539,
+      "tcode": 288230376151711744,
+      "ntok": 7499,
+      "toklen": 11263,
+      "V": 61,
+      "slot": "any",
+      "bin_center": 1.51,
+      "mean_len": 1.501933591145486,
+      "S1": "01349",
+      "prefixes": "25678",
+      "T": [
+        "58"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 56,
+      "s1mask": 31,
+      "tcode": 4503599627370496,
+      "ntok": 7354,
+      "toklen": 11263,
+      "V": 61,
+      "slot": "any",
+      "bin_center": 1.53,
+      "mean_len": 1.531547457166168,
+      "S1": "01234",
+      "prefixes": "56789",
+      "T": [
+        "52"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 56,
+      "s1mask": 31,
+      "tcode": 2305843009213693952,
+      "ntok": 7311,
+      "toklen": 11263,
+      "V": 60,
+      "slot": "any",
+      "bin_center": 1.55,
+      "mean_len": 1.5405553275885653,
+      "S1": "01234",
+      "prefixes": "56789",
+      "T": [
+        "61"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 54,
+      "s1mask": 155,
+      "tcode": 2305843009213693952,
+      "ntok": 7166,
+      "toklen": 11263,
+      "V": 60,
+      "slot": "any",
+      "bin_center": 1.57,
+      "mean_len": 1.5717276025676807,
+      "S1": "01347",
+      "prefixes": "25689",
+      "T": [
+        "61"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 54,
+      "s1mask": 155,
+      "tcode": 144115188075855872,
+      "ntok": 7128,
+      "toklen": 11263,
+      "V": 62,
+      "slot": "any",
+      "bin_center": 1.5899999999999999,
+      "mean_len": 1.5801066217732884,
+      "S1": "01347",
+      "prefixes": "25689",
+      "T": [
+        "57"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 55,
+      "s1mask": 27,
+      "tcode": 288230376151711744,
+      "ntok": 6968,
+      "toklen": 11263,
+      "V": 70,
+      "slot": "any",
+      "bin_center": 1.6099999999999999,
+      "mean_len": 1.6163892078071183,
+      "S1": "0134",
+      "prefixes": "256789",
+      "T": [
+        "58"
+      ],
+      "codebook_size": 73
+    },
+    {
+      "parsed": 54,
+      "s1mask": 27,
+      "tcode": 2305843009213693952,
+      "ntok": 6895,
+      "toklen": 11263,
+      "V": 69,
+      "slot": "any",
+      "bin_center": 1.63,
+      "mean_len": 1.633502538071066,
+      "S1": "0134",
+      "prefixes": "256789",
+      "T": [
+        "61"
+      ],
+      "codebook_size": 73
+    },
+    {
+      "parsed": 51,
+      "s1mask": 27,
+      "tcode": 65536,
+      "ntok": 6859,
+      "toklen": 11263,
+      "V": 71,
+      "slot": "any",
+      "bin_center": 1.65,
+      "mean_len": 1.642076104388395,
+      "S1": "0134",
+      "prefixes": "256789",
+      "T": [
+        "16"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 50,
+      "s1mask": 29,
+      "tcode": 128,
+      "ntok": 6707,
+      "toklen": 11263,
+      "V": 66,
+      "slot": "any",
+      "bin_center": 1.67,
+      "mean_len": 1.679290293722976,
+      "S1": "0234",
+      "prefixes": "156789",
+      "T": [
+        "07"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 52,
+      "s1mask": 29,
+      "tcode": 4096,
+      "ntok": 6640,
+      "toklen": 11263,
+      "V": 68,
+      "slot": "any",
+      "bin_center": 1.69,
+      "mean_len": 1.6962349397590362,
+      "S1": "0234",
+      "prefixes": "156789",
+      "T": [
+        "12"
+      ],
+      "codebook_size": 73
+    },
+    {
+      "parsed": 49,
+      "s1mask": 29,
+      "tcode": 2147483648,
+      "ntok": 6612,
+      "toklen": 11263,
+      "V": 67,
+      "slot": "any",
+      "bin_center": 1.71,
+      "mean_len": 1.7034180278281912,
+      "S1": "0234",
+      "prefixes": "156789",
+      "T": [
+        "31"
+      ],
+      "codebook_size": 64
+    },
+    {
+      "parsed": 45,
+      "s1mask": 153,
+      "tcode": 2048,
+      "ntok": 6543,
+      "toklen": 11263,
+      "V": 70,
+      "slot": "any",
+      "bin_center": 1.73,
+      "mean_len": 1.7213816292220694,
+      "S1": "0347",
+      "prefixes": "125689",
+      "T": [
+        "11"
+      ],
+      "codebook_size": 73
+    },
+    {
+      "parsed": 43,
+      "s1mask": 525,
+      "tcode": 524288,
+      "ntok": 6442,
+      "toklen": 11263,
+      "V": 71,
+      "slot": "any",
+      "bin_center": 1.75,
+      "mean_len": 1.7483700714063954,
+      "S1": "0239",
+      "prefixes": "145678",
+      "T": [
+        "19"
+      ],
+      "codebook_size": 73
+    },
+    {
+      "parsed": 29,
+      "s1mask": 588,
+      "tcode": 2048,
+      "ntok": 6398,
+      "toklen": 11263,
+      "V": 70,
+      "slot": "any",
+      "bin_center": 1.77,
+      "mean_len": 1.7603938730853392,
+      "S1": "2369",
+      "prefixes": "014578",
+      "T": [
+        "11"
+      ],
+      "codebook_size": 73
+    }
+  ]
+}

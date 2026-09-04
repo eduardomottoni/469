@@ -289,3 +289,94 @@ def summary_vector(books) -> dict:
         "ic": ic(s),
         "unigram_H": unigram_H(s),
     }
+
+
+# ------------------------------------------------- letter frequencies / codes
+
+#: English letter frequencies (Norvig, Google Books corpus), a-z, normalised.
+LETTER_FREQ_EN = {
+    "e": .1249, "t": .0928, "a": .0804, "o": .0764, "i": .0757, "n": .0723,
+    "s": .0651, "r": .0628, "h": .0505, "l": .0407, "d": .0382, "c": .0334,
+    "u": .0273, "m": .0251, "f": .0240, "p": .0214, "g": .0187, "w": .0168,
+    "y": .0166, "b": .0148, "v": .0105, "k": .0054, "x": .0023, "j": .0016,
+    "q": .0012, "z": .0009,
+}
+
+#: German letter frequencies (Beutelspacher / Wikipedia), incl. umlauts and ss.
+LETTER_FREQ_DE = {
+    "e": .1740, "n": .0978, "i": .0755, "s": .0727, "r": .0700, "a": .0651,
+    "t": .0615, "d": .0508, "h": .0476, "u": .0435, "l": .0344, "c": .0306,
+    "g": .0301, "m": .0253, "o": .0251, "b": .0189, "w": .0189, "f": .0166,
+    "k": .0121, "z": .0113, "p": .0079, "v": .0067, "ß": .0031,
+    "ü": .0065, "ä": .0054, "ö": .0025, "j": .0027, "y": .0004,
+    "x": .0003, "q": .0002,
+}
+
+
+def _target_vector(lang: str, m: int, floor: float = 1e-4) -> list[float]:
+    """The letter-frequency target padded/truncated to exactly `m` slots.
+
+    A codebook with more symbols than the alphabet has letters must put its
+    surplus symbols on near-zero-frequency slots; padding with `floor` is what
+    makes that cost show up in the chi-square instead of being ignored.
+    """
+    t = sorted((LETTER_FREQ_DE if lang == "de" else LETTER_FREQ_EN).values(),
+               reverse=True)
+    if m <= len(t):
+        t = t[:m]
+    else:
+        t = t + [floor] * (m - len(t))
+    s = sum(t)
+    return [x / s for x in t]
+
+
+def letter_chi2(counts, lang: str = "en", floor: float = 1e-4) -> float:
+    """Chi-square of a symbol-frequency vector against German/English letter
+    frequencies under the optimal one-to-one symbol->letter assignment.
+
+    Assignment is by scipy's Hungarian algorithm on the per-cell chi-square
+    contribution; with a single shared total this is provably the same as rank
+    matching, but the Hungarian call keeps the code honest if the cost is ever
+    made non-monotone.  Returned value is chi-square per symbol, so codebooks
+    of different sizes stay comparable.
+    """
+    obs = sorted((float(c) for c in counts), reverse=True)
+    m = len(obs)
+    if m < 2:
+        return float("inf")
+    n = sum(obs)
+    exp = [n * p for p in _target_vector(lang, m, floor)]
+    try:
+        import numpy as np
+        from scipy.optimize import linear_sum_assignment
+        o = np.asarray(obs)[:, None]
+        e = np.asarray(exp)[None, :]
+        cost = (o - e) ** 2 / e
+        r, c = linear_sum_assignment(cost)
+        return float(cost[r, c].sum() / m)
+    except Exception:
+        return sum((o - e) ** 2 / e for o, e in zip(obs, sorted(exp, reverse=True))) / m
+
+
+def parse_prefix_code(s: str, codebook) -> list[str] | None:
+    """Forced, unique parse of `s` under a prefix-free codebook.
+
+    Returns the token list, or None if `s` ends with a dangling remainder that
+    is not a codeword (the book does not parse cleanly).
+    """
+    cs = set(codebook)
+    maxlen = max((len(c) for c in cs), default=0)
+    out, i, n = [], 0, len(s)
+    while i < n:
+        for L in range(1, maxlen + 1):
+            if s[i:i + L] in cs:
+                out.append(s[i:i + L])
+                i += L
+                break
+        else:
+            return None
+    return out
+
+
+def mean_token_length(tokens) -> float:
+    return (sum(len(t) for t in tokens) / len(tokens)) if tokens else 0.0
