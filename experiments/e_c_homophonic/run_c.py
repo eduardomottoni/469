@@ -144,7 +144,30 @@ CONFIGS = [
     ("C1_pairs", "dedup_core", "en", 200),
     ("C1_pairs", "dedup_core", "de_ae", 200),
     ("C1_triples", "dedup_core", "en", 200),
+    # Added after agent 1 delivered the assembly and the innovation estimate.
+    # Family E is confirmed, so the copies carry no information and the only
+    # object that can carry a message is the innovation content -- but 578
+    # digits is a very short target (see FINDINGS.md: the solver provably
+    # cannot recover a *known* cipher at that length either).
+    ("C2_mdl", "master_v1", "en", 200),
+    ("C2_mdl", "master_v1", "de_ae", 200),
+    ("C1_pairs", "master_v1", "en", 200),
+    ("C2_mdl", "seed", "en", 200),
+    ("C2_mdl", "seed", "de_ae", 200),
+    ("C1_pairs", "seed", "en", 200),
 ]
+
+
+def load_stream(sname):
+    from c469.corpus import Corpus
+    if sname == "dedup_core":
+        return dedup_core(load_books())
+    if sname == "contigs":
+        return load_contigs()
+    fn = {"master_v1": "data/master_v1.txt", "seed": "data/seed_estimate.txt"}[sname]
+    parts = Path(fn).read_text().split()
+    return Corpus(tuple("".join(c for c in x if c.isdigit()) for x in parts),
+                  provenance=fn)
 
 
 def main():
@@ -154,7 +177,7 @@ def main():
     out = OUTDIR / f"c{ci:02d}_{kind}_{sname}_{lm}.json"
     if out.exists():
         print("already done", out); return
-    C = dedup_core(load_books()) if sname == "dedup_core" else load_contigs()
+    C = load_stream(sname)
     books = list(C.books)
     tab = load_table(lm)
     logf = open(OUTDIR / f"c{ci:02d}.log", "w")

@@ -7,7 +7,7 @@ Three rules from the pre-registration:
   * MDL bits are compared only to surrogates matched on LZ76 factor count.
   * Mean token length is likewise compared to surrogates, not just to 1.577.
 """
-import json, math, statistics, sys, time
+import json, math, os, statistics, sys, time
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 sys.path.insert(0, str(Path(__file__).parent))
@@ -86,12 +86,17 @@ DIRECTION = {"mdl_bits_per_digit": "less", "mean_token_len": "less",
 
 
 def main():
-    want = sys.argv[1:] or ["dedup_core", "contigs"]
+    want = sys.argv[1:] or ["dedup_core", "contigs", "master_v1"]
     out = json.loads(OUT.read_text()) if OUT.exists() else {}
-    for sname, C in (("dedup_core", dedup_core(load_books())),
-                     ("contigs", load_contigs())):
-        if sname not in want:
-            continue
+    def _master():
+        from c469.corpus import Corpus
+        t = (Path("data/master_v1.txt")).read_text().split()
+        return Corpus(tuple("".join(c for c in x if c.isdigit()) for x in t),
+                      provenance="data/master_v1.txt")
+
+    for sname in want:
+        C = {"dedup_core": lambda: dedup_core(load_books()),
+             "contigs": load_contigs, "master_v1": _master}[sname]()
         books = list(C.books)
         real = stats_of(books)
         print(f"[{sname}] real:", {k: round(real[k], 4) for k in KEYS},
@@ -100,7 +105,12 @@ def main():
         print(f"[{sname}] CopyPasteMutate tuned {params} -> lz76 {achieved:.1f} "
               f"vs real {real['lz76']} (rel err {err:.3f})", flush=True)
         fams = [U.Shuffle(), U.MarkovK(2), U.MarkovK(3), U.BlockShuffle(20),
-                U.CopyPasteMutate(**params), U.OtherCorpora("pi")]
+                U.CopyPasteMutate(**params), U.CopyPasteMutateFitted(),
+                U.OtherCorpora("pi")]
+        only = os.environ.get("A2_FAMILIES")
+        if only:
+            keep = set(only.split(","))
+            fams = [f for f in fams if f.name in keep]
         nulls = {}
         for fam in fams:
             t0 = time.time()
@@ -128,9 +138,13 @@ def main():
             print(f"  {nm:22s} lz76~{statistics.mean(lzs):6.1f} "
                   + " ".join(f"{k}:z={nulls[nm]['stats'][k]['z']:+.2f}" for k in KEYS),
                   flush=True)
+        prev = out.get(sname, {})
+        merged = dict(prev.get("nulls", {}))
+        merged.update(nulls)
         out[sname] = {"provenance": C.provenance, "real": real,
                       "copypaste_params": params, "copypaste_lz_relerr": err,
-                      "nulls": nulls}
+                      "nulls": merged}
+        nulls = merged
 
         # persist as harness Results, one per statistic
         for k in KEYS:
