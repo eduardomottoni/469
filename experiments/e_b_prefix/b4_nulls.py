@@ -53,18 +53,17 @@ def search(books) -> dict:
     h2 = np.zeros((nb + 1, NBIN), dtype=np.int64)
     best = np.full((NBIN, 2, 5), -1, dtype=np.int64)
     bmask = np.zeros((NBIN, 2), dtype=np.int64)
+    bb = np.empty((NBIN, 2, 5), dtype=np.int64)
     for s1mask, tmax in _TASKS:
         prefixes = np.array([d for d in range(10) if not (s1mask >> d) & 1],
                             dtype=np.int64)
-        hh = np.zeros((nb + 1, NBIN), dtype=np.int64)
-        bb = np.full((NBIN, 2, 5), -1, dtype=np.int64)
-        enumerate_s1(flat, offs, s1mask, prefixes, tmax, hh, bb, VLO, VHI)
-        h2 += hh
-        for b in range(NBIN):
-            for sl in range(2):
-                if bb[b, sl, 0] > best[b, sl, 0]:
-                    best[b, sl] = bb[b, sl]
-                    bmask[b, sl] = s1mask
+        # h2 accumulates across tasks in place; only `bb` needs resetting.
+        bb.fill(-1)
+        enumerate_s1(flat, offs, s1mask, prefixes, tmax, h2, bb, VLO, VHI)
+        better = bb[:, :, 0] > best[:, :, 0]
+        if better.any():
+            best[better] = bb[better]
+            bmask[better] = s1mask
 
     vwin = max((int(best[b, 1, 0]) for b in range(NBIN) if best[b, 1, 0] >= 0),
                default=-1)
