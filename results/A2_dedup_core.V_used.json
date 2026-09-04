@@ -1,0 +1,85 @@
+{
+  "experiment": "A2_dedup_core",
+  "statistic": "V_used",
+  "real_value": 76,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 200,
+      "mean": 11.99,
+      "sd": 0.099498743710662,
+      "p": 0.004975124378109453,
+      "z": 643.3247055474217,
+      "maximum": 12,
+      "minimum": 11
+    },
+    {
+      "family": "Markov2",
+      "n": 200,
+      "mean": 25.775,
+      "sd": 4.788984756709923,
+      "p": 0.004975124378109453,
+      "z": 10.48760907614687,
+      "maximum": 39,
+      "minimum": 15
+    },
+    {
+      "family": "Markov3",
+      "n": 200,
+      "mean": 45.86,
+      "sd": 5.760243050427647,
+      "p": 0.004975124378109453,
+      "z": 5.232418100441504,
+      "maximum": 63,
+      "minimum": 30
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 200,
+      "mean": 53.32,
+      "sd": 6.8255109698835,
+      "p": 0.004975124378109453,
+      "z": 3.3228281516317173,
+      "maximum": 69,
+      "minimum": 33
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 74.995,
+      "sd": 7.091189956558772,
+      "p": 0.417910447761194,
+      "z": 0.14172515560247437,
+      "maximum": 96,
+      "minimum": 54
+    },
+    {
+      "family": "Digits_pi",
+      "n": 200,
+      "mean": 11.965,
+      "sd": 0.18377975949489106,
+      "p": 0.004975124378109453,
+      "z": 348.43336489283047,
+      "maximum": 12,
+      "minimum": 11
+    }
+  ],
+  "corpus_provenance": "books.json|dedup_core(k=25)",
+  "n_candidates_tested": 1,
+  "seed": 900001,
+  "runtime_s": 0.0,
+  "code_sha": "ce1b682",
+  "extra": {
+    "inducer": "mdl_unigram(maxlen=8)",
+    "copypaste_params": {
+      "seed_len": 900,
+      "p_delete": 0.03,
+      "seed_order": 3
+    },
+    "copypaste_lz_relerr": 0.0008169934640523247,
+    "real_lz76": 510
+  },
+  "worst_p": 0.417910447761194,
+  "verdict": "REJECTED"
+}

@@ -112,3 +112,27 @@ contigs/mdl   (try_combine_books/out/books/books_combined_#2_6624[49]_63[1].txt)
         500      484     5.536     1.529   0.686    0.724
         750      516     5.572     1.531   0.680    0.730
        1000      516     5.572     1.531   0.680    0.730
+
+e_b_prefix.b3.dedup_core22.bpe.V32: real mean_token_len=1.5962 (target (1.5, 1.7)) -> IN
+   Shuffle            1.3510 +- 0.0063 p=0.0050
+   Markov2            1.5795 +- 0.0175 p=0.1791
+   Markov3            1.6007 +- 0.0227 p=0.5721
+   BlockShuffle20     1.5478 +- 0.0060 p=0.0050
+   CopyPasteMutate    1.5855 +- 0.0233 p=0.3234
+   Digits_pi          1.3091 +- 0.0039 p=0.0050
+
+e_b_prefix.b3.dedup_core22.mdl.V32: real mean_token_len=1.4567 (target (1.5, 1.7)) -> OUT
+   Shuffle            1.3040 +- 0.0170 p=0.0050
+   Markov2            1.4258 +- 0.0296 p=0.1592
+   Markov3            1.4505 +- 0.0374 p=0.4129
+   BlockShuffle20     1.4639 +- 0.0215 p=0.6667
+   CopyPasteMutate    1.3600 +- 0.0422 p=0.0149
+   Digits_pi          1.2664 +- 0.0090 p=0.0050
+
+e_b_prefix.b3.contigs.bpe.V32: real mean_token_len=1.5876 (target (1.5, 1.7)) -> IN
+   Shuffle            1.3402 +- 0.0049 p=0.0050
+   Markov2            1.5767 +- 0.0140 p=0.2040
+   Markov3            1.5909 +- 0.0175 p=0.6070
+   BlockShuffle20     1.5555 +- 0.0023 p=0.0050
+   CopyPasteMutate    1.5158 +- 0.0863 p=0.2438
+   Digits_pi          1.2956 +- 0.0003 p=0.0050

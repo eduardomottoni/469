@@ -22,24 +22,33 @@ N_NULL = 200
 OUT = Path(__file__).parent / "a2_nulls.json"
 
 
-def tune_copypaste(books, target_lz, n_probe=12, seed=7):
+def tune_copypaste(books, target_lz, n_probe=6, seed=7):
     """Find CopyPasteMutate parameters whose LZ76 factor count matches the real
     stream.  Reports the achieved match so an unmatched comparison is never
     quoted as if it were matched."""
     best = None
     grid = []
-    for seed_len in (600, 900, 1200, 1800, 2500, 3500, 5000):
-        for p_del in (0.0, 0.002, 0.006, 0.015, 0.03):
+    # max_segments matters as much as seed_len: CopyPasteMutate pads a book
+    # longer than its seed with independent random digits, which drives LZ76 up,
+    # so long streams need more segments to stay in range.  Leaving it out of
+    # the grid is what made the first contigs run unmatchable.
+    for seed_len in (600, 900, 1200, 1800, 2500, 3500, 5000, 7000):
+        for p_del in (0.0, 0.006, 0.03):
             for order in (2, 3):
-                grid.append((seed_len, p_del, order))
-    for (sl, pd, od) in grid:
-        g = U.CopyPasteMutate(seed_len=sl, seed_order=od, p_delete=pd)
+                for mseg in (2, 3, 6, 10):
+                    grid.append((seed_len, p_del, order, mseg))
+    for (sl, pd, od, ms) in grid:
+        g = U.CopyPasteMutate(seed_len=sl, seed_order=od, p_delete=pd,
+                              max_segments=ms)
         vals = [lz76_factors("".join(g.generate(books, seed * 1000 + i)))
                 for i in range(n_probe)]
         m = statistics.mean(vals)
         err = abs(m - target_lz) / target_lz
         if best is None or err < best[0]:
-            best = (err, dict(seed_len=sl, p_delete=pd, seed_order=od), m)
+            best = (err, dict(seed_len=sl, p_delete=pd, seed_order=od,
+                              max_segments=ms), m)
+        if best[0] < 0.01:                      # good enough, stop searching
+            break
     return best
 
 
@@ -77,9 +86,12 @@ DIRECTION = {"mdl_bits_per_digit": "less", "mean_token_len": "less",
 
 
 def main():
-    out = {}
+    want = sys.argv[1:] or ["dedup_core", "contigs"]
+    out = json.loads(OUT.read_text()) if OUT.exists() else {}
     for sname, C in (("dedup_core", dedup_core(load_books())),
                      ("contigs", load_contigs())):
+        if sname not in want:
+            continue
         books = list(C.books)
         real = stats_of(books)
         print(f"[{sname}] real:", {k: round(real[k], 4) for k in KEYS},
@@ -136,6 +148,7 @@ def main():
                     family=fam_name, n=N_NULL, mean=st["mean"], sd=st["sd"],
                     p=st["p"], z=st["z"], maximum=st["max"], minimum=st["min"]))
             r.save()
+        OUT.write_text(json.dumps(out, indent=2))
     OUT.write_text(json.dumps(out, indent=2))
     print("wrote", OUT)
 

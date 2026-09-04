@@ -22,7 +22,7 @@ from c469.harness import Experiment, Result, summarize_null
 PEN = dict(edit_penalty=6, rot_penalty=25)
 
 
-def assemble_stats(books, min_ov=5, mode="edits"):
+def assemble_stats(books, min_ov=5, mode="exact"):
     labels = [f"B{i}" for i in range(len(books))]
     kept, dropped = collapse_containment(list(books), labels)
     S = [books[i] for i in kept]
@@ -30,11 +30,7 @@ def assemble_stats(books, min_ov=5, mode="edits"):
     E = build_edges(S, min_ov=min_ov, allow_edits=(mode in ("edits", "rot")),
                     allow_rot=(mode == "rot"))
     rng = random.Random(11)
-    best = or_opt(greedy_path(n, E, **PEN), E, 8000, rng, **PEN)
-    for _ in range(3):
-        o = or_opt(greedy_path(n, E, rng=rng, noise=6.0, **PEN), E, 2000, rng, **PEN)
-        if order_score(o, E, **PEN) > order_score(best, E, **PEN):
-            best = o
+    best = or_opt(greedy_path(n, E, **PEN), E, 4000, rng, **PEN)
     used = [(best[i], best[i + 1]) for i in range(n - 1)
             if (best[i], best[i + 1]) in E]
     saved = sum(E[a].ov_b for a in used)
