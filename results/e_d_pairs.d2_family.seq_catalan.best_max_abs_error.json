@@ -1,0 +1,48 @@
+{
+  "experiment": "e_d_pairs.d2_family.seq_catalan",
+  "statistic": "best_max_abs_error",
+  "real_value": 229.0,
+  "direction": "less",
+  "nulls": [
+    {
+      "family": "UniformBand",
+      "n": 200,
+      "mean": 396.515,
+      "sd": 33.77528349251861,
+      "p": 0.004975124378109453,
+      "z": -4.959691901242084,
+      "maximum": 450,
+      "minimum": 271
+    },
+    {
+      "family": "MarginalPairing",
+      "n": 200,
+      "mean": 432.325,
+      "sd": 65.88451544179412,
+      "p": 0.09950248756218906,
+      "z": -3.08608173918541,
+      "maximum": 454,
+      "minimum": 229
+    },
+    {
+      "family": "ProportionalNoise",
+      "n": 200,
+      "mean": 358.475,
+      "sd": 42.6586377536836,
+      "p": 0.004975124378109453,
+      "z": -3.0351414582810903,
+      "maximum": 473,
+      "minimum": 236
+    }
+  ],
+  "corpus_provenance": "c469.cribs.FB_PAIRS_CERTAIN",
+  "n_candidates_tested": 17,
+  "seed": 4691,
+  "runtime_s": 0.0,
+  "code_sha": "f24a37e",
+  "extra": {
+    "bh_q": 0.845771144278607
+  },
+  "worst_p": 0.09950248756218906,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

@@ -1,0 +1,48 @@
+{
+  "experiment": "e_d_pairs.d2_family.honeminas_dot",
+  "statistic": "best_max_abs_error",
+  "real_value": 1199.0,
+  "direction": "less",
+  "nulls": [
+    {
+      "family": "UniformBand",
+      "n": 200,
+      "mean": 1136.225,
+      "sd": 61.44179664528049,
+      "p": 0.8656716417910447,
+      "z": 1.021698638834026,
+      "maximum": 1274,
+      "minimum": 935
+    },
+    {
+      "family": "MarginalPairing",
+      "n": 200,
+      "mean": 1166.96,
+      "sd": 36.26497483798934,
+      "p": 0.8208955223880597,
+      "z": 0.8834970972166921,
+      "maximum": 1226,
+      "minimum": 1100
+    },
+    {
+      "family": "ProportionalNoise",
+      "n": 200,
+      "mean": 1208.96,
+      "sd": 40.4577359722464,
+      "p": 0.44776119402985076,
+      "z": -0.2461828315561824,
+      "maximum": 1315,
+      "minimum": 1096
+    }
+  ],
+  "corpus_provenance": "c469.cribs.FB_PAIRS_CERTAIN",
+  "n_candidates_tested": 17,
+  "seed": 4691,
+  "runtime_s": 0.0,
+  "code_sha": "f24a37e",
+  "extra": {
+    "bh_q": 1.0
+  },
+  "worst_p": 0.8656716417910447,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

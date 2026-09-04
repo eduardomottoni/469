@@ -47,13 +47,13 @@ def perturb(theta, rng, scale=0.25):
     return t
 
 
-def run(n_round1=40000, n_round2=40000, keep=200, procs=2, seed=0):
+def run(n_round1=40000, n_round2=40000, keep=60, procs=2, seed=0):
     c = load_books(with_kharos=False)
     books = list(c.books)
     obs = abc_summary(books)
     # prior-predictive scale: SD of each summary over 300 prior draws
     rng = random.Random(seed)
-    pilot = [(i, sample_prior(rng)) for i in range(300)]
+    pilot = [(i, sample_prior(rng)) for i in range(150)]
     scale = {k: 1.0 for k in ABC_KEYS}
     with Pool(procs, _init, (books, obs, scale)) as p:
         pil = p.map(_sim, pilot, chunksize=8)
@@ -97,7 +97,7 @@ def run(n_round1=40000, n_round2=40000, keep=200, procs=2, seed=0):
     posterior = allr[:keep]
 
     # posterior predictive: 300 draws from the accepted set
-    pp_jobs = [(900000 + i, posterior[i % len(posterior)][0]) for i in range(300)]
+    pp_jobs = [(900000 + i, posterior[i % len(posterior)][0]) for i in range(150)]
     with Pool(procs, _init, (books, obs, scale)) as p:
         pp = p.map(_sim, pp_jobs, chunksize=8)
     pp_svs = [s for _, s, _ in pp if s]
