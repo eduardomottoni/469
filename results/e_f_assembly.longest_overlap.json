@@ -1,0 +1,90 @@
+{
+  "experiment": "e_f_assembly",
+  "statistic": "longest_overlap",
+  "real_value": 279.0,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 100,
+      "mean": 0.36,
+      "sd": 1.3154466921924288,
+      "p": 0.009900990099009901,
+      "z": 211.82158247370424,
+      "maximum": 6.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "Markov2",
+      "n": 100,
+      "mean": 6.55,
+      "sd": 1.8513508581573614,
+      "p": 0.009900990099009901,
+      "z": 147.16281292632337,
+      "maximum": 12.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "Markov3",
+      "n": 100,
+      "mean": 11.68,
+      "sd": 2.738174574419973,
+      "p": 0.009900990099009901,
+      "z": 97.62708429816837,
+      "maximum": 19.0,
+      "minimum": 7.0
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 100,
+      "mean": 14.3,
+      "sd": 2.4718414188616546,
+      "p": 0.009900990099009901,
+      "z": 107.08615770420298,
+      "maximum": 20.0,
+      "minimum": 9.0
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 100,
+      "mean": 116.69,
+      "sd": 28.56945746772242,
+      "p": 0.009900990099009901,
+      "z": 5.681241941096598,
+      "maximum": 240.0,
+      "minimum": 61.0
+    }
+  ],
+  "corpus_provenance": "data/books_sorted_unique_with_kharos.json",
+  "n_candidates_tested": 1,
+  "seed": 1,
+  "runtime_s": 0.0,
+  "code_sha": "760aa11",
+  "extra": {
+    "real": {
+      "n_nodes": 51,
+      "contained": 20,
+      "arcs": 67,
+      "n_contigs": 29,
+      "master_len": 6335,
+      "compression": 0.4442982456140351,
+      "rotations": 0,
+      "edits": 0,
+      "max_overlap": 279
+    },
+    "real_rot": {
+      "n_nodes": 51,
+      "contained": 20,
+      "arcs": 122,
+      "n_contigs": 23,
+      "master_len": 5782,
+      "compression": 0.4928070175438597,
+      "rotations": 6,
+      "edits": 0,
+      "max_overlap": 279
+    },
+    "n_nulls": 100
+  },
+  "worst_p": 0.009900990099009901,
+  "verdict": "SUPPORTED"
+}

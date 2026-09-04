@@ -85,7 +85,53 @@ So `max n_books_parsed` is reported **within mean-codeword-length bins**.
 parse actually uses. Unused codewords can be deleted for free (the code stays
 prefix-free, merely incomplete), which is exactly hypothesis (i) for `07`.
 
-RESULTS_B1_PLACEHOLDER
+### Results
+
+`out/b1_full.json`, 9,529,008 structures in 467 s wall (4 workers).
+
+* **max n_books_parsed overall = 70/70 — attained by exactly one structure,
+  `S1 = {0..9}`**, the identity "code" (10 codewords, mean length 1.000). That
+  is not a code; it is the digit string itself.
+* the best **non-degenerate** structure parses **68/70**: `S1 = {0,1,2,3,4,5,7,8,9}`,
+  `6` the only prefix, 19 codewords, mean codeword length **1.111**.
+* inside the pre-registered band 1.50-1.70: **60/70**, from 841,879 structures
+  in band. The best is `S1 = {0,1,2,3,4,9}`, prefixes `{5,6,7,8}`, three
+  length-3 expansions (`14`, `51`, `52`), 64 codewords, 69 used, mean length
+  1.525.
+* **max n_books_parsed by mean-codeword-length bin** (`out/full.log` has all
+  47 bins):
+
+| mean length | structures | max parsed | best S1 | \|codebook\| | V used |
+|---|---|---|---|---|---|
+| 1.01 | 1 | **70** | 0123456789 | 10 | 10 |
+| 1.11 | 1,602 | 68 | 012345789 | 19 | 19 |
+| 1.15 | 40,210 | 67 | 012345789 | 37 | 30 |
+| 1.25 | 538,443 | 65 | 01234579 | 28 | 40 |
+| 1.35 | 734,314 | 62 | 0123479 | 37 | 37 |
+| 1.45 | 389,032 | 61 | 0123479 | 64 | 57 |
+| 1.53 | 127,710 | 60 | 012349 | 64 | 69 |
+| 1.57 | 87,547 | 57 | 01349 | 73 | 71 |
+| 1.65 | 48,316 | 56 | 0134 | 82 | 75 |
+| 1.75 | 4,590 | 49 | 0347 | 82 | 78 |
+| 1.85 | 552 | 43 | 04 | 91 | 85 |
+| 1.93 | 241 | 46 | 9 | 100 | 92 |
+
+The trend is monotone and mechanical: the longer the code, the fewer books end
+on a codeword boundary. Nothing stands out against it.
+
+### The sharpest form of the incompatibility
+
+Tracking the *effective* alphabet V (codewords the forced parse actually uses;
+unused ones can be deleted for free, which is exactly what an incomplete
+prefix code is) over all 9.5 M structures:
+
+> **The largest mean codeword length attainable with a letter-sized effective
+> alphabet (V in [20,40]) is 1.4495.**
+
+Not 1.50, let alone 1.577. This covers incomplete codes as well as complete
+ones, so it is stronger than the Kraft counting argument in B3(a) below, and it
+is the single number that kills the prediction as stated.
+
 
 ---
 
@@ -234,7 +280,50 @@ RESULTS_B3_PLACEHOLDER
 
 ## B4 — null calibration
 
-RESULTS_B4_PLACEHOLDER
+`b4_nulls.py`, 200 surrogates from each of `Shuffle`, `Markov2`, `Markov3`,
+`BlockShuffle20`, `CopyPasteMutate` and the digits of pi — 1,200 identical
+searches, 674 s.
+
+The calibration space is smaller than B1's, because it has to run 1,200 times:
+`NULL_SPACE = {|S1|=9: sum|T|<=3, |S1|=8,7: <=1, all smaller |S1|: 0}` =
+**7,273 structures**, covering the whole mean-length range 1.00–1.94 including
+the band. The real corpus is re-scored on exactly this space, which is why its
+`band_parsed` is 56 here and 60 in the full B1 search.
+
+| statistic | real | Shuffle | Markov2 | Markov3 | BlockShuffle20 | CopyPasteMutate | Digits_pi | verdict |
+|---|---|---|---|---|---|---|---|---|
+| max_parsed | 70 | 70.0+-0.0 (p=1.00) | 70.0+-0.0 (1.00) | 70.0+-0.0 (1.00) | 70.0+-0.0 (1.00) | 70.0+-0.0 (1.00) | 70.0+-0.0 (1.00) | REJECTED |
+| band_parsed | 56 | 54.8+-1.9 (0.34) | 55.1+-2.0 (0.40) | 54.9+-1.9 (0.35) | 54.9+-2.2 (0.36) | 55.2+-1.9 (0.45) | 55.2+-2.0 (0.40) | REJECTED |
+| vwin_parsed | 68 | 67.9+-1.1 (0.63) | 67.9+-0.9 (0.64) | 67.7+-1.0 (0.56) | 67.8+-0.9 (0.61) | 67.9+-1.0 (0.65) | 67.3+-0.8 (0.47) | REJECTED |
+| best_chi2_de | 30.93 | 30.92+-0.02 (1.00) | 28.95+-4.66 (0.69) | 28.34+-4.85 (0.70) | 29.01+-3.80 (1.00) | 28.21+-6.20 (0.68) | 91.59+-4.98 (0.005) | REJECTED |
+| best_chi2_en | 2.617 | 2.617+-0 (1.00) | 3.20+-1.26 (0.35) | 3.11+-1.17 (0.41) | 2.617+-0 (1.00) | 4.55+-2.10 (0.20) | 80.02+-1.69 (0.005) | REJECTED |
+
+Benjamini-Hochberg over all 30 (statistic, family) tests: the smallest q is
+**0.075** (the two pi comparisons); every other q is **1.000**.
+
+**The honest conclusion, stated as the task required: the family-B search has
+essentially no power.**
+
+* Every surrogate family — including `CopyPasteMutate`, the generative form of
+  "there is no message" — finds a structure that parses 70/70 books, exactly as
+  the real corpus does, because the identity structure is always available.
+* In the 1.50–1.70 band the real corpus's best (56 books) is **+0.4 to +0.6
+  sigma** above the surrogate means. It is inside the surrogate range for every
+  family (surrogate maxima reach 60–62, i.e. *better* than the real corpus).
+* The letter-frequency chi-square is worse still: on `Shuffle` and
+  `BlockShuffle20` the null distribution has **standard deviation ~0** and sits
+  exactly on the real value. That is a diagnostic, not a coincidence — those
+  surrogates preserve the digit unigrams exactly, and the statistic's optimum is
+  determined by the unigrams alone. The chi-square arm of family B is reading
+  the digit histogram and nothing else.
+* Only the digits of pi separate (z = -12 for German, -46 for English), and in
+  the direction that says "pi's digits are too uniform to look like letters".
+  That is the *one* thing this method can detect, and it is not a message.
+
+So no family-B "hit" could have been believed even if one had appeared. The
+value of the family is the exhaustive negative and the frontier, both of which
+are deterministic facts about the corpus and need no null.
+
 
 ---
 

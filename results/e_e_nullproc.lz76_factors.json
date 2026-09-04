@@ -1,0 +1,66 @@
+{
+  "experiment": "e_e_nullproc",
+  "statistic": "lz76_factors",
+  "real_value": 608.0,
+  "direction": "less",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 200,
+      "mean": 3369.78,
+      "sd": 9.544715815570422,
+      "p": 0.004975124378109453,
+      "z": -289.35172648039156,
+      "maximum": 3395.0,
+      "minimum": 3341.0
+    },
+    {
+      "family": "Markov2",
+      "n": 200,
+      "mean": 2282.915,
+      "sd": 16.594510387474532,
+      "p": 0.004975124378109453,
+      "z": -100.93187210056037,
+      "maximum": 2333.0,
+      "minimum": 2241.0
+    },
+    {
+      "family": "Markov3",
+      "n": 200,
+      "mean": 1575.0,
+      "sd": 15.764199947983405,
+      "p": 0.004975124378109453,
+      "z": -61.341520863144154,
+      "maximum": 1616.0,
+      "minimum": 1521.0
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 200,
+      "mean": 1369.29,
+      "sd": 10.771067727945999,
+      "p": 0.004975124378109453,
+      "z": -70.6791582068322,
+      "maximum": 1405.0,
+      "minimum": 1337.0
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 1128.16,
+      "sd": 26.795977310036672,
+      "p": 0.004975124378109453,
+      "z": -19.41186895262706,
+      "maximum": 1195.0,
+      "minimum": 1047.0
+    }
+  ],
+  "corpus_provenance": "books.json",
+  "n_candidates_tested": 1,
+  "seed": 3,
+  "runtime_s": 77.7507963180542,
+  "code_sha": "760aa11",
+  "extra": {},
+  "worst_p": 0.004975124378109453,
+  "verdict": "SUPPORTED"
+}

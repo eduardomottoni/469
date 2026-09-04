@@ -34,7 +34,15 @@ from c469.harness import Result, summarize_null, bh_qvalues
 from c469.stats import letter_chi2
 
 from .enum_core import NBIN, enumerate_s1, pack, hist_structure, tmatrix, describe
-from .b1_enumerate import REDUCED_SPACE, VLO, VHI, BAND, tasks, band_max
+from .b1_enumerate import VLO, VHI, BAND, tasks, band_max
+
+#: The space the nulls are calibrated on.  It must be small enough to re-run
+#: 1200 times, so it is NOT b1's REDUCED_SPACE: |S1| = 9 keeps continuations up
+#: to sum|T_p| <= 3, |S1| = 8 and 7 up to 1, and every smaller |S1| is the pure
+#: two-length code (sum|T_p| = 0).  7,273 structures, and the whole
+#: mean-codeword-length range 1.00-1.94 is still covered, including the
+#: 1.50-1.70 band.  The real corpus is re-scored on exactly this space.
+NULL_SPACE = {10: 0, 9: 3, 8: 1, 7: 1, 6: 0, 5: 0, 4: 0, 3: 0, 2: 0, 1: 0}
 
 STATISTICS = ("max_parsed", "band_parsed", "vwin_parsed",
               "best_chi2_de", "best_chi2_en")
@@ -43,7 +51,7 @@ NULL_FAMILIES = [f.name for f in U.DEFAULT_FAMILIES] + ["Digits_pi"]
 NPROC = int(os.environ.get("C469_PROCS", "8"))
 
 OUT = Path(__file__).resolve().parent / "out"
-_TASKS = tasks(REDUCED_SPACE)
+_TASKS = tasks(NULL_SPACE)
 N_STRUCTURES = sum(math.comb(10 * (10 - bin(m).count("1")), t)
                    for m, tmax in _TASKS for t in range(tmax + 1)
                    if t <= 10 * (10 - bin(m).count("1")))
@@ -135,7 +143,8 @@ def main():
         res = Result("e_b_prefix.b4", stat, float(real[stat]), direction,
                      corpus_provenance=c.provenance,
                      n_candidates_tested=len(_TASKS),
-                     extra={"space": "reduced",
+                     extra={"space": "b4_null_space",
+                            "space_spec": {str(k): v for k, v in NULL_SPACE.items()},
                             "n_structures": N_STRUCTURES,
                             "band": list(BAND), "V_window": [VLO, VHI]})
         for fam in NULL_FAMILIES:
