@@ -34,3 +34,30 @@ book-initial digits: {'0': 5, '1': 7, '2': 7, '3': 3, '4': 8, '5': 10, '6': 6, '
 (iii) if 0 and 7 are single letters, they must be at 0.076 / 0.085 frequency:
    DE nearest for 0: [('i', 0.0755), ('s', 0.0727), ('r', 0.07)]
    DE nearest for 7: [('i', 0.0755), ('s', 0.0727), ('n', 0.0978)]
+
+n_missing_bigrams: real=1  REJECTED
+   Shuffle                    0 +- 0        p=0.0020 q=0.0047
+   Markov2                1.558 +- 0.625    p=1.0000 q=1.0000
+   Markov3                1.472 +- 0.601    p=1.0000 q=1.0000
+   BlockShuffle20         0.002 +- 0.0447   p=0.0040 q=0.0084
+   CopyPasteMutate        1.178 +- 0.85     p=0.7864 q=0.8692
+   Digits_pi                  0 +- 0        p=0.0020 q=0.0047
+   IID                        0 +- 0        p=0.0020 q=0.0047
+
+word_initial_7_rate: real=0.0079681  REJECTED
+   Shuffle              0.09244 +- 0.00945  p=0.0020 q=0.0047
+   Markov2             0.007815 +- 0.00301  p=0.5469 q=0.6381
+   Markov3             0.008185 +- 0.0032   p=0.4830 q=0.6381
+   BlockShuffle20       0.01327 +- 0.00369  p=0.0878 q=0.1537
+   CopyPasteMutate      0.00926 +- 0.00352  p=0.3772 q=0.6094
+   Digits_pi             0.1116 +- 0.00214  p=0.0020 q=0.0047
+   IID                  0.09179 +- 0.00941  p=0.0020 q=0.0047
+
+mean_word_len_sep0: real=13.822  REJECTED
+   Shuffle                12.25 +- 0.112    p=0.0020 q=0.0047
+   Markov2                13.83 +- 0.48     p=0.5110 q=0.6381
+   Markov3                13.84 +- 0.464    p=0.5190 q=0.6381
+   BlockShuffle20         13.68 +- 0.0602   p=0.0200 q=0.0381
+   CopyPasteMutate        13.87 +- 0.959    p=0.5230 q=0.6381
+   Digits_pi              9.723 +- 0.0299   p=0.0020 q=0.0047
+   IID                    12.24 +- 0.394    p=0.0020 q=0.0047

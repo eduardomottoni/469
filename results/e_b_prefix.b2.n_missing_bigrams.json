@@ -1,0 +1,96 @@
+{
+  "experiment": "e_b_prefix.b2",
+  "statistic": "n_missing_bigrams",
+  "real_value": 1.0,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 500,
+      "mean": 0.0,
+      "sd": 0.0,
+      "p": 0.001996007984031936,
+      "z": 0.0,
+      "maximum": 0.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "Markov2",
+      "n": 500,
+      "mean": 1.558,
+      "sd": 0.6250087999380489,
+      "p": 1.0,
+      "z": -0.8927874296414854,
+      "maximum": 4.0,
+      "minimum": 1.0
+    },
+    {
+      "family": "Markov3",
+      "n": 500,
+      "mean": 1.472,
+      "sd": 0.6010124790717738,
+      "p": 1.0,
+      "z": -0.7853414303958788,
+      "maximum": 4.0,
+      "minimum": 1.0
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 500,
+      "mean": 0.002,
+      "sd": 0.04467661580737739,
+      "p": 0.003992015968063872,
+      "z": 22.33830790368866,
+      "maximum": 1.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 500,
+      "mean": 1.178,
+      "sd": 0.8498917578138978,
+      "p": 0.7864271457085829,
+      "z": -0.20943843538129345,
+      "maximum": 3.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "Digits_pi",
+      "n": 500,
+      "mean": 0.0,
+      "sd": 0.0,
+      "p": 0.001996007984031936,
+      "z": 0.0,
+      "maximum": 0.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "IID",
+      "n": 500,
+      "mean": 0.0,
+      "sd": 0.0,
+      "p": 0.001996007984031936,
+      "z": 0.0,
+      "maximum": 0.0,
+      "minimum": 0.0
+    }
+  ],
+  "corpus_provenance": "books.json",
+  "n_candidates_tested": 1,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "405046f",
+  "extra": {
+    "bh_q": {
+      "Shuffle": 0.004657351962741184,
+      "Markov2": 1.0,
+      "Markov3": 1.0,
+      "BlockShuffle20": 0.008383233532934131,
+      "CopyPasteMutate": 0.8692089505200127,
+      "Digits_pi": 0.004657351962741184,
+      "IID": 0.004657351962741184
+    }
+  },
+  "worst_p": 1.0,
+  "verdict": "REJECTED"
+}

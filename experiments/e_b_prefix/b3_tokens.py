@@ -31,7 +31,7 @@ from c469.harness import Result, summarize_null, bh_qvalues
 from c469.stats import mean_token_length, token_zipf_slope, heaps_beta
 
 OUT = Path(__file__).resolve().parent / "out"
-VGRID = (50, 100, 200, 300, 500, 750, 1000)
+VGRID = (16, 20, 24, 26, 28, 30, 32, 36, 40, 50, 100, 200, 300, 500, 750, 1000)
 TARGET = (1.50, 1.70)
 PREDICTION = 1.577
 
@@ -203,9 +203,11 @@ def main():
     pvals, labels, results = [], [], []
     for dname in ("dedup_core22", "contigs"):
         bk, prov = datasets[dname]
-        for method, V in (("bpe", 200), ("mdl", 200)):
+        # V = 32 is the letter-alphabet size at which the 1.577 prediction is
+        # actually being made; V = 200 is a far-from-alphabet control.
+        for method, V in (("bpe", 32), ("mdl", 32), ("bpe", 200), ("mdl", 200)):
             real = _job(("real", 0, bk, method, V))[1]
-            res = Result(f"e_b_prefix.b3.{dname}.{method}", "mean_token_len",
+            res = Result(f"e_b_prefix.b3.{dname}.{method}.V{V}", "mean_token_len",
                          real, "greater", corpus_provenance=prov,
                          extra={"V": V, "prediction": PREDICTION,
                                 "target_window": list(TARGET),
