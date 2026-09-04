@@ -30,7 +30,7 @@ from c469.corpus import load_books, load_contigs, dedup_core           # noqa
 from c469 import surrogate as U                                        # noqa
 from c469.harness import Result, NullResult                            # noqa
 
-N_RESTARTS = 8
+N_RESTARTS = 4
 N_TEMPS, SWEEPS = 100, 5
 OUTDIR = HERE / "results_c"
 OUTDIR.mkdir(exist_ok=True)
@@ -84,7 +84,7 @@ def run_config(books, kind, lm, tab, n_surr, n_restarts, seed=0, log=print):
     # (1) digit-level Markov3 through the identical tokenisation
     for fam_name, gen in (("Markov3_digits", U.MarkovK(3)),
                           ("Digits_pi", U.OtherCorpora("pi"))):
-        n = n_surr if fam_name == "Markov3_digits" else min(n_surr, 30)
+        n = n_surr if fam_name == "Markov3_digits" else min(n_surr, 20)
         vals, vs, examples = [], [], []
         for i in range(n):
             sb = gen.generate(list(books), 500001 + i)
@@ -100,7 +100,7 @@ def run_config(books, kind, lm, tab, n_surr, n_restarts, seed=0, log=print):
             f"max={max(vals):.4f} meanV={np.mean(vs):.1f}")
     # (2) symbol-level Markov3: exact length and vocabulary control
     vals, examples = [], []
-    for i in range(max(1, n_surr // 2)):
+    for i in range(max(1, n_surr // 4)):
         st = symbol_markov3(sym, 700001 + i)
         sc, _, spt = solve(st, tab, n_restarts=n_restarts, n_temps=N_TEMPS,
                            sweeps=SWEEPS, seed=2000 + i)
@@ -130,8 +130,11 @@ def run_config(books, kind, lm, tab, n_surr, n_restarts, seed=0, log=print):
 
 
 CONFIGS = [
-    # (kind, stream, lm, n_surrogates) -- C2 is the live variant and gets the
-    # full 200; C1 is the documented refutation and gets 100.
+    # Budget note: on a 4-core box shared with three other agents one
+    # configuration costs about an hour of wall clock.  Per the brief we run
+    # fewer configurations properly scored rather than more unscored.  C2 (the
+    # live variant) gets all three language models on both streams; C1 (the
+    # documented refutation) gets the cheap subset.
     ("C2_mdl", "dedup_core", "en", 200),
     ("C2_mdl", "dedup_core", "de_ae", 200),
     ("C2_mdl", "dedup_core", "de_a", 200),
@@ -140,13 +143,7 @@ CONFIGS = [
     ("C2_mdl", "contigs", "de_a", 200),
     ("C1_pairs", "dedup_core", "en", 200),
     ("C1_pairs", "dedup_core", "de_ae", 200),
-    ("C1_pairs", "contigs", "en", 100),
-    ("C1_pairs", "contigs", "de_ae", 100),
-    ("C1_triples", "dedup_core", "en", 100),
-    ("C1_triples", "dedup_core", "de_ae", 100),
-    ("C1_pairs_phase1", "dedup_core", "en", 100),
-    ("C1_triples_phase1", "dedup_core", "en", 100),
-    ("C1_triples_phase2", "dedup_core", "en", 100),
+    ("C1_triples", "dedup_core", "en", 200),
 ]
 
 

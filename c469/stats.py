@@ -536,3 +536,52 @@ def relative_lz_bits_per_digit(books, loo: bool = True, min_copy: int = 3) -> fl
         tot_bits += bits
         tot_n += len(b)
     return tot_bits / tot_n if tot_n else float("inf")
+
+
+# ------------------------------------------------- token induction (family A)
+
+def token_length_profile(tokens) -> dict:
+    """The shape of an induced token set.
+
+    `mean_len_weighted` is the corpus-weighted mean codeword length -- the
+    quantity the Facebook-pair ratio predicts to be 1.577 -- and `types_by_len`
+    is what distinguishes a lexicon (mass at lengths 2-3) from a compressor's
+    dictionary (bare symbols plus long verbatim chunks, nothing in between).
+    """
+    toks = list(tokens)
+    n = len(toks)
+    types = sorted(set(toks))
+    occ = Counter(len(t) for t in toks)
+    typ = Counter(len(t) for t in types)
+    return {
+        "mean_len_weighted": sum(len(t) for t in toks) / n if n else 0.0,
+        "mean_len_types": sum(len(t) for t in types) / len(types) if types else 0.0,
+        "n_len1_types": typ[1], "n_len2_types": typ[2], "n_len3_types": typ[3],
+        "frac_occ_len1": occ[1] / n if n else 0.0,
+        "frac_occ_len12": (occ[1] + occ[2]) / n if n else 0.0,
+        "V": len(types), "n_tokens": n,
+        "occ_by_len": dict(sorted(occ.items())),
+        "types_by_len": dict(sorted(typ.items())),
+    }
+
+
+def two_part_mdl_bits(vocab, parses) -> dict:
+    """Two-part description length in bits of a dictionary parse.
+
+    L(model): each dictionary entry as a string over 11 symbols (10 digits plus
+      a terminator), plus Rissanen's (V-1)/2 log2 N for the frequency table.
+    L(data|model): N * H(token distribution).
+
+    One accounting applied to every inducer and every surrogate, so the absolute
+    constant is arguable but the comparison is not.
+    """
+    log11 = math.log2(11.0)
+    toks = [t for p in parses for t in p]
+    N = len(toks)
+    c = Counter(toks)
+    V = len(vocab)
+    L_dict = sum((len(t) + 1) * log11 for t in vocab)
+    L_counts = 0.5 * max(0, V - 1) * math.log2(max(N, 2))
+    L_data = -sum(k * math.log2(k / N) for k in c.values()) if N else 0.0
+    return {"L_dict": L_dict, "L_counts": L_counts, "L_data": L_data,
+            "total": L_dict + L_counts + L_data, "n_tokens": N, "V": V}

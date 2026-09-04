@@ -47,7 +47,7 @@ def perturb(theta, rng, scale=0.25):
     return t
 
 
-def run(n_round1=40000, n_round2=40000, keep=200, procs=3, seed=0):
+def run(n_round1=40000, n_round2=40000, keep=200, procs=2, seed=0):
     c = load_books(with_kharos=False)
     books = list(c.books)
     obs = abc_summary(books)
@@ -69,8 +69,14 @@ def run(n_round1=40000, n_round2=40000, keep=200, procs=3, seed=0):
 
     def batch(jobs, tag):
         t0 = time.time()
+        res = []
         with Pool(procs, _init, (books, obs, scale)) as p:
-            res = p.map(_sim, jobs, chunksize=16)
+            for i, r in enumerate(p.imap_unordered(_sim, jobs, chunksize=8), 1):
+                res.append(r)
+                if i % 500 == 0:
+                    best = min(x[2] for x in res)
+                    print(f"  {tag} {i}/{len(jobs)} "
+                          f"({time.time()-t0:.0f}s) best d={best:.3f}", flush=True)
         res = [r for r in res if r[1] is not None]
         res.sort(key=lambda r: r[2])
         print(f"{tag}: {len(res)} sims in {time.time()-t0:.0f}s "

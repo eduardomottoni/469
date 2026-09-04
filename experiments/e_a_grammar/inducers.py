@@ -28,30 +28,9 @@ LOG11 = math.log2(11.0)
 
 # ------------------------------------------------------------------ accounting
 
-def mdl_bits(vocab, parses) -> dict:
-    """Two-part description length, in bits, of `parses` given `vocab`.
-
-    L(model): each dictionary entry written as a digit string over an 11-symbol
-      alphabet (10 digits + terminator), plus Rissanen's (V-1)/2 log2 N cost of
-      the token frequency table.
-    L(data|model): N * H(token distribution) -- the empirical-entropy cost of
-      the token sequence itself.
-
-    The same accounting is applied to every inducer and to every surrogate, so
-    the comparison is fair even where the absolute constant is arguable.
-    """
-    toks = [t for p in parses for t in p]
-    N = len(toks)
-    c = Counter(toks)
-    V = len(vocab)
-    L_dict = sum((len(t) + 1) * LOG11 for t in vocab)
-    L_counts = 0.5 * max(0, V - 1) * math.log2(max(N, 2))
-    L_data = 0.0
-    for t, k in c.items():
-        L_data -= k * math.log2(k / N)
-    # cost of signalling the number of tokens per book is O(log) and common to all
-    return {"L_dict": L_dict, "L_counts": L_counts, "L_data": L_data,
-            "total": L_dict + L_counts + L_data, "n_tokens": N, "V": V}
+#: The shared accounting lives in c469.stats so every family uses the same one.
+from c469.stats import two_part_mdl_bits as mdl_bits          # noqa: E402
+from c469.stats import token_length_profile                   # noqa: E402
 
 
 @dataclass
@@ -70,25 +49,12 @@ class Induction:
         return sorted(set(self.tokens))
 
     def length_profile(self) -> dict:
-        """The numbers the pre-registered prediction is about."""
-        toks = self.tokens
-        uv = self.used_vocab
-        n = len(toks)
-        occ = Counter(len(t) for t in toks)
-        typ = Counter(len(t) for t in uv)
-        return {
-            "mean_token_len_weighted": sum(len(t) for t in toks) / n if n else 0.0,
-            "mean_token_len_types": sum(len(t) for t in uv) / len(uv) if uv else 0.0,
-            "n_len1_types": typ[1],
-            "n_len2_types": typ[2],
-            "n_len3_types": typ[3],
-            "frac_occ_len1": occ[1] / n if n else 0.0,
-            "frac_occ_len12": (occ[1] + occ[2]) / n if n else 0.0,
-            "V_used": len(uv),
-            "n_tokens": n,
-            "occ_by_len": dict(sorted(occ.items())),
-            "types_by_len": dict(sorted(typ.items())),
-        }
+        """The numbers the pre-registered prediction is about (c469.stats)."""
+        p = token_length_profile(self.tokens)
+        p["mean_token_len_weighted"] = p["mean_len_weighted"]
+        p["mean_token_len_types"] = p["mean_len_types"]
+        p["V_used"] = p["V"]
+        return p
 
 
 # ------------------------------------------------------------------------ BPE
