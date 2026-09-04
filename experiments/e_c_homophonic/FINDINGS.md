@@ -1,8 +1,8 @@
 # Family C — homophonic solving
 
 **Verdict: no configuration beats its matched surrogate baseline. The maximum
-z-score across every configuration, against the null that controls length and
-symbol inventory exactly, is −0.13 — i.e. the real corpus never once exceeds
+z-score across all eighteen configurations, against the null that controls length
+and symbol inventory exactly, is −0.13 — i.e. the real corpus never once exceeds
 even the *mean* of the noise distribution, let alone the 3-sigma bar. Family C
 is a calibrated negative.**
 
@@ -98,22 +98,28 @@ Every configuration is scored against three baselines:
 | `Markov3_symbols` | order-3 resampling of the **symbol stream itself** — exact length, exact vocabulary, only the sequential arrangement destroyed | **the matched null, and the one that decides this family** |
 | `Digits_pi` | the digits of pi through the identical pipeline | the "would this method find a message in anything" control |
 
-### Headline table
+### Headline table — all 18 configurations
 
-| config | stream | LM | n | V | real best | Markov3(digits) | z | Markov3(symbols) z | symbols max | pi max |
+| config | stream | LM | n | V | real best | Markov3(digits) | z_digits | **z_symbols** | symbols max | pi max |
 |---|---|---|---|---|---|---|---|---|---|---|
-| C2_mdl | dedup_core | en | 1923 | 76 | -1.8542 | -1.9893±0.0455 | +2.97 | **−1.78** | -1.6918 | -2.3445 |
-| C2_mdl | dedup_core | de_ae | 1923 | 76 | -1.8492 | -2.0417±0.0572 | +3.36 | **−0.21** | -1.6873 | -2.4036 |
-| C2_mdl | dedup_core | de_a | 1923 | 76 | -1.8778 | -2.0562±0.0548 | +3.25 | **−0.57** | -1.7663 | -2.4181 |
-| C2_mdl | contigs | en | 2241 | 121 | -1.6613 | -1.9483±0.0552 | +5.20 | **−0.81** | -1.5163 | -2.4315 |
-| C2_mdl | contigs | de_ae | 2241 | 121 | -1.6588 | -2.0051±0.0553 | +6.26 | **−0.82** | -1.4641 | -2.5032 |
-| C2_mdl | master_v1 | en | 2281 | 114 | -1.7105 | -1.9686±0.0493 | +5.23 | **−0.63** | -1.5265 | -2.4405 |
-| C2_mdl | master_v1 | de_ae | 2281 | 114 | -1.7373 | -2.0269±0.0587 | +4.93 | **−0.97** | -1.5573 | -2.5052 |
-| C1_pairs | dedup_core | en | 1946 | 96 | -1.5153 | -1.5239±0.0305 | +0.28 | **−1.92** | -1.3861 | -1.8597 |
-| C1_pairs | dedup_core | de_ae | 1946 | 96 | -1.5791 | -1.5305±0.0298 | −1.63 | **−3.84** | -1.3751 | -1.8845 |
-| C1_triples | dedup_core | en | 1293 | 374 | -0.9544 | -1.0596±0.0206 | +5.10 | **−3.05** | -0.8126 | -0.8111 |
-| C2_mdl | seed | en | 554 | 12 | -2.1733 | -2.1543±0.0968 | −0.20 | **−1.24** | -1.9568 | -2.1439 |
-| C1_pairs | seed | en | 289 | 95 | -1.1211 | -1.0179±0.0405 | −2.55 | **−0.13** | -1.0150 | -1.0381 |
+| C2_mdl | dedup_core | en | 1923 | 76 | -1.8542 | -1.9893±0.0455 | +2.97 | **-1.78** | -1.6918 | -2.3445 |
+| C2_mdl | dedup_core | de_ae | 1923 | 76 | -1.8492 | -2.0417±0.0572 | +3.36 | **-0.21** | -1.6873 | -2.4036 |
+| C2_mdl | dedup_core | de_a | 1923 | 76 | -1.8778 | -2.0562±0.0548 | +3.25 | **-0.57** | -1.7663 | -2.4181 |
+| C2_mdl | contigs | en | 2241 | 121 | -1.6613 | -1.9483±0.0552 | +5.20 | **-0.81** | -1.5163 | -2.4315 |
+| C2_mdl | contigs | de_ae | 2241 | 121 | -1.6588 | -2.0051±0.0553 | +6.26 | **-0.82** | -1.4641 | -2.5032 |
+| C2_mdl | contigs | de_a | 2241 | 121 | -1.6876 | -2.0183±0.0570 | +5.80 | **-0.91** | -1.4685 | -2.5410 |
+| C1_pairs | dedup_core | en | 1946 | 96 | -1.5153 | -1.5239±0.0305 | +0.28 | **-1.92** | -1.3861 | -1.8597 |
+| C1_pairs | dedup_core | de_ae | 1946 | 96 | -1.5791 | -1.5305±0.0298 | -1.63 | **-3.84** | -1.3751 | -1.8845 |
+| C1_triples | dedup_core | en | 1293 | 374 | -0.9544 | -1.0596±0.0206 | +5.10 | **-3.05** | -0.8126 | -0.8111 |
+| C2_mdl | master_v1 | en | 2281 | 114 | -1.7105 | -1.9686±0.0493 | +5.23 | **-0.63** | -1.5265 | -2.4405 |
+| C2_mdl | master_v1 | de_ae | 2281 | 114 | -1.7373 | -2.0269±0.0587 | +4.93 | **-0.97** | -1.5573 | -2.5052 |
+| C1_pairs | master_v1 | en | 3028 | 98 | -1.5600 | -1.5940±0.0313 | +1.09 | **-0.97** | -1.4408 | -1.9944 |
+| C2_mdl | seed | en | 554 | 12 | -2.1733 | -2.1543±0.0968 | -0.20 | **-1.24** | -1.9568 | -2.1439 |
+| C2_mdl | seed | de_ae | 554 | 12 | -2.2430 | -2.1798±0.0986 | -0.64 | **-1.82** | -1.9348 | -2.1434 |
+| C1_pairs | seed | en | 289 | 95 | -1.1211 | -1.0179±0.0405 | -2.55 | **-0.13** | -1.0150 | -1.0381 |
+| C2_mdlB | dedup_core | en | 1769 | 65 | -1.9879 | -1.9567±0.0540 | -0.58 | **-2.37** | -1.7194 | -2.3445 |
+| C2_mdlB | dedup_core | de_ae | 1769 | 65 | -1.9276 | -2.0138±0.0641 | +1.34 | **-0.54** | -1.7294 | -2.4036 |
+| C2_mdlB | master_v1 | en | 2429 | 68 | -1.8642 | -1.9490±0.0590 | +1.44 | **-0.92** | -1.7041 | -2.4405 |
 
 For scale: the language models score genuine text at about **−0.63** per
 character. The best 469 result anywhere is **−1.51**. The gap is not marginal.
@@ -133,8 +139,8 @@ can always drive the 5-gram score higher, so a vocabulary gap manufactures a
 positive z on its own. The evidence:
 
 ```
-Pearson r(vocabulary gap, z against Markov3_digits)  = +0.916
-Pearson r(vocabulary gap, z against Markov3_symbols) = +0.390
+Pearson r(vocabulary gap, z against Markov3_digits)  = +0.908
+Pearson r(vocabulary gap, z against Markov3_symbols) = +0.323
 ```
 
 Where the vocabulary happens to match — `C1_pairs`, real V = 96 against a
@@ -145,10 +151,10 @@ tokeniser, not the corpus.
 `Markov3_symbols` holds length and vocabulary exactly fixed. Against it:
 
 ```
-max z over all 12 configurations = -0.13
+max z over all 18 configurations = -0.13
 ```
 
-**Not one configuration reaches even the mean of the matched null.** After
+**Not one of the eighteen configurations reaches even the mean of the matched null.** After
 Benjamini–Hochberg across all configurations (a family testing many
 configurations does not get to quote its best raw p), every q-value against the
 matched null is **1.0000**.
@@ -168,6 +174,23 @@ The symbol-level surrogate — pure noise by construction — produces "et s she
 sssts sates ss s sea stasis sts seasi", which reads *more* like English than the
 real corpus does, and it scores higher. This is what the surrogate-maximum
 criterion is for.
+
+### Family B's frontier band
+
+Family B's enumeration showed that a 26–32 letter alphabet cannot produce the
+observed statistics: reaching mean codeword length 1.577 needs only 4–5
+single-digit codewords and hence a **~55–73 symbol** alphabet. If there is a
+code here at all it is homophonic, which puts it squarely in this family's
+scope, so three configurations were added with the MDL parse steered into that
+band (`C2_mdlB`, `maxlen=16`): **V = 65** on the dedup core and **V = 68** on
+`master_v1`.
+
+They are the best-targeted configurations in the study and they are also,
+usefully, the ones with the smallest vocabulary gap to their digit-level nulls
+(7.0 symbols on master_v1, against 41.9 for `C2_mdl`). With that confound
+largely removed, the digit-level z collapses to **−0.58, +1.34 and +1.44** — and
+the matched-null z stays negative (−0.92 and below). The frontier band contains
+no signal either.
 
 ### German versus English
 

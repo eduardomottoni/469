@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C2_mdlB_master_v1_en",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.8642144770991806,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -1.948967418106623,
+      "sd": 0.0590245666057041,
+      "p": 0.06965174129353234,
+      "z": 1.4358926440512294,
+      "maximum": -1.8055057137732076,
+      "minimum": -2.1291989076628193
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.4764781778540614,
+      "sd": 0.014938733430282267,
+      "p": 0.047619047619047616,
+      "z": 40.98498066199927,
+      "maximum": -2.4405027616310404,
+      "minimum": -2.4984617793271355
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.8098169152770223,
+      "sd": 0.05898890254694427,
+      "p": 0.7843137254901961,
+      "z": -0.9221660257006471,
+      "maximum": -1.7040955984026023,
+      "minimum": -1.9499627932300552
+    }
+  ],
+  "corpus_provenance": "data/master_v1.txt",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "28614e1",
+  "extra": {
+    "n_symbols": 2429,
+    "V": 68,
+    "plaintext_head": "esma saa aa asasmmsaeim asama sessr s  er arrama ass a a s srm ssasrmrsera s ess a amsesaassass sas sisassaamsaar m sa as  as mr s a rasaessr  a ama as rmam mms isasresaamisaa psa esre as sipsresa s i",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.7843137254901961,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

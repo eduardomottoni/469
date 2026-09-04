@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C2_mdl_seed_de_ae",
+  "statistic": "best_log10P_per_char",
+  "real_value": -2.2429570123942737,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -2.179802812328778,
+      "sd": 0.09858310909786419,
+      "p": 0.7263681592039801,
+      "z": -0.640618871157756,
+      "maximum": -1.8133034919894004,
+      "minimum": -2.4233268071827783
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.2402577997549225,
+      "sd": 0.03751967060246621,
+      "p": 0.5238095238095238,
+      "z": -0.0719412669676749,
+      "maximum": -2.143433639072759,
+      "minimum": -2.3061376853916657
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -2.1062218055447137,
+      "sd": 0.07492983639289345,
+      "p": 0.9411764705882353,
+      "z": -1.8248432591336647,
+      "maximum": -1.9348276402462612,
+      "minimum": -2.282043113428253
+    }
+  ],
+  "corpus_provenance": "data/seed_estimate.txt",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "28614e1",
+  "extra": {
+    "n_symbols": 554,
+    "V": 12,
+    "plaintext_head": " srtstaetettee a rre tersesaae ser s asea  teessa  ets eaetsars ss tts taseessstteertstsaetssesesseeeerrrteete teest reseaa  teattes seesttetee e errrr srteersaeese   sest att reresr     seers at  t e",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.9411764705882353,
+  "verdict": "INCOMPLETE (missing required null families)"
+}
