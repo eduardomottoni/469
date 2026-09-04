@@ -94,4 +94,102 @@ Raw data: [`a1_tokenlen.json`](a1_tokenlen.json), reproduced by
 
 ## A2 — every statistic against surrogates run through the same inducer
 
-See [`a2_nulls.json`](a2_nulls.json) and `results/A2_*.json`.
+The pre-registration forbids two things that are the usual way this analysis goes
+wrong, and both are honoured here:
+
+1. **Zipf slope and Heaps' beta are never compared to a textbook value.** BPE and
+   MDL segmenters manufacture Zipf-like curves on noise, so the only meaningful
+   comparison is to the distribution of the *same* statistic produced by running
+   the *same* inducer on surrogates.
+2. **The MDL comparison is only made against surrogates matched on LZ76 factor
+   count.** The real corpus wins on compression against unmatched surrogates for
+   reasons that have nothing to do with language, so an unmatched p is not
+   evidence of anything.
+
+`CopyPasteMutate` was tuned per stream to match the real LZ76 factor count. On
+the deduplicated core the match is essentially exact (**509.7 vs 510, 0.07%
+error**, at `seed_len=900, seed_order=2, p_delete=0.006, max_segments=10`); on
+the contigs it is **554.7 vs 563 (1.5%)**. (The first attempt at the contigs
+failed to match at all, 1079 vs 563. The cause was a tuner grid that held
+`max_segments` fixed at 3: `CopyPasteMutate` pads any book longer than about
+`max_segments × seed_len` with independent random digits, which drives LZ76 up.
+Adding `max_segments` to the grid fixed it. Had it not, the pre-registration
+required reporting the MDL comparison on that stream as uninformative rather
+than quoting an unmatched p — worth recording, because the unmatched version
+would have looked like a large, spurious win for the real corpus.)
+
+### Deduplicated core (22 books, 3901 digits, real LZ76 = 510), N = 200 per family
+
+| statistic | real | Shuffle | Markov2 | Markov3 | BlockShuffle20 | **CopyPasteMutate (LZ-matched)** | pi |
+|---|---|---|---|---|---|---|---|
+| MDL bits/digit | **2.748** | 3.312±0.008 (z=−74.1) | 3.164±0.032 (z=−13.2) | 2.989±0.038 (z=−6.3) | 2.990±0.024 (z=−10.2) | **2.687±0.055 (z=+1.1, p=0.89)** | 3.378±0.008 (z=−80.5) |
+| mean token length | **2.029** | 1.019±0.004 (z=+226.8) | 1.190±0.047 (z=+17.7) | 1.414±0.062 (z=+9.9) | 1.517±0.072 (z=+7.1) | **2.199±0.157 (z=−1.1, p=0.13)** | 1.017±0.004 (z=+256.6) |
+| frac. occurrences at length ≤2 | **0.852** | 0.997±0.003 (z=−50.4) | 0.949±0.014 (z=−6.7) | 0.935±0.011 (z=−7.4) | 0.906±0.015 (z=−3.6) | **0.823±0.024 (z=+1.2, p=0.11)** | 0.999±0.002 (z=−86.8) |
+| length-2 types | **0** | 1.26±0.74 | 0.24±0.50 | 0.04±0.18 | 0.23±0.46 | **0.06±0.26 (z=−0.2)** | 1.40±0.67 |
+| vocabulary size | **76** | 12.0±0.1 (z=+643) | 25.8±4.8 (z=+10.5) | 45.9±5.8 (z=+5.2) | 53.3±6.8 (z=+3.3) | **80.5±6.5 (z=−0.7, p=0.77)** | 12.0±0.2 (z=+348) |
+| **Zipf slope s** | **1.304** | 0.960±0.101 (z=+3.4) | 1.876±0.120 (z=−4.8) | 1.812±0.094 (z=−5.4) | 1.664±0.085 (z=−4.2) | **1.227±0.065 (z=+1.2, p=0.11)** | 0.736±0.125 (z=+4.5) |
+| **Heaps' beta** | **0.356** | 0.016±0.014 (z=+24.9) | 0.142±0.049 (z=+4.3) | 0.313±0.048 (z=+0.9) | 0.324±0.053 (z=+0.6) | **0.361±0.060 (z=−0.1, p=0.55)** | 0.015±0.016 (z=+21.5) |
+
+Surrogate mean LZ76 factors: Shuffle 1357, Markov2 957, Markov3 729,
+BlockShuffle20 746, **CopyPasteMutate 504**, pi 1390.
+
+### Reading the table
+
+**Against the LZ-matched copy-paste null, every Family A statistic is
+indistinguishable from noise.** The largest |z| across all seven statistics is
+**1.2**, and no p is below 0.11. Specifically:
+
+- **No MDL gain.** The real corpus needs **2.748 bits/digit**; the matched
+  surrogate needs **2.687**. The real corpus is very slightly *worse*
+  (z = +1.1, p = 0.89). The kill criterion's second clause is met.
+- **The Zipf slope is a red herring.** s = 1.304 is in the range one would
+  happily call "language-like" against a textbook value of ~1.0 — and the
+  copy-paste null produces 1.227 ± 0.065 with no message in it whatsoever
+  (z = +1.2). This is precisely the failure mode the pre-registration was
+  written to prevent, and it would have produced a false positive here.
+- **Heaps' beta likewise.** 0.356 is just below the 0.4–0.6 "language" band, and
+  the null reproduces it at 0.361 ± 0.060 (z = −0.1).
+- Against the *weaker* nulls (Shuffle, Markov2/3, BlockShuffle20, pi) the real
+  corpus looks wildly distinctive on every statistic — z from +3 to +643. That
+  apparent significance is entirely an artifact of those nulls not reproducing
+  the corpus's long-range copying, and quoting it would have been the error the
+  plan warned about.
+
+## Verdict
+
+The pre-registered kill criterion is:
+
+> no length-1/2 concentration **and** no MDL gain over LZ-matched surrogates
+> ⇒ Family A is dead.
+
+Both clauses hold.
+
+1. **No length-1/2 concentration.** The MDL-optimal vocabulary contains **zero**
+   length-2 tokens on every stream and at every `maxlen`. It is ten bare digits
+   plus long verbatim chunks. There is no lexicon layer.
+2. **No MDL gain over LZ-matched surrogates.** z = +1.1, p = 0.89 — the real
+   corpus compresses very slightly *worse* than a copy-paste process fitted to
+   its own LZ76 factor count.
+
+And the primary pre-registered prediction fails outright: the Facebook-pair ratio
+predicts a mean codeword length of **1.577**; the measured MDL-optimal figures
+are **2.029** (dedup core) and **2.984** (contigs). **Family A is dead.** It
+provides no support for the variable-length-code hypothesis, and the 1.577
+prediction should not be counted as corroborated by token induction.
+
+What Family A *does* deliver is a positive statement, and it agrees with
+Family E: the induced structure of 469 — its dictionary, its MDL curve, its
+Zipf slope, its Heaps exponent — is fully accounted for by one string cut up and
+pasted with mutation. Nothing in the token statistics needs a lexicon to explain
+it.
+
+## Reproducing
+
+```
+python experiments/e_a_grammar/run_a1_tokenlen.py      # the pre-registered test
+python experiments/e_a_grammar/run_a2_nulls.py         # the surrogate tables
+python experiments/e_a_grammar/summarize_a2.py         # regenerate the tables above
+```
+
+Raw: [`a1_tokenlen.json`](a1_tokenlen.json), [`a2_nulls.json`](a2_nulls.json),
+scored `Result`s in `results/A2_*.json`.

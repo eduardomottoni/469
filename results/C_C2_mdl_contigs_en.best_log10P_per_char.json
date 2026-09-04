@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C2_mdl_contigs_en",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.6612861531024588,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -1.9482643736800833,
+      "sd": 0.055177855587605074,
+      "p": 0.004975124378109453,
+      "z": 5.200967263434032,
+      "maximum": -1.7951984582021467,
+      "minimum": -2.0881793058695335
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.473576728522024,
+      "sd": 0.017010493381122614,
+      "p": 0.047619047619047616,
+      "z": 47.75232306436239,
+      "maximum": -2.4314596509616875,
+      "minimum": -2.519714089685157
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.6149514470373993,
+      "sd": 0.05695596927508494,
+      "p": 0.7843137254901961,
+      "z": -0.8135179974073105,
+      "maximum": -1.5162603087918274,
+      "minimum": -1.781889732811953
+    }
+  ],
+  "corpus_provenance": "try_combine_books/out/books/books_combined_#2_6624[49]_63[1].txt",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "5f37fd0",
+  "extra": {
+    "n_symbols": 2241,
+    "V": 121,
+    "plaintext_head": "ina a s avaal sansaa ssian sa assasan johnssasso a able i maaa a a has asaa ana a sassan as a masaa isasassaa naa siaans his ssasii sanas asanasia i a be does a a sasha in man a chaos fish eva i ssan ",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.7843137254901961,
+  "verdict": "INCOMPLETE (missing required null families)"
+}
