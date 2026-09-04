@@ -19,6 +19,7 @@ Usage: python -m experiments.e_b_prefix.b4_nulls [n_per_family]
 from __future__ import annotations
 
 import json
+import math
 import sys
 import time
 from multiprocessing import Pool
@@ -40,6 +41,9 @@ NULL_FAMILIES = [f.name for f in U.DEFAULT_FAMILIES] + ["Digits_pi"]
 
 OUT = Path(__file__).resolve().parent / "out"
 _TASKS = tasks(REDUCED_SPACE)
+N_STRUCTURES = sum(math.comb(10 * (10 - bin(m).count("1")), t)
+                   for m, tmax in _TASKS for t in range(tmax + 1)
+                   if t <= 10 * (10 - bin(m).count("1")))
 
 
 def search(books) -> dict:
@@ -128,9 +132,9 @@ def main():
         direction = "less" if stat.startswith("best_chi2") else "greater"
         res = Result("e_b_prefix.b4", stat, float(real[stat]), direction,
                      corpus_provenance=c.provenance,
-                     n_candidates_tested=sum(1 for _ in _TASKS),
+                     n_candidates_tested=len(_TASKS),
                      extra={"space": "reduced",
-                            "n_structures": 57728,
+                            "n_structures": N_STRUCTURES,
                             "band": list(BAND), "V_window": [VLO, VHI]})
         for fam in NULL_FAMILIES:
             vals = [x[stat] for x in nulls[fam]]

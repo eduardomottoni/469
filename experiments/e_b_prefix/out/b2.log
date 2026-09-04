@@ -1,0 +1,36 @@
+missing bigrams: ['07']  (expected count of 07 under independence: 72.3)
+rarest bigrams (obs/exp):
+   07  obs=   0  exp=  72.3
+   33  obs=   1  exp=  37.4
+   32  obs=   2  exp=  54.3
+   39  obs=   4  exp=  57.7
+   66  obs=  12  exp= 113.7
+   02  obs=  13  exp=  71.3
+   69  obs=  13  exp= 100.6
+   37  obs=  14  exp=  55.1
+   38  obs=  16  exp=  64.2
+   23  obs=  17  exp=  54.3
+   93  obs=  17  exp=  57.7
+   41  obs=  19  exp= 209.4
+
+book-final digits: {'0': 9, '1': 12, '2': 6, '3': 4, '4': 8, '5': 9, '6': 2, '7': 6, '8': 7, '9': 7}
+book-initial digits: {'0': 5, '1': 7, '2': 7, '3': 3, '4': 8, '5': 10, '6': 6, '7': 6, '8': 10, '9': 8}
+
+(i) 0-as-prefix: {
+  "source": "reduced",
+  "n_length_bins": 37,
+  "bins_where_best_structure_has_0_as_codeword": 36,
+  "bins_where_best_structure_has_0_as_prefix": 1,
+  "best_parse_with_0_codeword": 70,
+  "best_parse_with_0_prefix": 29,
+  "bins_where_3_is_prefix": 2,
+  "bins_where_0_prefix_and_3_prefix": 0
+}
+
+(ii) 0-as-delimiter:
+   words=753  mean len=13.82 +-11.57  max=62  empty gaps (`00`) = 172
+   word-initial digit distribution: 0:0.000 1:0.177 2:0.027 3:0.175 4:0.227 5:0.097 6:0.076 7:0.008 8:0.110 9:0.104
+
+(iii) if 0 and 7 are single letters, they must be at 0.076 / 0.085 frequency:
+   DE nearest for 0: [('i', 0.0755), ('s', 0.0727), ('r', 0.07)]
+   DE nearest for 7: [('i', 0.0755), ('s', 0.0727), ('n', 0.0978)]

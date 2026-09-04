@@ -27,9 +27,13 @@ VLO, VHI = 20, 40         # "effective alphabet is letter-sized" window
 OUT = Path(__file__).resolve().parent / "out"
 
 #: (|S1|, tmax).  tmax caps sum|T_p|; codebook size = |S1| + 10k + 9*tmax.
-FULL_SPACE = {10: 0, 9: 10, 8: 20, 7: 4, 6: 3, 5: 2, 4: 2}
+#: |S1| = 9 and 10 are enumerated completely (all 2^10 T assignments).  For
+#: smaller S1 the cap is set so each branch stays exhaustive up to a stated
+#: codebook size; b3_frontier shows |S1| >= 8 can never reach mean codeword
+#: length 1.5 whatever T is, so exhausting its 2^20 tail buys nothing.
+FULL_SPACE = {10: 0, 9: 10, 8: 6, 7: 4, 6: 3, 5: 2, 4: 2, 3: 1, 2: 1, 1: 1}
 #: the sub-space cheap enough to re-run identically on >=200 surrogates/family
-REDUCED_SPACE = {10: 0, 9: 10, 8: 2, 7: 1, 6: 1, 5: 1, 4: 1}
+REDUCED_SPACE = {10: 0, 9: 10, 8: 2, 7: 1, 6: 1, 5: 1, 4: 1, 3: 1, 2: 1, 1: 1}
 
 BAND = (1.50, 1.70)       # the pre-registered 1.577 band
 
