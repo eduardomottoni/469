@@ -1,0 +1,74 @@
+{
+  "prediction": 1.577,
+  "provenance": "books.json",
+  "smallest_codebook_reaching_prediction": 55,
+  "max_mean_len_letter_sized": 1.3014790848162698,
+  "frontier": [
+    {
+      "codebook_size": 10,
+      "max_mean_len": 1.0,
+      "S1": "0123456789",
+      "books_parsed": 70
+    },
+    {
+      "codebook_size": 19,
+      "max_mean_len": 1.1510475217169136,
+      "S1": "023456789",
+      "books_parsed": 61
+    },
+    {
+      "codebook_size": 28,
+      "max_mean_len": 1.3014790848162698,
+      "S1": "02356789",
+      "books_parsed": 55
+    },
+    {
+      "codebook_size": 37,
+      "max_mean_len": 1.4324049345033703,
+      "S1": "0236789",
+      "books_parsed": 46
+    },
+    {
+      "codebook_size": 46,
+      "max_mean_len": 1.5401340079310817,
+      "S1": "023689",
+      "books_parsed": 41
+    },
+    {
+      "codebook_size": 55,
+      "max_mean_len": 1.6430342815463166,
+      "S1": "02369",
+      "books_parsed": 37
+    },
+    {
+      "codebook_size": 64,
+      "max_mean_len": 1.7213816292220694,
+      "S1": "2369",
+      "books_parsed": 32
+    },
+    {
+      "codebook_size": 73,
+      "max_mean_len": 1.8058361391694726,
+      "S1": "379",
+      "books_parsed": 37
+    },
+    {
+      "codebook_size": 82,
+      "max_mean_len": 1.8803005008347244,
+      "S1": "37",
+      "books_parsed": 34
+    },
+    {
+      "codebook_size": 91,
+      "max_mean_len": 1.9388879325185058,
+      "S1": "3",
+      "books_parsed": 36
+    },
+    {
+      "codebook_size": 100,
+      "max_mean_len": 1.9860694762828426,
+      "S1": "3",
+      "books_parsed": 36
+    }
+  ]
+}

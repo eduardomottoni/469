@@ -11,8 +11,17 @@ from __future__ import annotations
 import random
 from collections import defaultdict
 from dataclasses import dataclass
+from pathlib import Path
 
 DIGITS = "0123456789"
+
+#: on-disk home for the constants' digit expansions
+_DIGIT_DIR = Path(__file__).resolve().parent.parent / "data" / "external"
+
+#: memo for OtherCorpora.  The constants never change, only the requested
+#: length; recomputing pi to 11k places on every generate() call was costing
+#: ~10 s per surrogate, which is the entire null-calibration budget.
+_DIGIT_CACHE: dict = {}
 
 
 class Surrogate:
@@ -182,6 +191,13 @@ class OtherCorpora(Surrogate):
         return f"Digits_{self.which}"
 
     def _digits(self, n: int) -> str:
+        hit = _DIGIT_CACHE.get(self.which)
+        if hit is None:
+            p = _DIGIT_DIR / f"digits_{self.which}.txt"
+            if p.exists():
+                hit = _DIGIT_CACHE[self.which] = p.read_text().strip()
+        if hit is not None and len(hit) >= n + 10:
+            return hit[:n + 10]
         from decimal import Decimal, getcontext
         getcontext().prec = n + 20
         if self.which == "pi":
@@ -205,8 +221,14 @@ class OtherCorpora(Surrogate):
                     break
         else:
             v = Decimal(2).sqrt()
-        s = str(v).replace(".", "").replace("-", "")
-        return s[:n + 10]
+        s = str(v).replace(".", "").replace("-", "")[:n + 10]
+        _DIGIT_CACHE[self.which] = s
+        try:
+            _DIGIT_DIR.mkdir(parents=True, exist_ok=True)
+            (_DIGIT_DIR / f"digits_{self.which}.txt").write_text(s)
+        except OSError:
+            pass
+        return s
 
     def generate(self, books, seed):
         total = sum(len(b) for b in books)

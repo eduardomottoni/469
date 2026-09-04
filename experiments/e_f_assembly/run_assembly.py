@@ -80,21 +80,24 @@ def assemble(seqs, labels=None, min_ov=5, mode="edits", n_extra=4,
                 kmin=kmin, front=front, S=S, heur_score=bs)
 
 
-def build_provenance(master, order, layouts, res, seqs, labels):
+def build_provenance(contigs, layouts, res, seqs, labels, tag):
     kept, dropped = res["kept"], res["dropped"]
+    master = "".join(contigs)
     cover = [0] * len(master)
-    entries, host_of = [], {}
+    entries, host_of, junctions = [], {}, []
     base = 0
-    for lay, clen in zip(layouts, order):
+    for ci, (lay, contig) in enumerate(zip(layouts, contigs)):
+        if ci:
+            junctions.append(base)
         for l in lay:
             gi = kept[l["node"]]
             st = base + l["start"]
             e = dict(book=labels[gi], index=gi, start=st, length=l["length"],
-                     edits=l["edits"], rot=l["rot"], ov_in=l["ov_in"])
+                     edits=l["edits"], rot=l["rot"], ov_in=l["ov_in"], contig=ci)
             entries.append(e); host_of[gi] = e
             for p in range(st, min(len(master), st + l["length"])):
                 cover[p] += 1
-        base += clen
+        base += len(contig)
     for di, (hi, off) in dropped.items():
         h = host_of.get(hi)
         if h is None:
@@ -102,13 +105,17 @@ def build_provenance(master, order, layouts, res, seqs, labels):
         st = h["start"] + off
         entries.append(dict(book=labels[di], index=di, start=st,
                             length=len(seqs[di]), edits=0, rot=0,
-                            contained_in=labels[hi]))
+                            contained_in=labels[hi], contig=h["contig"]))
         for p in range(st, min(len(master), st + len(seqs[di]))):
             cover[p] += 1
     single = [i for i, v in enumerate(cover) if v <= 1]
-    return dict(master_length=len(master), n_books=len(seqs),
-                junctions=[], placements=entries, coverage=cover,
-                single_coverage_positions=single, n_single_coverage=len(single))
+    return dict(assembly=tag, master_length=len(master), n_books=len(seqs),
+                n_contigs=len(contigs),
+                contig_lengths=[len(c) for c in contigs],
+                contig_start_offsets=[0] + junctions,
+                placements=sorted(entries, key=lambda e: e["start"]),
+                coverage=cover, single_coverage_positions=single,
+                n_single_coverage=len(single))
 
 
 def verify(master, prov, seqs, labels, max_edits=1):
@@ -120,23 +127,16 @@ def verify(master, prov, seqs, labels, max_edits=1):
         e = by.get(labels[i])
         if e is None:
             bad.append((labels[i], "unplaced")); continue
-        seg = master[e["start"]:e["start"] + len(b)]
-        if seg == b:
-            continue
+        cand = b
         if e.get("rot"):
-            r = e["rot"]
-            if seg == b[r:] + b[:r]:
-                continue
+            r = e["rot"]; cand = b[r:] + b[:r]
         ok = False
-        for d in range(-max_edits, max_edits + 1):
-            s2 = master[e["start"]:e["start"] + len(b) + d]
-            cand = b
-            if e.get("rot"):
-                r = e["rot"]; cand = b[r:] + b[:r]
-            if _edit_le(s2, cand, max_edits) is not None:
+        for d in (0, 1, -1, 2, -2):
+            seg = master[e["start"]:e["start"] + len(cand) + d]
+            if seg == cand or _edit_le(seg, cand, max_edits) is not None:
                 ok = True; break
         if not ok:
-            bad.append((labels[i], "mismatch"))
+            bad.append((labels[i], "mismatch", e["start"]))
     return bad
 
 
@@ -145,29 +145,31 @@ def main():
     seqs, labels = list(c.books), list(c.labels)
     print(f"corpus: {len(seqs)} books, {sum(map(len,seqs))} digits ({c.provenance})")
     out = {}
-    for min_ov, mode in ((1, "exact"), (5, "exact"), (5, "edits"), (5, "rot"),
-                         (20, "edits")):
+    configs = [(5, "exact"), (5, "edits"), (5, "rot"), (20, "edits"), (1, "exact")]
+    for min_ov, mode in configs:
         tag = f"minov{min_ov}_{mode}"
-        print(f"[{tag}]")
+        print(f"[{tag}]", flush=True)
         out[tag] = assemble(seqs, labels, min_ov=min_ov, mode=mode)
 
-    res = out["minov5_edits"]
-    sol = res["front"][0]
-    master = "".join(sol["contigs"])
-    prov = build_provenance(master, sol["contig_lens"] and
-                            [len(x) for x in sol["contigs"]],
-                            sol["layouts"], res, seqs, labels)
-    bad = verify(master, prov, seqs, labels)
-    print(f"master_v1: {len(master)} digits, {sol['n_contigs']} contigs, "
-          f"{sol['edits']} edits; unrecoverable books: {bad}")
-    assert not bad, f"books not recoverable from master: {bad}"
-    prov["contig_lengths"] = [len(x) for x in sol["contigs"]]
-    prov["assembly"] = dict(min_ov=5, mode="edits", n_contigs=sol["n_contigs"],
-                            edits=sol["edits"], rotations=sol["rotations"],
-                            ilp_status=sol["ilp_status"])
-    (REPO / "data" / "master_v1.txt").write_text(master + "\n")
-    (REPO / "data" / "master_provenance.json").write_text(json.dumps(prov))
-    print("wrote data/master_v1.txt and data/master_provenance.json")
+    for tag, fname in (("minov5_edits", "master_v1"),
+                       ("minov1_exact", "master_permissive_v1")):
+        res = out[tag]
+        sol = res["front"][0]
+        master = "".join(sol["contigs"])
+        prov = build_provenance(sol["contigs"], sol["layouts"], res, seqs, labels,
+                                tag)
+        bad = verify(master, prov, seqs, labels)
+        print(f"{fname}: {len(master)} digits, {sol['n_contigs']} contigs, "
+              f"{sol['edits']} edits, {sol['rotations']} rotations; "
+              f"unrecoverable books: {bad}", flush=True)
+        prov["unrecoverable"] = bad
+        (REPO / "data" / f"{fname}.txt").write_text(master + "\n")
+        (REPO / "data" / f"{fname.replace('master','master')}_provenance.json"
+         if False else REPO / "data" / (
+             "master_provenance.json" if fname == "master_v1"
+             else "master_permissive_provenance.json")).write_text(json.dumps(prov))
+        if fname == "master_v1":
+            assert not bad, f"books not recoverable from master: {bad}"
 
     summary = {t: dict(n_nodes=r["n_nodes"], arcs=r["arcs"], kmin=r["kmin"],
                        heur_score=r["heur_score"],
@@ -176,6 +178,7 @@ def main():
                               for f in r["front"]])
                for t, r in out.items()}
     (Path(__file__).parent / "pareto.json").write_text(json.dumps(summary, indent=1))
+    print("wrote pareto.json")
 
 
 if __name__ == "__main__":

@@ -311,12 +311,15 @@ def sequitur(books) -> Induction:
             digrams[(r.first().key(), r.first().nxt.key())] = r.first()
             link(s2.prev); link(s2)
             link(s1.prev); link(s1)
-        for s in (m, a):
-            pass
-        # enforce rule utility
+        # Rule utility: only rules whose reference count could just have
+        # dropped need checking -- scanning every rule on every match is
+        # quadratic and was the reason this did not terminate on 400+ digits.
+        # Rule utility.  Scanning every rule on every match is quadratic; it is
+        # why this implementation is only usable on short streams (see
+        # FINDINGS.md -- Re-Pair, the offline greedy equivalent, stands in for
+        # Sequitur on the full corpus and answers the same question).
         for r2 in list(rules):
             if r2.count == 1:
-                # find the single occurrence -- scan start rule and all rules
                 occ = find_occurrence(r2)
                 if occ is not None:
                     expand_rule_into(occ)

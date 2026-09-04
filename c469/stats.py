@@ -380,3 +380,159 @@ def parse_prefix_code(s: str, codebook) -> list[str] | None:
 
 def mean_token_length(tokens) -> float:
     return (sum(len(t) for t in tokens) / len(tokens)) if tokens else 0.0
+
+
+def abc_summary(books) -> dict:
+    """The statistic vector family E fits `CopyPasteMutate` against by ABC.
+
+    Chosen so that a generator has to get *both* long-range copying (lz76,
+    longest_cross_repeat, repeat_coverage) and local diversity (distinct
+    4-grams, h4, IC) right at the same time -- matching either alone is easy.
+    """
+    s = "".join(books)
+    return {
+        "lz76_factors": float(lz76_factors(s)),
+        "distinct_4grams_concat": float(distinct_ngrams(s, 4)),
+        "distinct_4grams_books": float(distinct_ngrams(books, 4)),
+        "distinct_6grams_books": float(distinct_ngrams(books, 6)),
+        "longest_cross_repeat": float(longest_cross_repeat(books)),
+        "repeat_coverage20": repeat_coverage(books, 20),
+        "h4": cond_entropy(books, 4),
+        "unigram_H": unigram_H(s),
+        "ic": ic(s),
+    }
+
+
+ABC_KEYS = ("lz76_factors", "distinct_4grams_concat", "distinct_4grams_books",
+            "distinct_6grams_books", "longest_cross_repeat",
+            "repeat_coverage20", "h4", "unigram_H", "ic")
+
+
+class CTW:
+    """Context-tree weighting over the 10-digit alphabet with KT estimators.
+
+    A variable-order model: unlike a fixed order-k Markov chain it pays only for
+    the context depth it actually uses, so it is the fair information-theoretic
+    competitor to a copy-paste process.  Adaptive/sequential, so its total code
+    length is already a held-out (prequential) quantity -- no train/test split.
+    """
+
+    def __init__(self, depth: int = 8, alphabet: int = 10):
+        self.D = depth
+        self.A = alphabet
+        self.cnt: dict[str, list] = {}
+        self.lpe: dict[str, float] = {}
+        self.lpw: dict[str, float] = {}
+        self.lch: dict[str, float] = {}
+
+    def _mk(self, k):
+        if k not in self.cnt:
+            self.cnt[k] = [0] * self.A
+            self.lpe[k] = 0.0
+            self.lpw[k] = 0.0
+            self.lch[k] = 0.0
+
+    def _step(self, ctx: str, sym: int) -> float:
+        """Code one symbol; returns its code length in bits."""
+        D = min(self.D, len(ctx))
+        path = [ctx[len(ctx) - d:] if d else "" for d in range(D + 1)]
+        for k in path:
+            self._mk(k)
+        before = self.lpw[""]
+        prev_delta = None
+        for d in range(D, -1, -1):
+            k = path[d]
+            c = self.cnt[k]
+            n = sum(c)
+            self.lpe[k] += math.log2((c[sym] + 0.5) / (n + 0.5 * self.A))
+            c[sym] += 1
+            if prev_delta is not None:
+                self.lch[k] += prev_delta
+            new = self.lpe[k] if d == D else _log_add(self.lpe[k] - 1.0,
+                                                      self.lch[k] - 1.0)
+            prev_delta = new - self.lpw[k]
+            self.lpw[k] = new
+        return -(self.lpw[""] - before)
+
+    def code_length(self, books) -> float:
+        total = 0.0
+        for b in books:
+            for i, ch in enumerate(b):
+                total += self._step(b[:i], int(ch))
+        return total
+
+
+def _log_add(a: float, b: float) -> float:
+    m = max(a, b)
+    if m == float("-inf"):
+        return m
+    return m + math.log2(2.0 ** (a - m) + 2.0 ** (b - m))
+
+
+def ctw_bits_per_digit(books, depth: int = 8) -> float:
+    """Prequential (adaptive) CTW code length per digit."""
+    m = CTW(depth)
+    n = sum(len(b) for b in books)
+    return m.code_length(books) / n if n else float("inf")
+
+
+def ctw_heldout_bits_per_digit(books, depth: int = 8) -> float:
+    """Leave-one-book-out CTW: train on the other books, then code the held-out
+    book with the model frozen-but-adaptive (standard prequential LOO)."""
+    tot, n = 0.0, 0
+    for i in range(len(books)):
+        m = CTW(depth)
+        m.code_length([b for j, b in enumerate(books) if j != i])
+        bits = 0.0
+        for t, ch in enumerate(books[i]):
+            bits += m._step(books[i][:t], int(ch))
+        tot += bits
+        n += len(books[i])
+    return tot / n if n else float("inf")
+
+
+def _longest_match(ref: str, s: str, i: int, maxlen: int = 400):
+    """Longest prefix of s[i:] occurring in ref; returns (length, position)."""
+    lo, hi = 0, min(maxlen, len(s) - i)
+    best, pos = 0, -1
+    while lo < hi:
+        m = (lo + hi + 1) // 2
+        p = ref.find(s[i:i + m])
+        if p >= 0:
+            best, pos, lo = m, p, m
+        else:
+            hi = m - 1
+    return best, pos
+
+
+def relative_lz_bits_per_digit(books, loo: bool = True, min_copy: int = 3) -> float:
+    """Code length per digit of a *copy* model: each book is encoded as a
+    sequence of (copy from the reference / copy from itself) tokens plus
+    literals.  Decodable, so the number is a real code length and directly
+    comparable to a Markov or CTW bits/digit.
+
+    loo=True codes each book against the other books only -- the leave-one-
+    book-out protocol.  This is the sharpest single test of family E: if the
+    corpus is cut-and-paste from shared material, a book costs far fewer bits
+    under this code than under any sequential statistical model.
+    """
+    tot_bits, tot_n = 0.0, 0
+    for i, b in enumerate(books):
+        ref = "".join(books[j] for j in range(len(books)) if j != i) if loo \
+            else "".join(books[:i])
+        bits = 0.0
+        p = 0
+        while p < len(b):
+            L, pos = _longest_match(ref + b[:p], b, p)
+            lit_cost = 1 + math.log2(10)
+            if L >= min_copy:
+                cost = 1 + math.log2(max(2, len(ref) + p)) + math.log2(max(2, L))
+                if cost / L < lit_cost:
+                    bits += cost
+                    p += L
+                    continue
+            bits += lit_cost
+            p += 1
+        tot_bits += bits
+        tot_n += len(b)
+    return tot_bits / tot_n if tot_n else float("inf")
