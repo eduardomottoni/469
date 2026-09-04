@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 data/external/lm5_*.npz
 experiments/e_c_homophonic/results_c/*.log
+
+# Derived language-model binaries: rebuildable from build_lm.py, ~150MB
+data/external/*.npz
