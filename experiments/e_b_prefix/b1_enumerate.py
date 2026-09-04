@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import itertools
 import json
+import os
 import sys
 import time
 from multiprocessing import Pool
@@ -67,8 +68,9 @@ def tasks(space):
     return out
 
 
-def run(books, space, procs=4, quiet=True):
+def run(books, space, procs=None, quiet=True):
     """Returns (n_structures, h2, best) where best[bin][slot] = record|None."""
+    procs = procs or int(os.environ.get("C469_PROCS", "8"))
     flat, offs = pack(list(books))
     nb = len(books)
     ts = tasks(space)

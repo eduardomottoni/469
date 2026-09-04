@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import sys
 import time
 from multiprocessing import Pool
@@ -38,6 +39,8 @@ from .b1_enumerate import REDUCED_SPACE, VLO, VHI, BAND, tasks, band_max
 STATISTICS = ("max_parsed", "band_parsed", "vwin_parsed",
               "best_chi2_de", "best_chi2_en")
 NULL_FAMILIES = [f.name for f in U.DEFAULT_FAMILIES] + ["Digits_pi"]
+
+NPROC = int(os.environ.get("C469_PROCS", "8"))
 
 OUT = Path(__file__).resolve().parent / "out"
 _TASKS = tasks(REDUCED_SPACE)
@@ -112,7 +115,7 @@ def main():
     nulls: dict[str, list[dict]] = {f: [] for f in NULL_FAMILIES}
     t0 = time.time()
     done = 0
-    with Pool(4) as p:
+    with Pool(NPROC) as p:
         for fam, seed, r in p.imap_unordered(_job, jobs, chunksize=1):
             nulls[fam].append(r)
             done += 1

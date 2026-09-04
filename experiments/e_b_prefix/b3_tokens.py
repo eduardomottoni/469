@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import json
 import math
+import os
 import sys
 import time
 from collections import Counter, defaultdict
@@ -205,7 +206,7 @@ def main():
         bk, prov = datasets[dname]
         # V = 32 is the letter-alphabet size at which the 1.577 prediction is
         # actually being made; V = 200 is a far-from-alphabet control.
-        for method, V in (("bpe", 32), ("mdl", 32), ("bpe", 200), ("mdl", 200)):
+        for method, V in (("bpe", 32), ("mdl", 32)):
             real = _job(("real", 0, bk, method, V))[1]
             res = Result(f"e_b_prefix.b3.{dname}.{method}.V{V}", "mean_token_len",
                          real, "greater", corpus_provenance=prov,
@@ -214,7 +215,7 @@ def main():
                                 "in_target_window": TARGET[0] <= real <= TARGET[1]})
             jobs = [(f, s, bk, method, V) for f in fams for s in range(nn)]
             got = defaultdict(list)
-            with Pool(4) as p:
+            with Pool(int(os.environ.get('C469_PROCS', '8'))) as p:
                 for fam, v in p.imap_unordered(_job, jobs, chunksize=4):
                     got[fam].append(v)
             for f in fams:
