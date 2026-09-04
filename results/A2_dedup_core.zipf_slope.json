@@ -47,12 +47,12 @@
     {
       "family": "CopyPasteMutate",
       "n": 200,
-      "mean": 1.2664072821586396,
-      "sd": 0.07149880508771489,
-      "p": 0.2537313432835821,
-      "z": 0.5285741932819381,
-      "maximum": 1.472123951383106,
-      "minimum": 1.0830397133576262
+      "mean": 1.2272109731195129,
+      "sd": 0.06467864948016987,
+      "p": 0.11442786069651742,
+      "z": 1.19032683702823,
+      "maximum": 1.4047625673328967,
+      "minimum": 1.0617619677602441
     },
     {
       "family": "Digits_pi",
@@ -69,15 +69,16 @@
   "n_candidates_tested": 1,
   "seed": 900001,
   "runtime_s": 0.0,
-  "code_sha": "ce1b682",
+  "code_sha": "b3e11e2",
   "extra": {
     "inducer": "mdl_unigram(maxlen=8)",
     "copypaste_params": {
       "seed_len": 900,
-      "p_delete": 0.03,
-      "seed_order": 3
+      "p_delete": 0.006,
+      "seed_order": 2,
+      "max_segments": 10
     },
-    "copypaste_lz_relerr": 0.0008169934640523247,
+    "copypaste_lz_relerr": 0.0006535947712417929,
     "real_lz76": 510
   },
   "worst_p": 1.0,

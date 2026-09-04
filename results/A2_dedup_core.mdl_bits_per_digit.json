@@ -47,12 +47,12 @@
     {
       "family": "CopyPasteMutate",
       "n": 200,
-      "mean": 2.615351767900441,
-      "sd": 0.05904063265121145,
-      "p": 0.9950248756218906,
-      "z": 2.2410133414755373,
-      "maximum": 2.76057502483208,
-      "minimum": 2.4612485863488933
+      "mean": 2.6868889115876304,
+      "sd": 0.05491892786498598,
+      "p": 0.8855721393034826,
+      "z": 1.1066075784061038,
+      "maximum": 2.8199208761822074,
+      "minimum": 2.489609545268355
     },
     {
       "family": "Digits_pi",
@@ -69,17 +69,18 @@
   "n_candidates_tested": 1,
   "seed": 900001,
   "runtime_s": 0.0,
-  "code_sha": "ce1b682",
+  "code_sha": "b3e11e2",
   "extra": {
     "inducer": "mdl_unigram(maxlen=8)",
     "copypaste_params": {
       "seed_len": 900,
-      "p_delete": 0.03,
-      "seed_order": 3
+      "p_delete": 0.006,
+      "seed_order": 2,
+      "max_segments": 10
     },
-    "copypaste_lz_relerr": 0.0008169934640523247,
+    "copypaste_lz_relerr": 0.0006535947712417929,
     "real_lz76": 510
   },
-  "worst_p": 0.9950248756218906,
+  "worst_p": 0.8855721393034826,
   "verdict": "REJECTED"
 }

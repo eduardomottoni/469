@@ -47,11 +47,11 @@
     {
       "family": "CopyPasteMutate",
       "n": 200,
-      "mean": 0.225,
-      "sd": 0.4841229182759271,
+      "mean": 0.06,
+      "sd": 0.25768197453450253,
       "p": 1.0,
-      "z": -0.46475800154489,
-      "maximum": 3,
+      "z": -0.23284515771189984,
+      "maximum": 2,
       "minimum": 0
     },
     {
@@ -69,15 +69,16 @@
   "n_candidates_tested": 1,
   "seed": 900001,
   "runtime_s": 0.0,
-  "code_sha": "ce1b682",
+  "code_sha": "b3e11e2",
   "extra": {
     "inducer": "mdl_unigram(maxlen=8)",
     "copypaste_params": {
       "seed_len": 900,
-      "p_delete": 0.03,
-      "seed_order": 3
+      "p_delete": 0.006,
+      "seed_order": 2,
+      "max_segments": 10
     },
-    "copypaste_lz_relerr": 0.0008169934640523247,
+    "copypaste_lz_relerr": 0.0006535947712417929,
     "real_lz76": 510
   },
   "worst_p": 1.0,
