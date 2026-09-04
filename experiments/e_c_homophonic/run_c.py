@@ -25,7 +25,7 @@ sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(HERE.parent / "e_a_grammar"))
 
 from solver import solve, load_table                                   # noqa
-from streams import fixed_width, mdl_tokens, encode                    # noqa
+from streams import fixed_width, mdl_tokens, mdl_tokens_targetV, encode  # noqa
 from c469.corpus import load_books, load_contigs, dedup_core           # noqa
 from c469 import surrogate as U                                        # noqa
 from c469.harness import Result, NullResult                            # noqa
@@ -47,6 +47,9 @@ def build_stream(books, kind):
         return fixed_width(books, 3, int(kind[-1]))
     if kind == "C2_mdl":
         return mdl_tokens(books)
+    if kind == "C2_mdlB":
+        # vocabulary steered into family B's 55-73 symbol frontier band
+        return mdl_tokens_targetV(books)[0]
     raise KeyError(kind)
 
 
@@ -155,6 +158,12 @@ CONFIGS = [
     ("C2_mdl", "seed", "en", 200),
     ("C2_mdl", "seed", "de_ae", 200),
     ("C1_pairs", "seed", "en", 200),
+    # Added after family B's frontier result: a 26-32 letter alphabet cannot
+    # produce the observed statistics, and mean length 1.577 requires ~55-73
+    # symbols.  These parses are steered into that band.
+    ("C2_mdlB", "dedup_core", "en", 200),
+    ("C2_mdlB", "dedup_core", "de_ae", 200),
+    ("C2_mdlB", "master_v1", "en", 200),
 ]
 
 
