@@ -136,3 +136,11 @@ e_b_prefix.b3.contigs.bpe.V32: real mean_token_len=1.5876 (target (1.5, 1.7)) ->
    BlockShuffle20     1.5555 +- 0.0023 p=0.0050
    CopyPasteMutate    1.5158 +- 0.0863 p=0.2438
    Digits_pi          1.2956 +- 0.0003 p=0.0050
+
+e_b_prefix.b3.contigs.mdl.V32: real mean_token_len=1.4732 (target (1.5, 1.7)) -> OUT
+   Shuffle            1.3128 +- 0.0134 p=0.0050
+   Markov2            1.4341 +- 0.0296 p=0.0995
+   Markov3            1.4356 +- 0.0314 p=0.1095
+   BlockShuffle20     1.4757 +- 0.0198 p=0.5572
+   CopyPasteMutate    1.3111 +- 0.0461 p=0.0050
+   Digits_pi          1.2686 +- 0.0068 p=0.0050

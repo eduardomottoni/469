@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C2_mdl_dedup_core_de_ae",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.8491957924426292,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -2.041741629741634,
+      "sd": 0.05722448780529583,
+      "p": 0.004975124378109453,
+      "z": 3.3647454906741103,
+      "maximum": -1.873063917504304,
+      "minimum": -2.1773568026693564
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.4561548831721014,
+      "sd": 0.02242578359216569,
+      "p": 0.047619047619047616,
+      "z": 27.06523445368079,
+      "maximum": -2.4035873308715745,
+      "minimum": -2.4946920147387392
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.8366725988468473,
+      "sd": 0.05992662686127213,
+      "p": 0.6078431372549019,
+      "z": -0.20897544633661144,
+      "maximum": -1.6873038044998443,
+      "minimum": -1.9468711879513982
+    }
+  ],
+  "corpus_provenance": "books.json|dedup_core(k=25)",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "e40901a",
+  "extra": {
+    "n_symbols": 1923,
+    "V": 76,
+    "plaintext_head": " t na senentteenttnes teastssns beats neanaase en n in as osas stssaet anseanaeaneen ne sat nnee e sese augenaeanee ns sesste doesna see sese augenaeanee ns sesste doe t na seneeesenentsans eress essz",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.6078431372549019,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

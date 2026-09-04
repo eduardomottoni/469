@@ -16,7 +16,13 @@ Every statistic comes from `c469.stats`; every scored number is a
    parses 70/70 is `S1 = {0..9}` — the identity "code" that is just the digits
    themselves. The best non-degenerate structure reaches **68/70** and is
    near-degenerate too (mean codeword length 1.11, only one prefix digit).
-   Inside the pre-registered 1.50–1.70 band the best is **58/70**.
+   Inside the pre-registered 1.50–1.70 band the best is **60/70**, out of
+   841,879 structures in band.
+
+   Stronger, and covering incomplete codes too: **over all 9.5 M structures the
+   largest mean codeword length attainable with a letter-sized effective
+   alphabet (20-40 codewords actually used) is 1.4495** — it never reaches 1.50,
+   let alone 1.577.
 
 2. **The 1.577 prediction is refuted in the form the plan stated it, and the
    refutation is a counting theorem, not a search result.** A *complete* 10-ary
@@ -30,7 +36,10 @@ Every statistic comes from `c469.stats`; every scored number is a
 3. **The token-induction half of the prediction is unfalsifiable as posed.**
    Mean induced token length is a smooth monotone function of the vocabulary
    budget V, passing through 1.577 at V ~ 32 (BPE) and V ~ 40 (MDL) on all
-   three datasets. The pre-registered honesty clause therefore applies.
+   three datasets. The pre-registered honesty clause therefore applies. Scored
+   properly — mean token length at a fixed V = 32, against 200 surrogates per
+   family — all four pre-registered runs are **REJECTED** (worst-family p =
+   0.56-0.67); `Markov3` reproduces the real value to three decimals.
 
 4. **The `07` gap does not need a codebook.** It is significant only against
    unigram-matched nulls (`Shuffle`/`IID`/pi, p = 0.002 = the 1/(1+500) floor);
@@ -274,7 +283,35 @@ one the surrogates must be allowed to match before it means anything.
 Zipf slopes at V ~ 32 are 0.69–0.74 (BPE) and 1.44–1.60 (MDL); natural language
 is ~1.0. Heaps' beta at V = 200 is 0.30–0.45.
 
-RESULTS_B3_PLACEHOLDER
+### The null-scored version
+
+The only informative form of the prediction is the mean token length at a
+**fixed, pre-set** vocabulary size. V = 32 is the letter-alphabet size at which
+the prediction is actually being made. 200 surrogates per family, `Pool(8)`.
+
+| run | real | in [1.50,1.70]? | Shuffle | Markov2 | Markov3 | BlockShuffle20 | CopyPasteMutate | Digits_pi | verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| core22 / BPE | 1.5962 | **yes** | 1.351+-.006 (p=.005) | 1.580+-.018 (.18) | 1.601+-.023 (.57) | 1.548+-.006 (.005) | 1.586+-.023 (.32) | 1.309+-.004 (.005) | REJECTED |
+| core22 / MDL | 1.4567 | no | 1.304+-.017 (.005) | 1.426+-.030 (.16) | 1.451+-.037 (.41) | 1.464+-.022 (.67) | 1.360+-.042 (.015) | 1.266+-.009 (.005) | REJECTED |
+| contigs / BPE | 1.5876 | **yes** | 1.340+-.005 (.005) | 1.577+-.014 (.20) | 1.591+-.018 (.61) | 1.556+-.002 (.005) | 1.516+-.086 (.24) | 1.296+-.000 (.005) | REJECTED |
+| contigs / MDL | 1.4732 | no | 1.313+-.013 (.005) | 1.434+-.030 (.10) | 1.436+-.031 (.11) | 1.476+-.020 (.56) | 1.311+-.046 (.005) | 1.269+-.007 (.005) | REJECTED |
+
+Every run's **worst-family p is 0.56-0.67** and the verdict is REJECTED.
+`Markov3` reproduces the real value almost exactly (1.601 vs 1.596 on the core;
+1.591 vs 1.588 on the contigs); so does `CopyPasteMutate` for BPE.
+
+The only families the real corpus beats are `Shuffle`, `BlockShuffle20` and pi
+(all p = 0.005, the 1/(1+200) floor) — i.e. the real corpus's tokens are longer
+than they would be if its bigram structure were destroyed. That is a restatement
+of "the corpus has strong bigram dependence", which the plan's established facts
+already record as chi-square = 5277.
+
+**Verdict on B3.** The token-induction half of the 1.577 prediction is
+confirmed only in the sense that a mean length of ~1.58 is what a V = 32
+tokenizer produces on *any* sequence with the corpus's bigram statistics,
+message or not. Two of the four pre-registered runs land outside the target
+window anyway (MDL: 1.457 and 1.473). The prediction is not supported.
+
 
 ---
 
