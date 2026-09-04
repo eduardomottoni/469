@@ -364,25 +364,31 @@ def or_opt(order: list[int], E: dict, iters: int = 20000,
 
 def beam_path(n: int, E: dict, width: int = 5000, succ: int = 25,
               rng: random.Random | None = None, **pen) -> list[int]:
-    """Beam search over Hamiltonian orderings, keyed by (used-set, last)."""
+    """Beam search over Hamiltonian orderings, keyed by (visited-set, last).
+
+    The visited set is a bitmask, not a frozenset: with width 5000 and 51 nodes
+    the frozenset version spends all of its time copying sets.
+    """
     adj: dict[int, list] = {i: [] for i in range(n)}
     for (i, j), e in E.items():
         adj[i].append((edge_score(e, **pen), j))
     for i in adj:
         adj[i].sort(reverse=True)
         adj[i] = adj[i][:succ]
-    beam = [(0.0, frozenset([i]), (i,)) for i in range(n)]
+    beam = [(0.0, 1 << i, (i,)) for i in range(n)]
     for _ in range(n - 1):
-        nxt = {}
+        nxt: dict = {}
         for sc, used, path in beam:
             last = path[-1]
-            cands = [(s, j) for s, j in adj[last] if j not in used]
-            if not cands:
-                cands = [(0.0, j) for j in range(n) if j not in used][:succ]
+            cands = [(s, j) for s, j in adj[last] if not (used >> j) & 1]
+            if len(cands) < 3:
+                cands = cands + [(0.0, j) for j in range(n)
+                                 if not (used >> j) & 1][:succ]
             for s, j in cands:
-                key = (used | {j}, j)
+                key = (used | (1 << j), j)
                 v = sc + s
-                if key not in nxt or nxt[key][0] < v:
+                cur = nxt.get(key)
+                if cur is None or cur[0] < v:
                     nxt[key] = (v, path + (j,))
         beam = sorted(((v, k[0], p) for k, (v, p) in nxt.items()),
                       key=lambda t: -t[0])[:width]

@@ -30,7 +30,8 @@ def _solution(n, E, paths, S):
 
 
 def assemble(seqs, labels=None, min_ov=5, mode="edits", n_extra=4,
-             beam_width=5000, restarts=200, time_limit=900, verbose=True):
+             beam_width=5000, restarts=200, time_limit=120, use_ilp=True,
+             verbose=True):
     labels = labels or [f"B{i}" for i in range(len(seqs))]
     kept, dropped = collapse_containment(seqs, labels)
     S = [seqs[i] for i in kept]
@@ -40,29 +41,7 @@ def assemble(seqs, labels=None, min_ov=5, mode="edits", n_extra=4,
     if verbose:
         print(f"  nodes={n} (dropped {len(dropped)} contained) arcs={len(E)}",
               flush=True)
-    # smallest attainable contig count
-    st, chosen = ilp_path_cover(n, E, objective="count", time_limit=time_limit, **PEN)
-    kmin = n - len(chosen) if chosen else n
-    if verbose:
-        print(f"  min contigs (exact ILP, {st}) = {kmin}", flush=True)
-
-    front = []
-    for k in range(kmin, kmin + n_extra + 1):
-        t = time.time()
-        st, chosen = ilp_path_cover(n, E, k=k, time_limit=time_limit, **PEN)
-        if not chosen and k < n:
-            continue
-        paths = chosen_to_paths(n, chosen)
-        sol = _solution(n, E, paths, S)
-        sol.update(k=k, ilp_status=st, ilp_s=round(time.time() - t, 1),
-                   score=sum(edge_score(E[c], **PEN) for c in chosen))
-        front.append(sol)
-        if verbose:
-            print(f"  k={k:3d} {st:10s} len={sol['total_len']} "
-                  f"edits={sol['edits']} rot={sol['rotations']} "
-                  f"({sol['ilp_s']}s)", flush=True)
-
-    # heuristic cross-check (beam + randomised restarts + or-opt) on the same arcs
+    # heuristic path cover: randomised greedy + or-opt restarts, then beam
     rng = random.Random(7)
     best = or_opt(greedy_path(n, E, **PEN), E, 20000, rng, **PEN)
     bs = order_score(best, E, **PEN)
@@ -74,8 +53,49 @@ def assemble(seqs, labels=None, min_ov=5, mode="edits", n_extra=4,
     if order_score(bo, E, **PEN) > bs:
         best, bs = bo, order_score(bo, E, **PEN)
     if verbose:
-        print(f"  heuristic best score={bs:.0f} vs ILP best="
-              f"{max((f['score'] for f in front), default=0):.0f}", flush=True)
+        print(f"  heuristic best score={bs:.0f}", flush=True)
+
+    def heur_front(k):
+        """Break the best order at its k-1 weakest joins (missing arc = -inf)."""
+        cutkeys = sorted(range(n - 1),
+                         key=lambda i: edge_score(E[(best[i], best[i + 1])], **PEN)
+                         if (best[i], best[i + 1]) in E else -1e9)
+        cuts = sorted(cutkeys[:k - 1])
+        paths, prev = [], 0
+        for cpos in cuts + [n - 1]:
+            paths.append(best[prev:cpos + 1]); prev = cpos + 1
+        return paths
+
+    # smallest attainable contig count
+    if use_ilp:
+        st, chosen = ilp_path_cover(n, E, objective="count",
+                                    time_limit=time_limit, **PEN)
+        kmin = n - len(chosen) if chosen else n
+    else:
+        used = sum(1 for i in range(n - 1) if (best[i], best[i + 1]) in E)
+        st, kmin = "heuristic", n - used
+    if verbose:
+        print(f"  min contigs ({st}) = {kmin}", flush=True)
+
+    front = []
+    for k in range(kmin, kmin + n_extra + 1):
+        t = time.time()
+        paths, src = None, "heuristic"
+        if use_ilp:
+            st, chosen = ilp_path_cover(n, E, k=k, time_limit=time_limit, **PEN)
+            if chosen:
+                paths, src = chosen_to_paths(n, chosen), "ILP:" + st
+        if paths is None:
+            paths = heur_front(k)
+        sol = _solution(n, E, paths, S)
+        sol.update(k=k, ilp_status=src, ilp_s=round(time.time() - t, 1),
+                   score=sum(order_score(p, E, **PEN) for p in paths))
+        front.append(sol)
+        if verbose:
+            print(f"  k={k:3d} {src:14s} len={sol['total_len']} "
+                  f"edits={sol['edits']} rot={sol['rotations']} "
+                  f"({sol['ilp_s']}s)", flush=True)
+
     return dict(n_nodes=n, kept=kept, dropped=dropped, arcs=len(E),
                 kmin=kmin, front=front, S=S, heur_score=bs)
 
@@ -145,16 +165,18 @@ def main():
     seqs, labels = list(c.books), list(c.labels)
     print(f"corpus: {len(seqs)} books, {sum(map(len,seqs))} digits ({c.provenance})")
     out = {}
-    configs = [(5, "exact"), (5, "edits"), (5, "rot"), (20, "edits"), (1, "exact")]
-    for min_ov, mode in configs:
+    configs = [(5, "exact", True), (5, "edits", True), (5, "rot", True),
+               (20, "edits", True), (1, "exact", False)]
+    for min_ov, mode, use_ilp in configs:
         tag = f"minov{min_ov}_{mode}"
         print(f"[{tag}]", flush=True)
-        out[tag] = assemble(seqs, labels, min_ov=min_ov, mode=mode)
+        out[tag] = assemble(seqs, labels, min_ov=min_ov, mode=mode,
+                            use_ilp=use_ilp, n_extra=(0 if not use_ilp else 4))
 
     for tag, fname in (("minov5_edits", "master_v1"),
                        ("minov1_exact", "master_permissive_v1")):
         res = out[tag]
-        sol = res["front"][0]
+        sol = min(res["front"], key=lambda f: f["total_len"])
         master = "".join(sol["contigs"])
         prov = build_provenance(sol["contigs"], sol["layouts"], res, seqs, labels,
                                 tag)
