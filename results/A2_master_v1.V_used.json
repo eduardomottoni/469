@@ -1,0 +1,96 @@
+{
+  "experiment": "A2_master_v1",
+  "statistic": "V_used",
+  "real_value": 114,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 200,
+      "mean": 11.96,
+      "sd": 0.19595917942265426,
+      "p": 0.004975124378109453,
+      "z": 520.7206944866572,
+      "maximum": 12,
+      "minimum": 11
+    },
+    {
+      "family": "Markov2",
+      "n": 200,
+      "mean": 34.405,
+      "sd": 6.189586012004357,
+      "p": 0.004975124378109453,
+      "z": 12.859503017751097,
+      "maximum": 51,
+      "minimum": 19
+    },
+    {
+      "family": "Markov3",
+      "n": 200,
+      "mean": 71.74,
+      "sd": 9.760245898541696,
+      "p": 0.004975124378109453,
+      "z": 4.329808945317063,
+      "maximum": 95,
+      "minimum": 47
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 200,
+      "mean": 94.685,
+      "sd": 9.690499213146865,
+      "p": 0.014925373134328358,
+      "z": 1.9931893677671226,
+      "maximum": 123,
+      "minimum": 73
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 144.675,
+      "sd": 80.53315699139083,
+      "p": 0.681592039800995,
+      "z": -0.38089901285354105,
+      "maximum": 275,
+      "minimum": 12
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 138.035,
+      "sd": 22.66569599637302,
+      "p": 0.8308457711442786,
+      "z": -1.060413057858276,
+      "maximum": 226,
+      "minimum": 59
+    },
+    {
+      "family": "Digits_pi",
+      "n": 200,
+      "mean": 12,
+      "sd": 0.0,
+      "p": 0.004975124378109453,
+      "z": 0.0,
+      "maximum": 12,
+      "minimum": 12
+    }
+  ],
+  "corpus_provenance": "data/master_v1.txt",
+  "n_candidates_tested": 1,
+  "seed": 900001,
+  "runtime_s": 0.0,
+  "code_sha": "687ec42",
+  "extra": {
+    "inducer": "mdl_unigram(maxlen=8)",
+    "copypaste_params": {
+      "seed_len": 2500,
+      "p_delete": 0.0,
+      "seed_order": 3,
+      "max_segments": 6
+    },
+    "copypaste_lz_relerr": 0.0017301038062283738,
+    "real_lz76": 578
+  },
+  "worst_p": 0.8308457711442786,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

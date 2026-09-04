@@ -1,0 +1,96 @@
+{
+  "experiment": "A2_master_v1",
+  "statistic": "mean_token_len",
+  "real_value": 2.6549758877685226,
+  "direction": "less",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 200,
+      "mean": 1.0127293163885556,
+      "sd": 0.0022616567577322905,
+      "p": 1.0,
+      "z": 726.1254678745366,
+      "maximum": 1.0228002026684682,
+      "minimum": 1.0059800664451828
+    },
+    {
+      "family": "Markov2",
+      "n": 200,
+      "mean": 1.2246037010992086,
+      "sd": 0.044810226756568844,
+      "p": 1.0,
+      "z": 31.920663879694207,
+      "maximum": 1.3769895407003183,
+      "minimum": 1.104102096627165
+    },
+    {
+      "family": "Markov3",
+      "n": 200,
+      "mean": 1.563470925623808,
+      "sd": 0.07195567465462778,
+      "p": 1.0,
+      "z": 15.169129709139836,
+      "maximum": 1.7681751824817518,
+      "minimum": 1.399584007395424
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 200,
+      "mean": 1.9497864467357087,
+      "sd": 0.10103980445749568,
+      "p": 1.0,
+      "z": 6.97932309765569,
+      "maximum": 2.1894432393347794,
+      "minimum": 1.7020798201236649
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 3.7942995308680425,
+      "sd": 1.9773220521139727,
+      "p": 0.32338308457711445,
+      "z": -0.5761952848709996,
+      "maximum": 7.844559585492228,
+      "minimum": 1.0203875315922493
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 2.428455395366755,
+      "sd": 0.34225581850720654,
+      "p": 0.8308457711442786,
+      "z": 0.6618455557301154,
+      "maximum": 4.264788732394366,
+      "minimum": 1.5445039530731957
+    },
+    {
+      "family": "Digits_pi",
+      "n": 200,
+      "mean": 1.0098076737778952,
+      "sd": 0.0007619848873649636,
+      "p": 1.0,
+      "z": 2159.0562244348694,
+      "maximum": 1.0152556580050294,
+      "minimum": 1.0093333333333334
+    }
+  ],
+  "corpus_provenance": "data/master_v1.txt",
+  "n_candidates_tested": 1,
+  "seed": 900001,
+  "runtime_s": 0.0,
+  "code_sha": "687ec42",
+  "extra": {
+    "inducer": "mdl_unigram(maxlen=8)",
+    "copypaste_params": {
+      "seed_len": 2500,
+      "p_delete": 0.0,
+      "seed_order": 3,
+      "max_segments": 6
+    },
+    "copypaste_lz_relerr": 0.0017301038062283738,
+    "real_lz76": 578
+  },
+  "worst_p": 1.0,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

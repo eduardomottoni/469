@@ -133,7 +133,29 @@ would have looked like a large, spurious win for the real corpus.)
 Surrogate mean LZ76 factors: Shuffle 1357, Markov2 957, Markov3 729,
 BlockShuffle20 746, **CopyPasteMutate 504**, pi 1390.
 
-### Reading the table
+### Contigs (6687 digits, real LZ76 = 563), matched at 1.5%
+
+| statistic | real | CopyPasteMutate (LZ-matched) | CopyPasteMutateFitted | Markov3 |
+|---|---|---|---|---|
+| MDL bits/digit | **2.353** | 2.481±0.421 (z=−0.3, p=0.62) | 2.718±0.044 (z=−8.3) | 2.844±0.030 (z=−16.2) |
+| mean token length | **2.984** | 3.696±1.384 (z=−0.5, p=0.25) | 2.982±0.517 (z=+0.0, p=0.49) | 1.679±0.093 (z=+14.1) |
+| length-2 types | **0** | 0.88±1.95 (z=−0.5) | 0.03±0.17 (z=−0.2) | 0.21±0.47 (z=−0.5) |
+| vocabulary size | **121** | 137.8±60.3 (z=−0.3, p=0.82) | 176.7±30.1 (z=−1.9) | 83.6±12.4 (z=+3.0) |
+| Zipf slope | **0.999** | 0.838±0.268 (z=+0.6, p=0.17) | 0.888±0.157 (z=+0.7, p=0.27) | 1.484±0.097 (z=−5.0) |
+| Heaps' beta | **0.282** | 0.328±0.185 (z=−0.2, p=0.73) | 0.352±0.145 (z=−0.5, p=0.65) | 0.363±0.055 (z=−1.5) |
+
+### master_v1 (agent 1's ILP assembly, 6056 digits, real LZ76 = 578), matched at 0.17%
+
+| statistic | real | CopyPasteMutate (LZ-matched) | CopyPasteMutateFitted (LZ 583) | Markov3 |
+|---|---|---|---|---|
+| MDL bits/digit | **2.485** | 2.695±0.342 (z=−0.6, p=0.32) | 2.763±0.036 (**z=−7.8**) | 2.906±0.031 (z=−13.6) |
+| mean token length | **2.655** | 3.794±1.977 (z=−0.6, p=0.32) | 2.428±0.342 (z=+0.7, p=0.83) | 1.563±0.072 (z=+15.2) |
+| length-2 types | **0** | 0.81±1.68 (z=−0.5) | 0.04±0.18 (z=−0.2) | 0.12±0.33 (z=−0.4) |
+| vocabulary size | **114** | 144.7±80.5 (z=−0.4, p=0.68) | 138.0±22.7 (z=−1.1, p=0.83) | 71.7±9.8 (z=+4.3) |
+| Zipf slope | **1.079** | 1.005±0.641 (z=+0.1, p=0.32) | 1.046±0.145 (z=+0.2, p=0.31) | 1.585±0.092 (z=−5.5) |
+| Heaps' beta | **0.705** | 0.418±0.273 (z=+1.1, p=0.17) | 0.276±0.140 (**z=+3.1**, p=0.030) | 0.356±0.052 (z=+6.8) |
+
+### Reading the tables
 
 **Against the LZ-matched copy-paste null, every Family A statistic is
 indistinguishable from noise.** The largest |z| across all seven statistics is
@@ -154,6 +176,46 @@ indistinguishable from noise.** The largest |z| across all seven statistics is
   apparent significance is entirely an artifact of those nulls not reproducing
   the corpus's long-range copying, and quoting it would have been the error the
   plan warned about.
+- The same picture holds on the contigs and on `master_v1`: against the
+  LZ-matched null, no statistic on any stream reaches |z| = 1.2.
+
+### The two things that are not clean, reported anyway
+
+Two cells are bold in the tables above, and both deserve saying out loud rather
+than being smoothed over.
+
+**(a) Two LZ-matched nulls disagree on the assembled streams.** On the contigs
+and on `master_v1`, the ABC-fitted `CopyPasteMutateFitted` (which happens to
+land at LZ76 579 and 583 against real 563 and 578 — matched to within 1%) says
+the real stream compresses *better* than the null by z ≈ −8, while the
+grid-tuned `CopyPasteMutate` says nothing (z ≈ −0.3 to −0.6). The reason is
+variance, and it is a genuine methodological weakness of the tuned generator:
+matching the *mean* LZ76 factor count left it with an enormous spread
+(MDL bits/digit sd 0.34–0.42 against the fitted generator's 0.04). A null that
+noisy has almost no power, so its non-significance is weak evidence. The
+low-variance fitted null is the more informative comparison, and on the two
+assembled streams it does show the real stream to be more compressible than the
+model.
+
+That is worth flagging for Family E — but it is **not** support for a lexicon,
+because the very same runs show the token-length profile flat against that null
+(mean token length z = +0.0 and +0.7; length-2 types z = −0.2 on both). The
+streams are slightly more repetitive than the fitted copy-paste process; they
+are not more *lexical*.
+
+**(b) `master_v1` has a high Heaps' beta (0.705).** Against the fitted null,
+z = +3.1, p = 0.030. Against the LZ-matched tuned null, z = +1.1, p = 0.17.
+Two cautions apply. First, `master_v1` is a *derived* object — an ILP assembly —
+and the plan's own rule is that anything appearing only on the master is
+suspect; a vocabulary-growth exponent is exactly the kind of statistic assembly
+can manufacture by concatenating overlapping fragments. Second, multiplicity:
+
+> **Benjamini–Hochberg over all 42 tests against LZ-matched nulls
+> (7 statistics × 3 streams × 2 matched generators): the smallest q is 0.104,
+> and the `master_v1` Heaps result sits at q = 0.418.**
+
+Nothing in Family A survives correction. (Note that p = 0.005 is the floor at
+N = 200, i.e. "no surrogate out of 200 beat it".)
 
 ## Verdict
 
