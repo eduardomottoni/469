@@ -75,3 +75,60 @@ coincidence, so the junctions are fiction. It is emitted only so the prior
 result is comparable. Note that even so it saves just 13 digits over
 `master_v1` — and both beat the prior published 6,624 digits for 49 of the
 books, because the prior decomposition was greedy.
+
+## Null control — does assembly mean anything?
+
+The identical assembler (exact overlaps >=5, plus a rotation-mode pass) was run
+on 100 surrogates from each of six families, `results/e_f_assembly.*.json`.
+Empirical p with the +1 correction, so 0.0099 is the floor at N=100.
+
+| statistic | real | Shuffle | Markov2 | Markov3 | BlockShuffle20 | CopyPasteMutate | **CopyPasteMutateFitted** |
+|---|---|---|---|---|---|---|---|
+| contigs (fewer = better) | **29** | 70.9 | 67.5 | 60.6 | 58.0 | 50.5 | **31.1 (p = 0.33)** |
+| compression (1 - len/digits) | **0.444** | 0.000 | 0.002 | 0.006 | 0.009 | 0.085 | 0.260 (p = 0.0099) |
+| longest overlap used | **279** | 0.4 | 6.6 | 11.7 | 14.3 | 116.7 | 166.9 (p = 0.0099) |
+| rotations invoked | 6 | 0 | 0 | 0 | 0.01 | 11.4 | 14.5 (p = 1.00) |
+
+**The honest reading, in the plan's own words: assembly proves nothing about
+meaning.** Against the ABC-fitted copy-paste null (family E, fitted independently
+on 9 statistics that include none of these), a surrogate corpus assembles into
+31.1 contigs on average against the real corpus's 29 — p = 0.33, no effect. The
+corpus assembles because it was pasted together, not because it says anything.
+Assembly stays useful as **dedup**: it is how you avoid counting the same digits
+five times, and that is all it is.
+
+Two statistics do still separate the real corpus from the fitted null, and both
+have mundane explanations rather than linguistic ones:
+
+* **compression 0.444 vs 0.260** — driven by the 20 books that are *exact*
+  substrings of other books, which the fitted model under-produces;
+* **longest overlap 279 vs 167** — the single B64/B65 near-duplicate pair
+  (`05-rearrange.txt`'s B42/B43), one hand edit, not a distribution.
+
+**Rotations are worthless as evidence.** Allowing every book to be rotated adds
+55 arcs (67 -> 122) and cuts the contig count from 22 to 16, which looks
+impressive until you score it: fitted surrogates invoke *more* rotations than
+the real corpus (14.5 vs 6, p = 1.00). Rotation is nearly unconstrained — with a
+corpus this repetitive, almost any book can be spun to match almost any other.
+`master_v1` therefore uses **no** rotations, and the rotation-mode assembly is
+reported only as a documented negative.
+
+The one genuine rotation-like relation in the corpus is not a rotation at all.
+B64 = X + Y + Z and B65 = Y + X + Z with |X| = 52, |Y| = 141, |Z| = 79: a
+**block transposition inside the prefix**, not a rotation of the whole book
+(checked directly — no pair of books satisfies `a in b+b`). The prior author's
+hand analysis of B42/B43 is exactly right; the plan's description of it as a
+whole-book rotation is not.
+
+## For the other agents
+
+* `data/master_v1.txt` — **6,056 digits**, the deduplicated stream. Contig
+  boundaries in `data/master_provenance.json` (`contig_start_offsets`); do not
+  read across them.
+* `data/master_provenance.json` — every book's placement, per-position coverage,
+  and **3,858 of the 6,056 positions are single-coverage** (no second book
+  confirms them). A pattern that lives only on single-coverage positions is a
+  pattern in one book, not in the corpus.
+* Run everything on the master **and** on the raw books, per the plan. Anything
+  that appears only on the master is an artifact of my junction choices.
+* `data/master_permissive_v1.txt` exists for comparison with prior work only.

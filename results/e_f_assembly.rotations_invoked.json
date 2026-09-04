@@ -53,13 +53,23 @@
       "z": -1.7604169964473584,
       "maximum": 18.0,
       "minimum": 3.0
+    },
+    {
+      "family": "CopyPasteMutateFitted",
+      "n": 100,
+      "mean": 14.45,
+      "sd": 2.896118091514915,
+      "p": 1.0,
+      "z": -2.9176987032251622,
+      "maximum": 21.0,
+      "minimum": 8.0
     }
   ],
   "corpus_provenance": "data/books_sorted_unique_with_kharos.json",
   "n_candidates_tested": 1,
   "seed": 1,
   "runtime_s": 0.0,
-  "code_sha": "760aa11",
+  "code_sha": "77700a8",
   "extra": {
     "real": {
       "n_nodes": 51,
@@ -85,6 +95,6 @@
     },
     "n_nulls": 100
   },
-  "worst_p": 0.9801980198019802,
+  "worst_p": 1.0,
   "verdict": "REJECTED"
 }

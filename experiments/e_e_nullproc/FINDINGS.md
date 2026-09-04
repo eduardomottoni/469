@@ -138,11 +138,31 @@ statistical filler rather than a message.
 **This is the object families A, B and C should now be pointed at.** Searching
 the full 11,263 digits for structure mostly re-finds the copy-paste.
 
-## 4. Scored nulls
+## 4. Scored nulls (`run_nulls.py`, `results/e_e_nullproc.*.json`)
 
-`run_nulls.py` scores `copy_code_advantage = CTW8 bits/digit - relative-LZ
-bits/digit` (and LZ76 factors, and distinct 4-grams) against
-`surrogate.DEFAULT_FAMILIES`, N=200. Results land in `results/`.
+N = 200 per family, empirical p with the +1 correction (floor 0.005).
+`copy_code_advantage` = prequential CTW-8 bits/digit minus leave-one-book-out
+relative-LZ bits/digit: how much better a copy model is than the best sequential
+model. Positive means "built by copying".
+
+| statistic | real | Shuffle | Markov2 | Markov3 | BlockShuffle20 | CopyPasteMutate | CopyPasteMutateFitted |
+|---|---|---|---|---|---|---|---|
+| copy_code_advantage | **+0.851** | -0.691 | -0.791 | -0.400 | +0.298 | +1.26 (p=1.00) | +0.911 (p=0.91) |
+| LZ76 factors | **608** | 3370 | 2283 | 1575 | 1369 | 1128 | 700 (p=0.005) |
+| distinct 4-grams | **1097** | 6169 | 1885 | 1012 (p=1.00) | 2050 | 1543 | 981 (p=1.00) |
+
+All unmarked cells have p = 0.005. Read the first row across: on shuffled and on
+Markov material the copy code is *worse* than CTW (negative), on the real corpus
+it is 0.85 bits/digit better, and the **only** generators that reach that number
+are the two copy-paste ones. The harness verdict on `copy_code_advantage` is
+therefore REJECTED, which here is the point: the statistic fails to distinguish
+469 from a copy-paste process, and separates it decisively from everything else.
+
+One honest tension: at the posterior *median* parameter the fitted generator
+produces 700 LZ76 factors against the corpus's 608 (p = 0.005), while the full
+posterior predictive covers 608 comfortably ([511, 863]). The point estimate is
+slightly less redundant than the corpus; the posterior is not. Do not quote the
+median-parameter surrogate as if it were the fit.
 
 ## Verdict on family E
 

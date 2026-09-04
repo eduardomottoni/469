@@ -53,13 +53,23 @@
       "z": -10.979344435328873,
       "maximum": 1.3523867404488967,
       "minimum": 1.163426652173164
+    },
+    {
+      "family": "CopyPasteMutateFitted",
+      "n": 200,
+      "mean": 0.9112532640480465,
+      "sd": 0.04467943327346402,
+      "p": 0.9104477611940298,
+      "z": -1.3455580410799692,
+      "maximum": 1.0168572711105188,
+      "minimum": 0.8043836343877839
     }
   ],
   "corpus_provenance": "books.json",
   "n_candidates_tested": 1,
   "seed": 3,
-  "runtime_s": 657.6475832462311,
-  "code_sha": "7496c27",
+  "runtime_s": 481.70547366142273,
+  "code_sha": "77700a8",
   "extra": {},
   "worst_p": 1.0,
   "verdict": "REJECTED"
