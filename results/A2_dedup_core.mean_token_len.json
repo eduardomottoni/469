@@ -63,13 +63,23 @@
       "z": 256.61291814024605,
       "maximum": 1.0222746331236898,
       "minimum": 1.0077499354172048
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 2.4345847149753133,
+      "sd": 0.3993244547065241,
+      "p": 0.15422885572139303,
+      "z": -1.0166759539631038,
+      "maximum": 4.110642781875659,
+      "minimum": 1.7675577707294972
     }
   ],
   "corpus_provenance": "books.json|dedup_core(k=25)",
   "n_candidates_tested": 1,
   "seed": 900001,
   "runtime_s": 0.0,
-  "code_sha": "b3e11e2",
+  "code_sha": "4cd1988",
   "extra": {
     "inducer": "mdl_unigram(maxlen=8)",
     "copypaste_params": {
@@ -82,5 +92,5 @@
     "real_lz76": 510
   },
   "worst_p": 1.0,
-  "verdict": "REJECTED"
+  "verdict": "INCOMPLETE (missing required null families)"
 }

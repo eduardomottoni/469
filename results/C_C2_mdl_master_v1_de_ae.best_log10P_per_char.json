@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C2_mdl_master_v1_de_ae",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.7373485256182368,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -2.0269046061362928,
+      "sd": 0.058722771961565695,
+      "p": 0.004975124378109453,
+      "z": 4.930899391254412,
+      "maximum": -1.9031091927047588,
+      "minimum": -2.1923319529125216
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.530849919657044,
+      "sd": 0.01494175931521615,
+      "p": 0.047619047619047616,
+      "z": 53.10628937990817,
+      "maximum": -2.5052084273989137,
+      "minimum": -2.5594027988294275
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.685275708414627,
+      "sd": 0.05384629958383407,
+      "p": 0.8431372549019608,
+      "z": -0.9670639877961693,
+      "maximum": -1.5572973033375201,
+      "minimum": -1.827744439396423
+    }
+  ],
+  "corpus_provenance": "data/master_v1.txt",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "4cd1988",
+  "extra": {
+    "n_symbols": 2281,
+    "V": 114,
+    "plaintext_head": "eeeenetrererer stseeetree en eres eetenere esereter re e tne eeseneneens eeete r renree ereee treeenrnee er st ese einereetn  r resert nere eeeee treneerse r e tneene treneere e etneese tine eneere e ",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.8431372549019608,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

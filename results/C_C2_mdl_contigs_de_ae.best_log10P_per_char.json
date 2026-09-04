@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C2_mdl_contigs_de_ae",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.6587582489594885,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -2.0050587357446807,
+      "sd": 0.0553032743806986,
+      "p": 0.004975124378109453,
+      "z": 6.261844179447982,
+      "maximum": -1.8630518578928412,
+      "minimum": -2.1715782341776255
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.538527661156025,
+      "sd": 0.013184579282354631,
+      "p": 0.047619047619047616,
+      "z": 66.72715096597443,
+      "maximum": -2.5032251161776373,
+      "minimum": -2.5623643309496402
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.6167623227480923,
+      "sd": 0.05149132822823071,
+      "p": 0.7843137254901961,
+      "z": -0.815592210502962,
+      "maximum": -1.4640537751896852,
+      "minimum": -1.7287948320824151
+    }
+  ],
+  "corpus_provenance": "try_combine_books/out/books/books_combined_#2_6624[49]_63[1].txt",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "4cd1988",
+  "extra": {
+    "n_symbols": 2241,
+    "V": 121,
+    "plaintext_head": "stseset ansa erst eset sagt ena tareus hattre ta se probin aaenat nun es seestsesetstra hat in sraeesrs s taen esetseattel fetts sse araris sea saere kassen in hae s es so beeinte art ja meins se tat ",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.7843137254901961,
+  "verdict": "INCOMPLETE (missing required null families)"
+}
