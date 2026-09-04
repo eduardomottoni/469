@@ -1,0 +1,442 @@
+{
+ "real": [
+  {
+   "model": "Markov0",
+   "heldout_bpd": 3.265505153517583,
+   "insample_bpd": 3.264726801517781,
+   "params": 9,
+   "aic": 73559.23593098954,
+   "bic": 36891.7516972898,
+   "corpus": "real"
+  },
+  {
+   "model": "Markov1",
+   "heldout_bpd": 2.931380862840218,
+   "insample_bpd": 2.920562487388544,
+   "params": 90,
+   "aic": 65968.59059091435,
+   "bic": 34105.63261340747,
+   "corpus": "real"
+  },
+  {
+   "model": "Markov2",
+   "heldout_bpd": 2.0029114566362636,
+   "insample_bpd": 1.9442745492747169,
+   "params": 900,
+   "aic": 45596.72849696227,
+   "bic": 34011.73742798408,
+   "corpus": "real"
+  },
+  {
+   "model": "Markov3",
+   "heldout_bpd": 1.2583782838908482,
+   "insample_bpd": 1.1588475123428197,
+   "params": 9000,
+   "aic": 44104.19906303436,
+   "bic": 134185.83132654664,
+   "corpus": "real"
+  },
+  {
+   "model": "Markov4",
+   "heldout_bpd": 1.0367420883261367,
+   "insample_bpd": 0.9087307526137259,
+   "params": 90000,
+   "aic": 200470.06893337678,
+   "bic": 1221572.3524169829,
+   "corpus": "real"
+  },
+  {
+   "model": "Markov5",
+   "heldout_bpd": 0.9862763778311895,
+   "insample_bpd": 0.8303346517769892,
+   "params": 900000,
+   "aic": 1818704.1183659285,
+   "bic": 12122725.23868591,
+   "corpus": "real"
+  },
+  {
+   "model": "Markov6",
+   "heldout_bpd": 0.990418712064167,
+   "insample_bpd": 0.8094239387732328,
+   "params": 9000000,
+   "aic": 18018233.083644807,
+   "bic": 121142848.33685185,
+   "corpus": "real"
+  },
+  {
+   "model": "CTW2",
+   "heldout_bpd": 1.963485832521964,
+   "insample_bpd": 2.0797325092905496,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 23424.02725213946,
+   "corpus": "real"
+  },
+  {
+   "model": "CTW4",
+   "heldout_bpd": 1.074236343452881,
+   "insample_bpd": 1.3578340039630241,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 15293.284386635542,
+   "corpus": "real"
+  },
+  {
+   "model": "CTW8",
+   "heldout_bpd": 0.9086146958917842,
+   "insample_bpd": 1.2558249066792144,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 14144.355923927991,
+   "corpus": "real"
+  },
+  {
+   "model": "CTW16",
+   "heldout_bpd": 0.8987827848257189,
+   "insample_bpd": 1.2496948583217522,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 14075.313189277895,
+   "corpus": "real"
+  },
+  {
+   "model": "RelativeLZ(copy)",
+   "heldout_bpd": 0.40469041334317335,
+   "insample_bpd": 0.6930482230610147,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 4558.028125484161,
+   "corpus": "real"
+  }
+ ],
+ "Shuffle": [
+  {
+   "model": "Markov0",
+   "heldout_bpd": 3.265857554924877,
+   "insample_bpd": 3.264726801517769,
+   "params": 9,
+   "aic": 73559.23593098926,
+   "bic": 36891.75169728966,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "Markov1",
+   "heldout_bpd": 3.271601796045601,
+   "insample_bpd": 3.258856224800567,
+   "params": 90,
+   "aic": 73588.99531985757,
+   "bic": 37915.83497787908,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "Markov2",
+   "heldout_bpd": 3.329737634224071,
+   "insample_bpd": 3.2054029810923863,
+   "params": 900,
+   "aic": 74004.9075520871,
+   "bic": 48215.826955546494,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "Markov3",
+   "heldout_bpd": 3.5450691468903948,
+   "insample_bpd": 2.786253931405739,
+   "params": 9000,
+   "aic": 80763.15605884568,
+   "bic": 152515.3098244523,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "Markov4",
+   "heldout_bpd": 3.421724448772945,
+   "insample_bpd": 2.186605702177581,
+   "params": 90000,
+   "aic": 229255.4800472522,
+   "bic": 1235965.0579739206,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "Markov5",
+   "heldout_bpd": 3.338448745319072,
+   "insample_bpd": 2.033862579100545,
+   "params": 900000,
+   "aic": 1845814.7884568188,
+   "bic": 12136280.573731355,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "Markov6",
+   "heldout_bpd": 3.3264527305262583,
+   "insample_bpd": 2.0147777119939327,
+   "params": 9000000,
+   "aic": 18045384.882740375,
+   "bic": 121156424.23639964,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "CTW2",
+   "heldout_bpd": 3.265868945763787,
+   "insample_bpd": 3.269459944692808,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 36823.927357075096,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "CTW4",
+   "heldout_bpd": 3.2658689457637484,
+   "insample_bpd": 3.2694599446928065,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 36823.92735707508,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "CTW8",
+   "heldout_bpd": 3.265733859306942,
+   "insample_bpd": 3.2694598632931804,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 36823.92644027109,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "CTW16",
+   "heldout_bpd": 3.265733859306942,
+   "insample_bpd": 3.2694598632931804,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 36823.92644027109,
+   "corpus": "Shuffle"
+  },
+  {
+   "model": "RelativeLZ(copy)",
+   "heldout_bpd": 3.9628071563483163,
+   "insample_bpd": 3.8985414312272533,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 44633.097001951086,
+   "corpus": "Shuffle"
+  }
+ ],
+ "Markov3": [
+  {
+   "model": "Markov0",
+   "heldout_bpd": 3.2702490167467637,
+   "insample_bpd": 3.2690630071428464,
+   "params": 9,
+   "aic": 73656.91329889976,
+   "bic": 36940.59038124491,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "Markov1",
+   "heldout_bpd": 2.9174045047708193,
+   "insample_bpd": 2.905115157437967,
+   "params": 90,
+   "aic": 65620.62403644764,
+   "bic": 33931.649336174116,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "Markov2",
+   "heldout_bpd": 1.955713274384096,
+   "insample_bpd": 1.8984582733370603,
+   "params": 900,
+   "aic": 44564.67106519062,
+   "bic": 33495.708712098254,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "Markov3",
+   "heldout_bpd": 1.20408986561414,
+   "insample_bpd": 1.121061025032263,
+   "params": 9000,
+   "aic": 43253.02064987676,
+   "bic": 133760.24211996782,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "Markov4",
+   "heldout_bpd": 1.3536433696955184,
+   "insample_bpd": 1.1871918173725895,
+   "params": 90000,
+   "aic": 206742.68287813495,
+   "bic": 1224708.659389362,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "Markov5",
+   "heldout_bpd": 1.5881962677775334,
+   "insample_bpd": 1.2995907738347174,
+   "params": 900000,
+   "aic": 1829274.5817714008,
+   "bic": 12128010.470388645,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "Markov6",
+   "heldout_bpd": 1.8647888549975657,
+   "insample_bpd": 1.4287353698136618,
+   "params": 9000000,
+   "aic": 18032183.69294042,
+   "bic": 121149823.64149965,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "CTW2",
+   "heldout_bpd": 1.9166871744333238,
+   "insample_bpd": 2.0345503352429866,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 22915.140425841757,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "CTW4",
+   "heldout_bpd": 1.246074282122179,
+   "insample_bpd": 1.4805686891792886,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 16675.64514622633,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "CTW8",
+   "heldout_bpd": 1.2462510997865799,
+   "insample_bpd": 1.4859309266038343,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 16736.040026338986,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "CTW16",
+   "heldout_bpd": 1.2462559559894977,
+   "insample_bpd": 1.485939612834288,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 16736.137859352588,
+   "corpus": "Markov3"
+  },
+  {
+   "model": "RelativeLZ(copy)",
+   "heldout_bpd": 1.8906177939893105,
+   "insample_bpd": 2.0429603690156095,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 21294.028213701604,
+   "corpus": "Markov3"
+  }
+ ],
+ "CopyPasteMutate": [
+  {
+   "model": "Markov0",
+   "heldout_bpd": 3.256210798332829,
+   "insample_bpd": 3.2553908338812403,
+   "params": 9,
+   "aic": 73348.93392400882,
+   "bic": 36786.60069379944,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "Markov1",
+   "heldout_bpd": 2.8893719576951793,
+   "insample_bpd": 2.8782875679522824,
+   "params": 90,
+   "aic": 65016.30575569311,
+   "bic": 33629.49019579685,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "Markov2",
+   "heldout_bpd": 1.9602074720183185,
+   "insample_bpd": 1.898285431079672,
+   "params": 900,
+   "aic": 44560.77762050069,
+   "bic": 33493.761989753286,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "Markov3",
+   "heldout_bpd": 1.863830557492896,
+   "insample_bpd": 1.713294054121768,
+   "params": 9000,
+   "aic": 56593.66186314695,
+   "bic": 140430.56272660292,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "Markov4",
+   "heldout_bpd": 1.758340906867627,
+   "insample_bpd": 1.5176666094793414,
+   "params": 90000,
+   "aic": 214186.95804513164,
+   "bic": 1228430.7969728603,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "Markov5",
+   "heldout_bpd": 1.688052610061615,
+   "insample_bpd": 1.3734611294942394,
+   "params": 900000,
+   "aic": 1830938.5854029872,
+   "bic": 12128842.47220444,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "Markov6",
+   "heldout_bpd": 1.6639138208835436,
+   "insample_bpd": 1.2985035232306776,
+   "params": 9000000,
+   "aic": 18029250.090364296,
+   "bic": 121148356.8402116,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "CTW2",
+   "heldout_bpd": 1.9211186665103588,
+   "insample_bpd": 2.031499068272052,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 22880.774005948122,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "CTW4",
+   "heldout_bpd": 1.7112032589603074,
+   "insample_bpd": 1.9597418197926535,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 22072.572116324656,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "CTW8",
+   "heldout_bpd": 1.5207838307203052,
+   "insample_bpd": 1.8956599371964924,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 21350.817872644093,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "CTW16",
+   "heldout_bpd": 1.516838309176878,
+   "insample_bpd": 1.8946500438071086,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 21339.443443399465,
+   "corpus": "CopyPasteMutate"
+  },
+  {
+   "model": "RelativeLZ(copy)",
+   "heldout_bpd": 0.6283986834646328,
+   "insample_bpd": 1.3213566880039682,
+   "params": NaN,
+   "aic": NaN,
+   "bic": 7077.654371862159,
+   "corpus": "CopyPasteMutate"
+  }
+ ]
+}

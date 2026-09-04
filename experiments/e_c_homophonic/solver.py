@@ -82,62 +82,85 @@ def _delta_windows(pos_start, pos_end, positions, sym,
 
 
 @njit(cache=True, fastmath=True)
-def _hill(stream, key, table, pos_start, pos_end, positions, n_sym,
-          max_rounds, seed, n_kicks, kick_size):
-    """One restart: best-improvement hill climb with annealing kicks."""
+def _anneal(stream, key, table, pos_start, pos_end, positions, n_sym,
+            seed, n_temps, sweeps, t0, t1):
+    """One restart of AZdecrypt-style simulated annealing.
+
+    At each temperature the solver sweeps every (symbol, letter) pair in random
+    symbol order, keeping a move that improves the score and keeping a worsening
+    move with probability exp(delta/T).  The temperature falls geometrically
+    from t0 to t1.  Deltas are exact (verified against the full score), so the
+    running total never drifts.
+    """
     n = stream.shape[0]
     np.random.seed(seed)
+    cur = _full_score(stream, key, table)
+    best = cur
     best_key = key.copy()
-    best = _full_score(stream, key, table)
-    cur = best
-    kick = 0
-    while True:
-        improved = True
-        rounds = 0
-        while improved and rounds < max_rounds:
-            improved = False
-            rounds += 1
-            for s in range(n_sym):
+    ratio = (t1 / t0) ** (1.0 / max(1, n_temps - 1))
+    T = t0
+    for _ in range(n_temps):
+        for _ in range(sweeps):
+            for s in np.random.permutation(n_sym):
                 if pos_start[s] == pos_end[s]:
                     continue
                 old = key[s]
                 base = _delta_windows(pos_start, pos_end, positions, s,
                                       stream, key, table, n)
-                bestl = old
-                bestg = 0.0
-                for L in range(27):
-                    if L == old:
-                        continue
-                    key[s] = L
-                    g = _delta_windows(pos_start, pos_end, positions, s,
-                                       stream, key, table, n) - base
-                    if g > bestg:
-                        bestg = g
-                        bestl = L
-                key[s] = bestl
-                if bestl != old:
-                    cur += bestg
-                    improved = True
-        cur = _full_score(stream, key, table)   # exact, kills accumulated drift
-        if cur > best:
-            best = cur
-            for s in range(n_sym):
-                best_key[s] = key[s]
-        kick += 1
-        if kick > n_kicks:
-            break
-        # annealing kick: perturb from the best key found so far
-        for s in range(n_sym):
-            key[s] = best_key[s]
-        for _ in range(kick_size):
-            s = np.random.randint(0, n_sym)
-            key[s] = np.random.randint(0, 27)
-        cur = _full_score(stream, key, table)
+                L = np.random.randint(0, 27)
+                if L == old:
+                    continue
+                key[s] = L
+                d = _delta_windows(pos_start, pos_end, positions, s,
+                                   stream, key, table, n) - base
+                if d > 0.0:
+                    cur += d
+                else:
+                    if np.random.random() < np.exp(d / T):
+                        cur += d
+                    else:
+                        key[s] = old
+                if cur > best:
+                    best = cur
+                    for q in range(n_sym):
+                        best_key[q] = key[q]
+        T *= ratio
     return best, best_key
 
 
+@njit(cache=True, fastmath=True)
+def _polish(stream, key, table, pos_start, pos_end, positions, n_sym, max_rounds):
+    """Deterministic best-improvement hill climb to a local optimum."""
+    n = stream.shape[0]
+    cur = _full_score(stream, key, table)
+    for _ in range(max_rounds):
+        improved = False
+        for s in range(n_sym):
+            if pos_start[s] == pos_end[s]:
+                continue
+            old = key[s]
+            base = _delta_windows(pos_start, pos_end, positions, s,
+                                  stream, key, table, n)
+            bl, bg = old, 0.0
+            for L in range(27):
+                if L == old:
+                    continue
+                key[s] = L
+                g = _delta_windows(pos_start, pos_end, positions, s,
+                                   stream, key, table, n) - base
+                if g > bg:
+                    bg, bl = g, L
+            key[s] = bl
+            if bl != old:
+                cur += bg
+                improved = True
+        if not improved:
+            break
+    return _full_score(stream, key, table), key
+
+
 def solve(stream: np.ndarray, table: np.ndarray, n_restarts: int = 60,
-          max_rounds: int = 40, n_kicks: int = 8, kick_size: int = 3,
+          n_temps: int = 60, sweeps: int = 12, t0: float = 8.0, t1: float = 0.15,
           seed: int = 0):
     """Best-of-restarts.  Returns (best log10P per char, key, plaintext)."""
     stream = np.ascontiguousarray(stream.astype(np.int32))
@@ -151,9 +174,10 @@ def solve(stream: np.ndarray, table: np.ndarray, n_restarts: int = 60,
     best_key = None
     for r in range(n_restarts):
         k = rng.integers(0, 27, size=n_sym).astype(np.int32)
-        sc, kk = _hill(stream, k, table, pos_start, pos_end, order, n_sym,
-                       max_rounds, int(rng.integers(1, 2 ** 31 - 1)),
-                       n_kicks, kick_size)
+        sc, kk = _anneal(stream, k, table, pos_start, pos_end, order, n_sym,
+                         int(rng.integers(1, 2 ** 31 - 1)), n_temps, sweeps, t0, t1)
+        sc, kk = _polish(stream, kk.copy(), table, pos_start, pos_end, order,
+                         n_sym, 50)
         if sc > best:
             best, best_key = sc, kk.copy()
     npc = best / max(1, stream.shape[0] - 4)

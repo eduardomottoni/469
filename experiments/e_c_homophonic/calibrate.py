@@ -34,7 +34,8 @@ def make_cipher(n_chars: int, n_sym: int, lang="en", mode="en", seed=3):
 
 def main():
     tab = load_table("en")
-    for n_chars, n_sym, nr in ((1200, 60, 40), (2400, 80, 40)):
+    for n_chars, n_sym, nr in ((1200, 60, 16), (1950, 100, 16),
+                               (2240, 121, 16), (1300, 300, 16)):
         stream, txt = make_cipher(n_chars, n_sym)
         t0 = time.time()
         npc, key, pt = solve(stream, tab, n_restarts=nr, seed=1)

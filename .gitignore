@@ -1,3 +1,4 @@
 __pycache__/
 *.pyc
 data/external/lm5_*.npz
+experiments/e_c_homophonic/results_c/*.log
