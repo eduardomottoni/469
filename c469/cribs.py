@@ -41,11 +41,15 @@ CRIBS: tuple[Crib, ...] = (
     Crib("486486", "tibia.fandom/A_Wrinkled_Bonelord", "A Wrinkled Bonelord",
          "(the librarian's own name)", "en", "high"),
     Crib("663 902073 7223 67538 467 80097", "tibia.com poll 2020-04-15", "poll answer C",
-         "These aren't the words you're looking for.", "en", "medium",
-         "parallel text: answer A is that sentence in binary, answer B the same "
-         "idea in Deepling ('Nonbelievers defy the narrow path to undersea!'). "
-         "6 groups; the English has 7 words, the Deepling 7 -- the mapping is "
-         "not obviously word-for-word."),
+         None, None, "low",
+         "NOT a crib.  This was previously recorded here as a parallel "
+         "translation of answer A.  It is not: the poll's three answers are "
+         "three DIFFERENT joke answers to the question, not one sentence in "
+         "three encodings.  Answer A is binary for \"These aren't the words "
+         "you're looking for\"; answer B is Jekhr (Deepling) for \"Nonbelievers "
+         "defy the narrow path to undersea!\" -- a different sentence.  So C has "
+         "no known plaintext.  Its 25-year opacity is still evidence, but it is "
+         "not known-plaintext and must never be scored as such."),
     Crib("3478 67 90871 97664 3466 0 345", "tibia.fandom/Knightmare", "Knightmare NPC",
          None, None, "medium",
          "7 groups. 3478 DOES occur in the books (24x) and is a nostalgia "
