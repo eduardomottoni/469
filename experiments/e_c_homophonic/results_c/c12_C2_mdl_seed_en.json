@@ -1,0 +1,71 @@
+{
+  "kind": "C2_mdl",
+  "lm": "en",
+  "n_symbols": 554,
+  "V": 12,
+  "real_best": -2.173329636732286,
+  "plaintext": "saaiais inii  sssaa si aa assnsanasassa s sinnaasss ias s iasaasaasnia isannaaaiinnaiaias iaa anaa    aaai  n sin ai a a ss  i sii asa naii in s s aaaasaai  aasnnansssa aissiisa a aass ssannaassissis ai sasi sia nissa aa a as nsnan sia sisa sna a s aaas snasisaiasaasaasans a ss a  inns  sai nassa  anisaansni is isssa as a sns nnssisnan iannaansaia inssas ni asai assaa as aanasa isassaasas sn aa ssi n aia iaasasisssaa asaniissa ssaa ns aiin  aiisaniasannaannnssa sssssaaa asnan i sasaas aaaasa nasasia asssaasn a a a aasaissnana nin ai sii naaissa aa ",
+  "key": {
+    "1": "a",
+    "4": "i",
+    "5": " ",
+    "8": "s",
+    "7": "a",
+    "9": "n",
+    "2": "s",
+    "0": "s",
+    "6": "a",
+    "3": " ",
+    "61": "n",
+    "55": " "
+  },
+  "n_restarts": 4,
+  "solve_seconds": 0.9809861183166504,
+  "nulls": {
+    "Markov3_digits": {
+      "n": 200,
+      "mean": -2.15430886172409,
+      "sd": 0.09676218714857136,
+      "max": -1.7204002354382082,
+      "min": -2.363113845566954,
+      "z": -0.19657239639478827,
+      "p": 0.5572139303482587,
+      "mean_V": 14.605,
+      "examples": [
+        "sssia mamssasi l sis asllsssasaalass alsa aslismslasassaiassaac smslasalslamil ai asai miasllasalsasmli illsiaiaailicalass aamla saamasa  is",
+        "saaisia sia as anas n saissaaaiinnaaaissass ss asaasai  nssaa i   asssssass s saass ss asassaaa aai s   aa sisas nnsns isnanssiannaan aiasis"
+      ]
+    },
+    "Digits_pi": {
+      "n": 20,
+      "mean": -2.1978087652787845,
+      "sd": 0.035084505334046084,
+      "max": -2.1439222492205072,
+      "min": -2.2708062947402845,
+      "z": 0.6977190732327098,
+      "p": 0.2857142857142857,
+      "mean_V": 12.0,
+      "examples": [
+        "sn asin  saa aaasaas sais nia sasssansi  aasian ani aa an iss nsssn ia a nas i asasn nsiaas ias smiassis nnsa nsssasi an s a ssin sain iaas ",
+        "  saa aaahaah hash ssa sasshasa  aassas ass aa as shs shhss sa a sas s ahahs saaas sah ssasahhsh ssha shhhass as s a shss sass saah hsaashhh"
+      ]
+    },
+    "Markov3_symbols": {
+      "n": 50,
+      "mean": -2.0800923295729667,
+      "sd": 0.07491956941250716,
+      "max": -1.9567951999752866,
+      "min": -2.283695716202598,
+      "z": -1.244498705617947,
+      "p": 0.8627450980392157,
+      "mean_V": 12.0,
+      "examples": [
+        "ia  aan ss anann na imma aasnnmiamasaisi asaai m a iiiianismannama a iasaaaanni iaanasasn asi s aana assmais naannasnnmiaa aanaianismannaina",
+        "ass  n ai aaaai naiaana saasssshaanssiaiissinsaaa hss sis i  saassinsaaa hss sisasan anas sn ssiiaasaassi  asan aisiass assan aisiaisaiaas a"
+      ]
+    }
+  },
+  "stream": "seed",
+  "provenance": "data/seed_estimate.txt",
+  "wall_seconds": 135.412113904953
+}

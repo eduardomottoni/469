@@ -1,0 +1,8 @@
+shape                          n     S  recovered  accuracy  verdict
+C2_mdl / dedup_core         1923    76    -0.6305     0.999  solvable
+C2_mdl / contigs            2241   121    -0.6441     1.000  solvable
+C2_mdl / master_v1          2000   100    -0.6350     1.000  solvable
+C1_pairs / dedup_core       1946    96    -0.6307     0.999  solvable
+C1_triples / dedup_core     1293   374    -1.1628     0.060  UNDERPOWERED
+C1_pairs / seed              289    87    -1.1033     0.066  UNDERPOWERED
+C2_mdl / seed                554    12        nan       nan  ILL-POSED (fewer symbols than letters: a homophonic cipher needs at least 27 symbols to carry a 26-letter alphabet)

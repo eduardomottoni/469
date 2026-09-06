@@ -1,0 +1,100 @@
+{
+  "experiment": "e_f_assembly",
+  "statistic": "assembly_compression",
+  "real_value": 0.4442982456140351,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 100,
+      "mean": 3.157894736841804e-05,
+      "sd": 0.00011539006071862374,
+      "p": 0.009900990099009901,
+      "z": 3850.129412359022,
+      "maximum": 0.000526315789473708,
+      "minimum": 0.0
+    },
+    {
+      "family": "Markov2",
+      "n": 100,
+      "mean": 0.0017526315789473678,
+      "sd": 0.0008675771196150447,
+      "p": 0.009900990099009901,
+      "z": 510.0936896900312,
+      "maximum": 0.004298245614035134,
+      "minimum": 0.0
+    },
+    {
+      "family": "Markov3",
+      "n": 100,
+      "mean": 0.0063666666666666715,
+      "sd": 0.0017812927893053245,
+      "p": 0.009900990099009901,
+      "z": 245.85041918805197,
+      "maximum": 0.011491228070175441,
+      "minimum": 0.0031578947368421373
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 100,
+      "mean": 0.009134210526315793,
+      "sd": 0.0021234831096766816,
+      "p": 0.009900990099009901,
+      "z": 204.92936021232433,
+      "maximum": 0.01482456140350874,
+      "minimum": 0.0049122807017544234
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 100,
+      "mean": 0.08532982456140348,
+      "sd": 0.021964096448051685,
+      "p": 0.009900990099009901,
+      "z": 16.343418537686933,
+      "maximum": 0.1528947368421053,
+      "minimum": 0.038596491228070184
+    },
+    {
+      "family": "CopyPasteMutateFitted",
+      "n": 100,
+      "mean": 0.2603087719298246,
+      "sd": 0.032593879090095056,
+      "p": 0.009900990099009901,
+      "z": 5.6449087626431975,
+      "maximum": 0.34622807017543855,
+      "minimum": 0.1768421052631579
+    }
+  ],
+  "corpus_provenance": "data/books_sorted_unique_with_kharos.json",
+  "n_candidates_tested": 1,
+  "seed": 1,
+  "runtime_s": 0.0,
+  "code_sha": "77700a8",
+  "extra": {
+    "real": {
+      "n_nodes": 51,
+      "contained": 20,
+      "arcs": 67,
+      "n_contigs": 29,
+      "master_len": 6335,
+      "compression": 0.4442982456140351,
+      "rotations": 0,
+      "edits": 0,
+      "max_overlap": 279
+    },
+    "real_rot": {
+      "n_nodes": 51,
+      "contained": 20,
+      "arcs": 122,
+      "n_contigs": 23,
+      "master_len": 5782,
+      "compression": 0.4928070175438597,
+      "rotations": 6,
+      "edits": 0,
+      "max_overlap": 279
+    },
+    "n_nulls": 100
+  },
+  "worst_p": 0.009900990099009901,
+  "verdict": "SUPPORTED"
+}

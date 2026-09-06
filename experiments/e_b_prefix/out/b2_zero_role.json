@@ -1,0 +1,82 @@
+{
+  "provenance": "books.json",
+  "space": "reduced",
+  "digit_0": {
+    "all_lengths": {
+      "codeword": {
+        "n_structures": 39509,
+        "max_books_parsed": 70,
+        "mean_books_parsed": 52.32417930091878
+      },
+      "prefix": {
+        "n_structures": 31294,
+        "max_books_parsed": 64,
+        "mean_books_parsed": 44.52038729468908
+      }
+    },
+    "band_1.50_1.70": {
+      "codeword": {
+        "n_structures": 10748,
+        "max_books_parsed": 58,
+        "mean_books_parsed": 44.76804986974321
+      },
+      "prefix": {
+        "n_structures": 14274,
+        "max_books_parsed": 54,
+        "mean_books_parsed": 42.378940731399744
+      }
+    }
+  },
+  "digit_3": {
+    "all_lengths": {
+      "codeword": {
+        "n_structures": 39509,
+        "max_books_parsed": 70,
+        "mean_books_parsed": 51.152041307043966
+      },
+      "prefix": {
+        "n_structures": 31294,
+        "max_books_parsed": 66,
+        "mean_books_parsed": 46.000223685051445
+      }
+    },
+    "band_1.50_1.70": {
+      "codeword": {
+        "n_structures": 10770,
+        "max_books_parsed": 58,
+        "mean_books_parsed": 43.18458681522748
+      },
+      "prefix": {
+        "n_structures": 14252,
+        "max_books_parsed": 53,
+        "mean_books_parsed": 43.571849564973334
+      }
+    }
+  },
+  "digit_1": {
+    "all_lengths": {
+      "codeword": {
+        "n_structures": 39509,
+        "max_books_parsed": 70,
+        "mean_books_parsed": 52.868612214938366
+      },
+      "prefix": {
+        "n_structures": 31294,
+        "max_books_parsed": 62,
+        "mean_books_parsed": 43.83303508659807
+      }
+    },
+    "band_1.50_1.70": {
+      "codeword": {
+        "n_structures": 9448,
+        "max_books_parsed": 58,
+        "mean_books_parsed": 44.037891617273495
+      },
+      "prefix": {
+        "n_structures": 15574,
+        "max_books_parsed": 53,
+        "mean_books_parsed": 43.02131758058302
+      }
+    }
+  }
+}

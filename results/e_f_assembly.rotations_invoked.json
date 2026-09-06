@@ -1,0 +1,100 @@
+{
+  "experiment": "e_f_assembly",
+  "statistic": "rotations_invoked",
+  "real_value": 6.0,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 100,
+      "mean": 0.0,
+      "sd": 0.0,
+      "p": 0.009900990099009901,
+      "z": 0.0,
+      "maximum": 0.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "Markov2",
+      "n": 100,
+      "mean": 0.0,
+      "sd": 0.0,
+      "p": 0.009900990099009901,
+      "z": 0.0,
+      "maximum": 0.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "Markov3",
+      "n": 100,
+      "mean": 0.0,
+      "sd": 0.0,
+      "p": 0.009900990099009901,
+      "z": 0.0,
+      "maximum": 0.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 100,
+      "mean": 0.01,
+      "sd": 0.09949874371066196,
+      "p": 0.009900990099009901,
+      "z": 60.20176513402683,
+      "maximum": 1.0,
+      "minimum": 0.0
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 100,
+      "mean": 11.36,
+      "sd": 3.04473315743761,
+      "p": 0.9801980198019802,
+      "z": -1.7604169964473584,
+      "maximum": 18.0,
+      "minimum": 3.0
+    },
+    {
+      "family": "CopyPasteMutateFitted",
+      "n": 100,
+      "mean": 14.45,
+      "sd": 2.896118091514915,
+      "p": 1.0,
+      "z": -2.9176987032251622,
+      "maximum": 21.0,
+      "minimum": 8.0
+    }
+  ],
+  "corpus_provenance": "data/books_sorted_unique_with_kharos.json",
+  "n_candidates_tested": 1,
+  "seed": 1,
+  "runtime_s": 0.0,
+  "code_sha": "77700a8",
+  "extra": {
+    "real": {
+      "n_nodes": 51,
+      "contained": 20,
+      "arcs": 67,
+      "n_contigs": 29,
+      "master_len": 6335,
+      "compression": 0.4442982456140351,
+      "rotations": 0,
+      "edits": 0,
+      "max_overlap": 279
+    },
+    "real_rot": {
+      "n_nodes": 51,
+      "contained": 20,
+      "arcs": 122,
+      "n_contigs": 23,
+      "master_len": 5782,
+      "compression": 0.4928070175438597,
+      "rotations": 6,
+      "edits": 0,
+      "max_overlap": 279
+    },
+    "n_nulls": 100
+  },
+  "worst_p": 1.0,
+  "verdict": "REJECTED"
+}

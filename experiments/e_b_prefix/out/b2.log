@@ -1,0 +1,63 @@
+missing bigrams: ['07']  (expected count of 07 under independence: 72.3)
+rarest bigrams (obs/exp):
+   07  obs=   0  exp=  72.3
+   33  obs=   1  exp=  37.4
+   32  obs=   2  exp=  54.3
+   39  obs=   4  exp=  57.7
+   66  obs=  12  exp= 113.7
+   02  obs=  13  exp=  71.3
+   69  obs=  13  exp= 100.6
+   37  obs=  14  exp=  55.1
+   38  obs=  16  exp=  64.2
+   23  obs=  17  exp=  54.3
+   93  obs=  17  exp=  57.7
+   41  obs=  19  exp= 209.4
+
+book-final digits: {'0': 9, '1': 12, '2': 6, '3': 4, '4': 8, '5': 9, '6': 2, '7': 6, '8': 7, '9': 7}
+book-initial digits: {'0': 5, '1': 7, '2': 7, '3': 3, '4': 8, '5': 10, '6': 6, '7': 6, '8': 10, '9': 8}
+
+(i) 0-as-prefix: {
+  "source": "reduced",
+  "n_length_bins": 37,
+  "bins_where_best_structure_has_0_as_codeword": 36,
+  "bins_where_best_structure_has_0_as_prefix": 1,
+  "best_parse_with_0_codeword": 70,
+  "best_parse_with_0_prefix": 29,
+  "bins_where_3_is_prefix": 2,
+  "bins_where_0_prefix_and_3_prefix": 0
+}
+
+(ii) 0-as-delimiter:
+   words=753  mean len=13.82 +-11.57  max=62  empty gaps (`00`) = 172
+   word-initial digit distribution: 0:0.000 1:0.177 2:0.027 3:0.175 4:0.227 5:0.097 6:0.076 7:0.008 8:0.110 9:0.104
+
+(iii) if 0 and 7 are single letters, they must be at 0.076 / 0.085 frequency:
+   DE nearest for 0: [('i', 0.0755), ('s', 0.0727), ('r', 0.07)]
+   DE nearest for 7: [('i', 0.0755), ('s', 0.0727), ('n', 0.0978)]
+
+n_missing_bigrams: real=1  REJECTED
+   Shuffle                    0 +- 0        p=0.0020 q=0.0047
+   Markov2                1.558 +- 0.625    p=1.0000 q=1.0000
+   Markov3                1.472 +- 0.601    p=1.0000 q=1.0000
+   BlockShuffle20         0.002 +- 0.0447   p=0.0040 q=0.0084
+   CopyPasteMutate        1.178 +- 0.85     p=0.7864 q=0.8692
+   Digits_pi                  0 +- 0        p=0.0020 q=0.0047
+   IID                        0 +- 0        p=0.0020 q=0.0047
+
+word_initial_7_rate: real=0.0079681  REJECTED
+   Shuffle              0.09244 +- 0.00945  p=0.0020 q=0.0047
+   Markov2             0.007815 +- 0.00301  p=0.5469 q=0.6381
+   Markov3             0.008185 +- 0.0032   p=0.4830 q=0.6381
+   BlockShuffle20       0.01327 +- 0.00369  p=0.0878 q=0.1537
+   CopyPasteMutate      0.00926 +- 0.00352  p=0.3772 q=0.6094
+   Digits_pi             0.1116 +- 0.00214  p=0.0020 q=0.0047
+   IID                  0.09179 +- 0.00941  p=0.0020 q=0.0047
+
+mean_word_len_sep0: real=13.822  REJECTED
+   Shuffle                12.25 +- 0.112    p=0.0020 q=0.0047
+   Markov2                13.83 +- 0.48     p=0.5110 q=0.6381
+   Markov3                13.84 +- 0.464    p=0.5190 q=0.6381
+   BlockShuffle20         13.68 +- 0.0602   p=0.0200 q=0.0381
+   CopyPasteMutate        13.87 +- 0.959    p=0.5230 q=0.6381
+   Digits_pi              9.723 +- 0.0299   p=0.0020 q=0.0047
+   IID                    12.24 +- 0.394    p=0.0020 q=0.0047

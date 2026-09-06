@@ -1,0 +1,96 @@
+{
+  "experiment": "A2_dedup_core",
+  "statistic": "V_used",
+  "real_value": 76,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 200,
+      "mean": 11.99,
+      "sd": 0.099498743710662,
+      "p": 0.004975124378109453,
+      "z": 643.3247055474217,
+      "maximum": 12,
+      "minimum": 11
+    },
+    {
+      "family": "Markov2",
+      "n": 200,
+      "mean": 25.775,
+      "sd": 4.788984756709923,
+      "p": 0.004975124378109453,
+      "z": 10.48760907614687,
+      "maximum": 39,
+      "minimum": 15
+    },
+    {
+      "family": "Markov3",
+      "n": 200,
+      "mean": 45.86,
+      "sd": 5.760243050427647,
+      "p": 0.004975124378109453,
+      "z": 5.232418100441504,
+      "maximum": 63,
+      "minimum": 30
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 200,
+      "mean": 53.32,
+      "sd": 6.8255109698835,
+      "p": 0.004975124378109453,
+      "z": 3.3228281516317173,
+      "maximum": 69,
+      "minimum": 33
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 80.535,
+      "sd": 6.458233117502031,
+      "p": 0.7661691542288557,
+      "z": -0.7022044446971096,
+      "maximum": 98,
+      "minimum": 66
+    },
+    {
+      "family": "Digits_pi",
+      "n": 200,
+      "mean": 11.965,
+      "sd": 0.18377975949489106,
+      "p": 0.004975124378109453,
+      "z": 348.43336489283047,
+      "maximum": 12,
+      "minimum": 11
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 80.035,
+      "sd": 12.400555431108721,
+      "p": 0.6318407960199005,
+      "z": -0.3253886507274966,
+      "maximum": 127,
+      "minimum": 50
+    }
+  ],
+  "corpus_provenance": "books.json|dedup_core(k=25)",
+  "n_candidates_tested": 1,
+  "seed": 900001,
+  "runtime_s": 0.0,
+  "code_sha": "4cd1988",
+  "extra": {
+    "inducer": "mdl_unigram(maxlen=8)",
+    "copypaste_params": {
+      "seed_len": 900,
+      "p_delete": 0.006,
+      "seed_order": 2,
+      "max_segments": 10
+    },
+    "copypaste_lz_relerr": 0.0006535947712417929,
+    "real_lz76": 510
+  },
+  "worst_p": 0.7661691542288557,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

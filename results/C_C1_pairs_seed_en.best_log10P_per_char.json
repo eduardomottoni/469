@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C1_pairs_seed_en",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.121078183856566,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -1.017864392388747,
+      "sd": 0.040452277645541206,
+      "p": 0.9950248756218906,
+      "z": -2.5514951808701345,
+      "maximum": -0.8867680401161411,
+      "minimum": -1.1329148753128202
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -1.0831957311522016,
+      "sd": 0.02655005720862695,
+      "p": 0.8571428571428571,
+      "z": -1.4268313023466934,
+      "maximum": -1.0381314256987504,
+      "minimum": -1.134303185643772
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.1154499806816716,
+      "sd": 0.042258796505340174,
+      "p": 0.6078431372549019,
+      "z": -0.1331841803441611,
+      "maximum": -1.015000007756227,
+      "minimum": -1.221769318731273
+    }
+  ],
+  "corpus_provenance": "data/seed_estimate.txt",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "b276a6d",
+  "extra": {
+    "n_symbols": 289,
+    "V": 95,
+    "plaintext_head": "lacxt n a s sea m maesteeminoreans ie sea raceramese law race stee masse ravell annabis am a meet ram r clearansal be as it anems l remnamen a of et a a eras a ta ronmenters maramanor mst saee as asa ",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.9950248756218906,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

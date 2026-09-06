@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C2_mdlB_dedup_core_de_ae",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.927616915280242,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -2.0138083453940787,
+      "sd": 0.06413199738796876,
+      "p": 0.0845771144278607,
+      "z": 1.3439692138764774,
+      "maximum": -1.856726173018966,
+      "minimum": -2.190139099217755
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.4561548831721014,
+      "sd": 0.02242578359216569,
+      "p": 0.047619047619047616,
+      "z": 23.568316608410548,
+      "maximum": -2.4035873308715745,
+      "minimum": -2.4946920147387392
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.887637024063566,
+      "sd": 0.073835457385735,
+      "p": 0.7058823529411765,
+      "z": -0.5414727914233807,
+      "maximum": -1.729392486565402,
+      "minimum": -2.043583557500554
+    }
+  ],
+  "corpus_provenance": "books.json|dedup_core(k=25)",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "28614e1",
+  "extra": {
+    "n_symbols": 1769,
+    "V": 65,
+    "plaintext_head": "osen e in ntin esstin ees i nineitri so seieie sre eren r isi bis isnt eisen ereres sente eis bis isnt eisen eis renssteesresi ii esterricant einettei seesse ntseneinrnneeeees sert beeitiieereeperttei",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.7058823529411765,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

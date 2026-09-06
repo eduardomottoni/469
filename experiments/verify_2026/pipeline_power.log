@@ -1,0 +1,63 @@
+real-corpus residue lengths: {('greedy', 3): 246, ('greedy', 6): 791, ('union', 5): 1238, ('union', 6): 1535, ('union', 8): 2058, ('union', 12): 2713, ('lz76_innovation', 0): 608}
+rep 0: corpus 11263 digits, 2554 are first-occurrences of 2602 seed digits
+  greedy           mc= 3 n=  303 purity=0.983 recall=0.115 key_acc=0.185 char_acc=0.182 score=-1.9539 | matched n=  246 key_acc=0.203 score=-1.9502
+      n maa sin s aia an im i massssa  a maasm assn a  asa maas anasma in ininns aaana
+  greedy           mc= 6 n= 1914 purity=0.981 recall=0.721 key_acc=0.360 char_acc=0.358 score=-1.6983 | matched n=  791 key_acc=0.837 score=-1.5037
+      s sha sas s haa as as sa a sas a issan a saas as sha is ass sa as is as a a naia
+  union            mc= 5 n= 2853 purity=0.516 recall=0.726 key_acc=0.595 char_acc=0.593 score=-1.8310 | matched n= 1238 key_acc=0.600 score=-1.7953
+      n sha san s haa in as sa a sas a assas a siin is sha as isin an i saaiss a siias
+  union            mc= 6 n= 3743 purity=0.512 recall=0.845 key_acc=0.900 char_acc=0.898 score=-1.6790 | matched n= 1535 key_acc=0.607 score=-1.6233
+      n she tan t hae in as ta a set a atter e siin is the as its ta in an et a i reai
+  union            mc= 8 n= 4720 purity=0.502 recall=0.949 key_acc=1.000 char_acc=0.998 score=-1.5045 | matched n= 2058 key_acc=1.000 score=-1.5114
+      n she ton t hoe in os to o set o atter e siin is the as its to in an et o i reai
+  union            mc=12 n= 5086 purity=0.501 recall=0.978 key_acc=1.000 char_acc=0.998 score=-1.4416 | matched n= 2713 key_acc=1.000 score=-1.4389
+      n she ton t hoe in os to o set o atter e siin is the as its to in an et o i reai
+  lz76_innovation  mc= 0 n=  949 purity=0.807 recall=0.332 key_acc=0.051 char_acc=0.050 score=-2.2615 | matched n=  608 key_acc=0.099 score=-2.1764
+      nsnaasi sisa sas n  nass iiaassnasais saiss ssasaa aasna s an ssnasnsnanisnnsaa 
+rep 1: corpus 11263 digits, 2509 are first-occurrences of 2602 seed digits
+  greedy           mc= 3 n=  311 purity=0.987 recall=0.119 key_acc=0.113 char_acc=0.113 score=-2.0385 | matched n=  246 key_acc=0.232 score=-1.9507
+      nnian ais na ann in nasan i an sa nsn an iaasnaaiasan nn asananaasaa a as ain na
+  greedy           mc= 6 n= 2000 purity=0.971 recall=0.747 key_acc=0.436 char_acc=0.434 score=-1.6253 | matched n=  791 key_acc=0.900 score=-1.5289
+      haish sia as sha ia anash i na an haa sa innaassis sa anaa a ha sasas sha sa ans
+  union            mc= 5 n= 3011 purity=0.521 recall=0.734 key_acc=0.503 char_acc=0.501 score=-1.7577 | matched n= 1238 key_acc=0.416 score=-1.7352
+      haash saa as sha aa anash a na an haa sa annaansan sa anaa a ha sasassa ansass n
+  union            mc= 6 n= 3893 purity=0.509 recall=0.842 key_acc=0.608 char_acc=0.606 score=-1.6283 | matched n= 1535 key_acc=0.907 score=-1.5791
+      haash sai as sha aa anish a na in hia sa anniassas sa inaa a ha sisas sha sa ans
+  union            mc= 8 n= 4738 purity=0.507 recall=0.943 key_acc=0.902 char_acc=0.901 score=-1.4775 | matched n= 2058 key_acc=0.902 score=-1.4906
+      heath sai at the ae enish a na in hie ta anniersar ta inae e ha tites the ta ent
+  union            mc=12 n= 5054 purity=0.495 recall=0.961 key_acc=0.904 char_acc=0.902 score=-1.4420 | matched n= 2713 key_acc=0.451 score=-1.5319
+      heath sai at the ae enish a na in hie ta anniersar ta inae e ha tites the ta ent
+  lz76_innovation  mc= 0 n=  970 purity=0.791 recall=0.335 key_acc=0.000 char_acc=0.000 score=-2.2698 | matched n=  608 key_acc=0.000 score=-2.2599
+       sn  aansas a sanasisaanaisasia sa aniss n aiss a s saaaisaa  i a nasiasasaas aa
+rep 2: corpus 11263 digits, 2595 are first-occurrences of 2602 seed digits
+  greedy           mc= 3 n=  314 purity=0.994 recall=0.119 key_acc=0.000 char_acc=0.000 score=-1.9802 | matched n=  246 key_acc=0.000 score=-1.8532
+      asa am aaisi ansaa   assasni  aa mis naaasa  s ansa is a i assaaisisasi   aman a
+  greedy           mc= 6 n= 1965 purity=0.972 recall=0.730 key_acc=0.622 char_acc=0.617 score=-1.6209 | matched n=  791 key_acc=0.446 score=-1.5760
+       ass han anasnin ssaa ansaiasas shan shain  a aaaa iansans sa aaa nan s aaans na
+  union            mc= 5 n= 2958 purity=0.532 recall=0.734 key_acc=0.510 char_acc=0.507 score=-1.7329 | matched n= 1238 key_acc=0.611 score=-1.7032
+       ass han anasnan ssaa ansaaasas shan shaan  a aaaa aansans sa aaa nan s aaans na
+  union            mc= 6 n= 3778 purity=0.520 recall=0.832 key_acc=0.529 char_acc=0.526 score=-1.6208 | matched n= 1535 key_acc=1.000 score=-1.5844
+       ass han anasnan ssaa ansaaasas shan shaan  a aaaa aansans sa aaa nan s aaans na
+  union            mc= 8 n= 4840 purity=0.508 recall=0.960 key_acc=1.000 char_acc=0.996 score=-1.4070 | matched n= 2058 key_acc=1.000 score=-1.3878
+       ost her anatrin stee onsoiates than their  o eeoe iortant to eae non s eaons ra
+  union            mc=12 n= 5187 purity=0.496 recall=0.990 key_acc=1.000 char_acc=0.997 score=-1.3795 | matched n= 2713 key_acc=1.000 score=-1.4063
+       ost her anatrin stee onsoiates than their  o eeoe iortant to eae non s eaons ra
+  lz76_innovation  mc= 0 n=  992 purity=0.780 recall=0.338 key_acc=0.066 char_acc=0.066 score=-2.2542 | matched n=  608 key_acc=0.000 score=-2.1784
+      ass assna i  nnia sssissn ssa sissnasassansn ia s aiis saniassn saas na ssn a s 
+rep 3: corpus 11263 digits, 2536 are first-occurrences of 2602 seed digits
+  greedy           mc= 3 n=  278 purity=0.989 recall=0.106 key_acc=0.000 char_acc=0.000 score=-2.0736 | matched n=  246 key_acc=0.000 score=-2.0275
+      asi aia aanasi asiss ii s as isai aininaiassa snisassin  i na snai  sas nasssias
+  greedy           mc= 6 n= 1885 purity=0.979 recall=0.706 key_acc=0.905 char_acc=0.897 score=-1.6530 | matched n=  791 key_acc=0.913 score=-1.5197
+      ne at ratrate sre eea  aistis in an is a an this an is eraean a ith thhn i aat a
+  union            mc= 5 n= 2708 purity=0.531 recall=0.677 key_acc=0.586 char_acc=0.582 score=-1.8579 | matched n= 1238 key_acc=0.268 score=-1.8316
+      na as nasnasa sna aaa  aissis in an is a an shis aanaaan a ish shhn i aas aanan 
+  union            mc= 6 n= 3582 purity=0.524 recall=0.801 key_acc=0.602 char_acc=0.599 score=-1.6644 | matched n= 1535 key_acc=0.904 score=-1.6367
+      na as nasnasa sna aaa  aissis in an is a an shis an is anaaan a ish shhn i aas a
+  union            mc= 8 n= 4673 purity=0.519 recall=0.941 key_acc=0.607 char_acc=0.605 score=-1.5386 | matched n= 2058 key_acc=1.000 score=-1.4209
+      na as nasnasa sna aaa  aissis in an is a an shis an is anaaan a ish shhn i aas a
+  union            mc=12 n= 4969 purity=0.509 recall=0.966 key_acc=0.605 char_acc=0.603 score=-1.5235 | matched n= 2713 key_acc=0.909 score=-1.4057
+      na as nasnasa sna aaa  aissis in an is a an shis an is anaaan a ish shhn i aas a
+  lz76_innovation  mc= 0 n=  947 purity=0.786 recall=0.327 key_acc=0.103 char_acc=0.103 score=-2.3231 | matched n=  608 key_acc=0.076 score=-2.2717
+       as assasaasnssaa s anansa  ssaasa asa assa   aas assss asnasass anaassnsaasa sa
+
+wrote pipeline_power.json

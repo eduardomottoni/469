@@ -1,0 +1,71 @@
+{
+  "kind": "C2_mdl",
+  "lm": "de_ae",
+  "n_symbols": 554,
+  "V": 12,
+  "real_best": -2.2429570123942737,
+  "plaintext": " srtstaetettee a rre tersesaae ser s asea  teessa  ets eaetsars ss tts taseessstteertstsaetssesesseeeerrrteete teest reseaa  teattes seesttetee e errrr srteersaeese   sest att reresr     seers at  t esteasate treet  resseser etaesee tse tase trese erss eatratartsassars seaerea ere tee ee stetsaaseeset rst etetaeta aresaese eaeee  t ere treerreartrett  s eetes rt sa sses erres set saassas e eesse  teeestretsr sata asser retta se  ssee esttteerttasets retsseeta seaa aassr raestete s ss esssr sees s tsera assaeesesesesr staaestreeteesteatt esst  resre",
+  "key": {
+    "1": "s",
+    "4": "t",
+    "5": "e",
+    "8": "a",
+    "7": "r",
+    "9": "e",
+    "2": " ",
+    "0": " ",
+    "6": "s",
+    "3": "e",
+    "61": "t",
+    "55": " "
+  },
+  "n_restarts": 4,
+  "solve_seconds": 0.7088379859924316,
+  "nulls": {
+    "Markov3_digits": {
+      "n": 200,
+      "mean": -2.179802812328778,
+      "sd": 0.09858310909786419,
+      "max": -1.8133034919894004,
+      "min": -2.4233268071827783,
+      "z": -0.640618871157756,
+      "p": 0.7263681592039801,
+      "mean_V": 14.605,
+      "examples": [
+        "seee ss see sesrseeet errees et r eestrets ereeserte ss etest iseserte rer serstes e esse errte retesreserreete  erei r eest sr se  s e ssee",
+        "sei s ese esisten stntee eseee  nneee ssiessesteeeise ssnsseis stsieseseisstesseiessesteeeseiiitei tetstiits eissnnsnst sninee inniinsi ie s"
+      ]
+    },
+    "Digits_pi": {
+      "n": 20,
+      "mean": -2.2402577997549225,
+      "sd": 0.03751967060246621,
+      "max": -2.143433639072759,
+      "min": -2.3061376853916657,
+      "z": -0.0719412669676749,
+      "p": 0.5238095238095238,
+      "mean_V": 12.0,
+      "examples": [
+        "ar  etreets  ss a  a esteert  t tte rat essttsresrte  esretatereatr ts  erstetesesareratsst t aetet eeteerras reae ttesretes tetretstr ts ae",
+        "sste  ea r  r testses  t ttt es seatsaesaess  saessrtsetrtelsa  seetsssateresesaat s rsttas ttstseere etrt tsseestselttsestese se rsteeesttt"
+      ]
+    },
+    "Markov3_symbols": {
+      "n": 50,
+      "mean": -2.1062218055447137,
+      "sd": 0.07492983639289345,
+      "max": -1.9348276402462612,
+      "min": -2.282043113428253,
+      "z": -1.8248432591336647,
+      "p": 0.9411764705882353,
+      "mean_V": 12.0,
+      "examples": [
+        "e staettsss t ttst sett s esttte tasaeseses  ests seeee testattat sateasa aatte eaetes sts sesst  t sesst es ta tt sttte     tee testattaet ",
+        "sernnet at sssatesasses rsseerrasserrasaaeeaees  nare raeta nrsseeaees  nare raesrset eseteeneraassesseeannsr en araseensee en arasae asset "
+      ]
+    }
+  },
+  "stream": "seed",
+  "provenance": "data/seed_estimate.txt",
+  "wall_seconds": 96.76878428459167
+}

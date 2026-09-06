@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C1_pairs_master_v1_en",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.5599529889438424,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -1.5940086854241877,
+      "sd": 0.03133789426338217,
+      "p": 0.15422885572139303,
+      "z": 1.08672574468856,
+      "maximum": -1.5106129806423538,
+      "minimum": -1.6742057661084677
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.024323825796956,
+      "sd": 0.012513460862572134,
+      "p": 0.047619047619047616,
+      "z": 37.109704657490134,
+      "maximum": -1.994354233901297,
+      "minimum": -2.042351850618983
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.5246879796834285,
+      "sd": 0.036182113625455106,
+      "p": 0.9019607843137255,
+      "z": -0.9746531014043351,
+      "maximum": -1.4407990894805291,
+      "minimum": -1.6110898418852306
+    }
+  ],
+  "corpus_provenance": "data/master_v1.txt",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "28614e1",
+  "extra": {
+    "n_symbols": 3028,
+    "V": 98,
+    "plaintext_head": " esa ttl ae sa a lat nsi a san attatasisa a  arani ae assiaaa i nansaalsria staa s  bastiasasas be s i risseit asis aas aisis ainess a sa sness ain as a a aasias as tsit sa asanta a a la a ss a ase ha",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.9019607843137255,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

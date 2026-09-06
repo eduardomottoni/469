@@ -1,0 +1,5 @@
+/tmp/chain3.sh: line 3:  6831 Killed                  timeout 9000 python -u -m experiments.e_b_prefix.b4_nulls 200 > experiments/e_b_prefix/out/b4.log 2>&1
+B4_EXIT=137
+B1_EXIT=0
+B3_EXIT=0
+CHAIN3_DONE

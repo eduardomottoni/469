@@ -1,0 +1,65 @@
+real: {"max_parsed": 70, "band_parsed": 56, "vwin_parsed": 68, "best_chi2_de": 30.92622459235226, "best_chi2_en": 2.6172651535378773} (2.5s)
+  50/1200  40s  eta 917s
+  100/1200  73s  eta 803s
+  150/1200  109s  eta 760s
+  200/1200  142s  eta 709s
+  250/1200  174s  eta 662s
+  300/1200  205s  eta 614s
+  350/1200  230s  eta 559s
+  400/1200  258s  eta 515s
+  450/1200  284s  eta 474s
+  500/1200  310s  eta 434s
+  550/1200  336s  eta 397s
+  600/1200  363s  eta 363s
+  650/1200  389s  eta 330s
+  700/1200  414s  eta 296s
+  750/1200  442s  eta 265s
+  800/1200  469s  eta 235s
+  850/1200  495s  eta 204s
+  900/1200  521s  eta 174s
+  950/1200  546s  eta 144s
+  1000/1200  572s  eta 114s
+  1050/1200  597s  eta 85s
+  1100/1200  623s  eta 57s
+  1150/1200  650s  eta 28s
+  1200/1200  674s  eta 0s
+
+max_parsed: real=70  verdict=REJECTED
+   Shuffle            mean=       70 sd=       0 min=       70 max=       70 p=1.0000 q=1.0000 z=+0.00
+   Markov2            mean=       70 sd=       0 min=       70 max=       70 p=1.0000 q=1.0000 z=+0.00
+   Markov3            mean=       70 sd=       0 min=       70 max=       70 p=1.0000 q=1.0000 z=+0.00
+   BlockShuffle20     mean=       70 sd=       0 min=       70 max=       70 p=1.0000 q=1.0000 z=+0.00
+   CopyPasteMutate    mean=       70 sd=       0 min=       70 max=       70 p=1.0000 q=1.0000 z=+0.00
+   Digits_pi          mean=       70 sd=       0 min=       70 max=       70 p=1.0000 q=1.0000 z=+0.00
+
+band_parsed: real=56  verdict=REJECTED
+   Shuffle            mean=    54.82 sd=   1.931 min=       50 max=       61 p=0.3433 q=1.0000 z=+0.61
+   Markov2            mean=    55.09 sd=   2.025 min=       50 max=       62 p=0.4030 q=1.0000 z=+0.45
+   Markov3            mean=    54.94 sd=   1.884 min=       51 max=       61 p=0.3483 q=1.0000 z=+0.57
+   BlockShuffle20     mean=    54.88 sd=   2.161 min=       50 max=       62 p=0.3632 q=1.0000 z=+0.52
+   CopyPasteMutate    mean=    55.17 sd=   1.896 min=       50 max=       60 p=0.4478 q=1.0000 z=+0.44
+   Digits_pi          mean=     55.2 sd=   2.029 min=       51 max=       61 p=0.3980 q=1.0000 z=+0.40
+
+vwin_parsed: real=68  verdict=REJECTED
+   Shuffle            mean=    67.86 sd=    1.06 min=       66 max=       70 p=0.6269 q=1.0000 z=+0.14
+   Markov2            mean=    67.87 sd=  0.9127 min=       66 max=       70 p=0.6368 q=1.0000 z=+0.14
+   Markov3            mean=    67.69 sd=   1.023 min=       65 max=       70 p=0.5622 q=1.0000 z=+0.31
+   BlockShuffle20     mean=    67.83 sd=  0.9387 min=       66 max=       70 p=0.6119 q=1.0000 z=+0.18
+   CopyPasteMutate    mean=    67.85 sd=  0.9887 min=       65 max=       70 p=0.6517 q=1.0000 z=+0.15
+   Digits_pi          mean=    67.29 sd=  0.8037 min=       65 max=       69 p=0.4677 q=1.0000 z=+0.88
+
+best_chi2_de: real=30.93  verdict=REJECTED
+   Shuffle            mean=    30.92 sd= 0.02053 min=    30.64 max=    30.93 p=1.0000 q=1.0000 z=+0.07
+   Markov2            mean=    28.95 sd=   4.661 min=    14.91 max=    42.96 p=0.6915 q=1.0000 z=+0.42
+   Markov3            mean=    28.34 sd=    4.85 min=    15.08 max=    38.47 p=0.6965 q=1.0000 z=+0.53
+   BlockShuffle20     mean=    29.01 sd=   3.796 min=    14.48 max=    30.93 p=1.0000 q=1.0000 z=+0.50
+   CopyPasteMutate    mean=    28.21 sd=   6.198 min=    14.26 max=    50.13 p=0.6766 q=1.0000 z=+0.44
+   Digits_pi          mean=    91.59 sd=   4.976 min=    67.97 max=    108.6 p=0.0050 q=0.0746 z=-12.19
+
+best_chi2_en: real=2.617  verdict=REJECTED
+   Shuffle            mean=    2.617 sd=7.105e-15 min=    2.617 max=    2.617 p=1.0000 q=1.0000 z=+1.00
+   Markov2            mean=    3.199 sd=   1.263 min=   0.7149 max=     7.28 p=0.3483 q=1.0000 z=-0.46
+   Markov3            mean=    3.114 sd=   1.169 min=    1.046 max=    7.391 p=0.4080 q=1.0000 z=-0.42
+   BlockShuffle20     mean=    2.617 sd=7.105e-15 min=    2.617 max=    2.617 p=1.0000 q=1.0000 z=+1.00
+   CopyPasteMutate    mean=    4.554 sd=   2.095 min=    0.914 max=    12.16 p=0.2040 q=1.0000 z=-0.92
+   Digits_pi          mean=    80.02 sd=   1.687 min=    66.43 max=    80.47 p=0.0050 q=0.0746 z=-45.88

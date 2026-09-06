@@ -1,0 +1,107 @@
+{
+  "experiment": "e_b_prefix.b4",
+  "statistic": "vwin_parsed",
+  "real_value": 68.0,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 200,
+      "mean": 67.855,
+      "sd": 1.060176872035984,
+      "p": 0.6268656716417911,
+      "z": 0.1367696313932365,
+      "maximum": 70,
+      "minimum": 66
+    },
+    {
+      "family": "Markov2",
+      "n": 200,
+      "mean": 67.87,
+      "sd": 0.9127431182978026,
+      "p": 0.6368159203980099,
+      "z": 0.14242780624020007,
+      "maximum": 70,
+      "minimum": 66
+    },
+    {
+      "family": "Markov3",
+      "n": 200,
+      "mean": 67.685,
+      "sd": 1.0226314096486562,
+      "p": 0.5621890547263682,
+      "z": 0.30802887240498683,
+      "maximum": 70,
+      "minimum": 65
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 200,
+      "mean": 67.83,
+      "sd": 0.9386692708297206,
+      "p": 0.6119402985074627,
+      "z": 0.18110745209516993,
+      "maximum": 70,
+      "minimum": 66
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 67.85,
+      "sd": 0.9886859966642613,
+      "p": 0.6517412935323383,
+      "z": 0.15171652122725754,
+      "maximum": 70,
+      "minimum": 65
+    },
+    {
+      "family": "Digits_pi",
+      "n": 200,
+      "mean": 67.29,
+      "sd": 0.8036790404135236,
+      "p": 0.46766169154228854,
+      "z": 0.8834372483257391,
+      "maximum": 69,
+      "minimum": 65
+    }
+  ],
+  "corpus_provenance": "books.json",
+  "n_candidates_tested": 1023,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "760aa11",
+  "extra": {
+    "space": "b4_null_space",
+    "space_spec": {
+      "10": 0,
+      "9": 3,
+      "8": 1,
+      "7": 1,
+      "6": 0,
+      "5": 0,
+      "4": 0,
+      "3": 0,
+      "2": 0,
+      "1": 0
+    },
+    "n_structures": 7273,
+    "band": [
+      1.5,
+      1.7
+    ],
+    "V_window": [
+      20,
+      40
+    ],
+    "bh_q": {
+      "Shuffle": 1.0,
+      "Markov2": 1.0,
+      "Markov3": 1.0,
+      "BlockShuffle20": 1.0,
+      "CopyPasteMutate": 1.0,
+      "Digits_pi": 1.0
+    }
+  },
+  "worst_p": 0.6517412935323383,
+  "verdict": "REJECTED"
+}

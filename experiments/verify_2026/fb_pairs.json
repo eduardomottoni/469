@@ -1,0 +1,4528 @@
+{
+ "source": {
+  "file": "data/external/provenance/fb/fb_hires.jpg",
+  "size": [
+   1536,
+   2048
+  ],
+  "origin": "Facebook og:image for fbid 10150239378812364 on Tibia's official page, posted 12 Aug 2011; 2x the linear resolution of the 768x1024 copy previously in the repo and genuinely more detailed (high-frequency RMS 3.46 vs 1.80 for an upscale of the small copy)",
+  "note": "in the as-posted image the speech bubble reads correctly and the NUMBERS are the mirrored element; the analysis flips horizontally so the digits read left-to-right"
+ },
+ "geometry": {
+  "rotation_deg": -18.2,
+  "left_rows": 28,
+  "right_rows": 31,
+  "row_pitch_px_first_last": [
+   64.8,
+   74.1
+  ]
+ },
+ "classifier_calibration": [
+  {
+   "hidden": 0.0,
+   "n": 99,
+   "acc": 0.98,
+   "n_margin10": 87,
+   "acc_margin10": 1.0
+  },
+  {
+   "hidden": 0.15,
+   "n": 99,
+   "acc": 0.96,
+   "n_margin10": 78,
+   "acc_margin10": 1.0
+  },
+  {
+   "hidden": 0.3,
+   "n": 99,
+   "acc": 0.899,
+   "n_margin10": 64,
+   "acc_margin10": 0.984
+  },
+  {
+   "hidden": 0.45,
+   "n": 99,
+   "acc": 0.828,
+   "n_margin10": 49,
+   "acc_margin10": 0.98
+  },
+  {
+   "hidden": 0.6,
+   "n": 99,
+   "acc": 0.788,
+   "n_margin10": 41,
+   "acc_margin10": 0.902
+  }
+ ],
+ "total_rows": 31,
+ "left_rows_photographed": 28,
+ "rows": [
+  {
+   "row": 1,
+   "left": {
+    "reading": "713",
+    "verdict": "READ",
+    "note": "",
+    "readme": "713",
+    "y": 273.7,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "3",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.625
+       ],
+       [
+        "8",
+        0.486
+       ],
+       [
+        "2",
+        0.471
+       ]
+      ],
+      "margin": 0.14,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.823
+       ],
+       [
+        "4",
+        0.529
+       ],
+       [
+        "2",
+        0.423
+       ]
+      ],
+      "margin": 0.294,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.819
+       ],
+       [
+        "2",
+        0.518
+       ],
+       [
+        "5",
+        0.377
+       ]
+      ],
+      "margin": 0.301,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "473",
+    "verdict": "READ",
+    "note": "",
+    "readme": "473",
+    "y": 257.7,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "3",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.471
+       ],
+       [
+        "4",
+        0.446
+       ],
+       [
+        "5",
+        0.378
+       ]
+      ],
+      "margin": 0.025,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.677
+       ],
+       [
+        "2",
+        0.51
+       ],
+       [
+        "9",
+        0.386
+       ]
+      ],
+      "margin": 0.167,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.606
+       ],
+       [
+        "2",
+        0.458
+       ],
+       [
+        "7",
+        0.383
+       ]
+      ],
+      "margin": 0.148,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 2,
+   "left": {
+    "reading": "765",
+    "verdict": "READ",
+    "note": "",
+    "readme": "765",
+    "y": 338.5,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.641
+       ],
+       [
+        "6",
+        0.558
+       ],
+       [
+        "1",
+        0.471
+       ]
+      ],
+      "margin": 0.083,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.605
+       ],
+       [
+        "0",
+        0.515
+       ],
+       [
+        "5",
+        0.426
+       ]
+      ],
+      "margin": 0.091,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.798
+       ],
+       [
+        "2",
+        0.437
+       ],
+       [
+        "1",
+        0.351
+       ]
+      ],
+      "margin": 0.361,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "464",
+    "verdict": "READ",
+    "note": "",
+    "readme": "464",
+    "y": 323.8,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.651
+       ],
+       [
+        "1",
+        0.449
+       ],
+       [
+        "2",
+        0.431
+       ]
+      ],
+      "margin": 0.202,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.627
+       ],
+       [
+        "0",
+        0.524
+       ],
+       [
+        "8",
+        0.488
+       ]
+      ],
+      "margin": 0.103,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.741
+       ],
+       [
+        "9",
+        0.395
+       ],
+       [
+        "1",
+        0.395
+       ]
+      ],
+      "margin": 0.346,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 3,
+   "left": {
+    "reading": "706",
+    "verdict": "READ",
+    "note": "",
+    "readme": "706",
+    "y": 403.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.561
+       ],
+       [
+        "5",
+        0.455
+       ],
+       [
+        "0",
+        0.447
+       ]
+      ],
+      "margin": 0.106,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.662
+       ],
+       [
+        "9",
+        0.471
+       ],
+       [
+        "6",
+        0.436
+       ]
+      ],
+      "margin": 0.191,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.888
+       ],
+       [
+        "2",
+        0.514
+       ],
+       [
+        "1",
+        0.421
+       ]
+      ],
+      "margin": 0.374,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "447",
+    "verdict": "READ",
+    "note": "",
+    "readme": "447",
+    "y": 390.1,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.851
+       ],
+       [
+        "2",
+        0.504
+       ],
+       [
+        "1",
+        0.466
+       ]
+      ],
+      "margin": 0.346,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.796
+       ],
+       [
+        "9",
+        0.422
+       ],
+       [
+        "1",
+        0.412
+       ]
+      ],
+      "margin": 0.374,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.839
+       ],
+       [
+        "1",
+        0.433
+       ],
+       [
+        "2",
+        0.417
+       ]
+      ],
+      "margin": 0.406,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 4,
+   "left": {
+    "reading": "824",
+    "verdict": "READ",
+    "note": "",
+    "readme": "824",
+    "y": 469.1,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.785
+       ],
+       [
+        "1",
+        0.448
+       ],
+       [
+        "2",
+        0.392
+       ]
+      ],
+      "margin": 0.337,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.559
+       ],
+       [
+        "7",
+        0.551
+       ],
+       [
+        "3",
+        0.529
+       ]
+      ],
+      "margin": 0.008,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.767
+       ],
+       [
+        "6",
+        0.629
+       ],
+       [
+        "0",
+        0.599
+       ]
+      ],
+      "margin": 0.138,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "499",
+    "verdict": "READ",
+    "note": "",
+    "readme": "499",
+    "y": 456.8,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.594
+       ],
+       [
+        "1",
+        0.466
+       ],
+       [
+        "4",
+        0.456
+       ]
+      ],
+      "margin": 0.128,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.679
+       ],
+       [
+        "0",
+        0.455
+       ],
+       [
+        "4",
+        0.418
+       ]
+      ],
+      "margin": 0.224,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.869
+       ],
+       [
+        "1",
+        0.425
+       ],
+       [
+        "9",
+        0.423
+       ]
+      ],
+      "margin": 0.445,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 5,
+   "left": {
+    "reading": "975",
+    "verdict": "READ",
+    "note": "",
+    "readme": "975",
+    "y": 534.9,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.732
+       ],
+       [
+        "6",
+        0.572
+       ],
+       [
+        "8",
+        0.511
+       ]
+      ],
+      "margin": 0.161,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.777
+       ],
+       [
+        "2",
+        0.469
+       ],
+       [
+        "1",
+        0.366
+       ]
+      ],
+      "margin": 0.308,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.643
+       ],
+       [
+        "4",
+        0.44
+       ],
+       [
+        "5",
+        0.412
+       ]
+      ],
+      "margin": 0.204,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "595",
+    "verdict": "READ",
+    "note": "all three digits legible on the hi-res frame with the mask-aware background",
+    "readme": "595",
+    "y": 523.8,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.549
+       ],
+       [
+        "3",
+        0.529
+       ],
+       [
+        "6",
+        0.499
+       ]
+      ],
+      "margin": 0.021,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.69
+       ],
+       [
+        "0",
+        0.514
+       ],
+       [
+        "1",
+        0.477
+       ]
+      ],
+      "margin": 0.175,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "5",
+      "visible": 0.956,
+      "top": [
+       [
+        "5",
+        0.58
+       ],
+       [
+        "8",
+        0.554
+       ],
+       [
+        "6",
+        0.549
+       ]
+      ],
+      "margin": 0.026,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 6,
+   "left": {
+    "reading": "937",
+    "verdict": "READ",
+    "note": "",
+    "readme": "937",
+    "y": 601.1,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.866
+       ],
+       [
+        "2",
+        0.548
+       ],
+       [
+        "1",
+        0.405
+       ]
+      ],
+      "margin": 0.318,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "3",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.623
+       ],
+       [
+        "8",
+        0.54
+       ],
+       [
+        "2",
+        0.477
+       ]
+      ],
+      "margin": 0.083,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.594
+       ],
+       [
+        "5",
+        0.452
+       ],
+       [
+        "4",
+        0.422
+       ]
+      ],
+      "margin": 0.143,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "__0",
+    "verdict": "PARTIAL",
+    "note": "tens and hundreds fully behind the figure's head",
+    "readme": "X30",
+    "y": 591.2,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.827
+       ],
+       [
+        "1",
+        0.635
+       ],
+       [
+        "6",
+        0.575
+       ]
+      ],
+      "margin": 0.192,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": null,
+      "visible": 0.268,
+      "top": [
+       [
+        "9",
+        0.787
+       ],
+       [
+        "2",
+        0.783
+       ],
+       [
+        "0",
+        0.782
+       ]
+      ],
+      "margin": 0.004,
+      "unrecoverable": "opaque clay (head)"
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (head)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 7,
+   "left": {
+    "reading": "726",
+    "verdict": "READ",
+    "note": "",
+    "readme": "726",
+    "y": 667.7,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.799
+       ],
+       [
+        "5",
+        0.626
+       ],
+       [
+        "8",
+        0.433
+       ]
+      ],
+      "margin": 0.173,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.765
+       ],
+       [
+        "7",
+        0.502
+       ],
+       [
+        "4",
+        0.465
+       ]
+      ],
+      "margin": 0.263,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.762
+       ],
+       [
+        "2",
+        0.477
+       ],
+       [
+        "1",
+        0.387
+       ]
+      ],
+      "margin": 0.284,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "__1",
+    "verdict": "PARTIAL",
+    "note": "tens and hundreds fully behind the head",
+    "readme": "XY1",
+    "y": 658.8,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "1",
+      "visible": 0.986,
+      "top": [
+       [
+        "1",
+        0.751
+       ],
+       [
+        "4",
+        0.527
+       ],
+       [
+        "0",
+        0.435
+       ]
+      ],
+      "margin": 0.224,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "9",
+        0.576
+       ],
+       [
+        "0",
+        0.565
+       ],
+       [
+        "5",
+        0.555
+       ]
+      ],
+      "margin": 0.011,
+      "unrecoverable": "opaque clay (head)"
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (head)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 8,
+   "left": {
+    "reading": "729",
+    "verdict": "READ",
+    "note": "",
+    "readme": "729",
+    "y": 734.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.649
+       ],
+       [
+        "0",
+        0.425
+       ],
+       [
+        "5",
+        0.401
+       ]
+      ],
+      "margin": 0.224,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.691
+       ],
+       [
+        "4",
+        0.513
+       ],
+       [
+        "7",
+        0.506
+       ]
+      ],
+      "margin": 0.178,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.864
+       ],
+       [
+        "2",
+        0.541
+       ],
+       [
+        "9",
+        0.384
+       ]
+      ],
+      "margin": 0.323,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "_47",
+    "verdict": "PARTIAL",
+    "note": "hundreds fully behind the head/shoulder",
+    "readme": "X47",
+    "y": 726.8,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.837
+       ],
+       [
+        "2",
+        0.519
+       ],
+       [
+        "1",
+        0.465
+       ]
+      ],
+      "margin": 0.318,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "4",
+      "visible": 0.57,
+      "top": [
+       [
+        "4",
+        0.763
+       ],
+       [
+        "1",
+        0.532
+       ],
+       [
+        "9",
+        0.512
+       ]
+      ],
+      "margin": 0.231,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (head/shoulder)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 9,
+   "left": {
+    "reading": "652",
+    "verdict": "READ",
+    "note": "",
+    "readme": "652",
+    "y": 801.9,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.685
+       ],
+       [
+        "4",
+        0.53
+       ],
+       [
+        "7",
+        0.471
+       ]
+      ],
+      "margin": 0.155,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.585
+       ],
+       [
+        "3",
+        0.411
+       ],
+       [
+        "8",
+        0.406
+       ]
+      ],
+      "margin": 0.174,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.768
+       ],
+       [
+        "5",
+        0.493
+       ],
+       [
+        "0",
+        0.474
+       ]
+      ],
+      "margin": 0.275,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "400",
+    "verdict": "READ",
+    "note": "hundreds digit sits on the clay boundary but is clear",
+    "readme": "400",
+    "y": 795.1,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.65
+       ],
+       [
+        "1",
+        0.564
+       ],
+       [
+        "6",
+        0.513
+       ]
+      ],
+      "margin": 0.086,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.72
+       ],
+       [
+        "9",
+        0.557
+       ],
+       [
+        "1",
+        0.503
+       ]
+      ],
+      "margin": 0.163,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 0.838,
+      "top": [
+       [
+        "4",
+        0.762
+       ],
+       [
+        "9",
+        0.582
+       ],
+       [
+        "1",
+        0.49
+       ]
+      ],
+      "margin": 0.18,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 10,
+   "left": {
+    "reading": "653",
+    "verdict": "READ",
+    "note": "",
+    "readme": "653",
+    "y": 869.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "3",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.739
+       ],
+       [
+        "8",
+        0.552
+       ],
+       [
+        "7",
+        0.473
+       ]
+      ],
+      "margin": 0.188,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.755
+       ],
+       [
+        "8",
+        0.471
+       ],
+       [
+        "6",
+        0.442
+       ]
+      ],
+      "margin": 0.284,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.647
+       ],
+       [
+        "0",
+        0.53
+       ],
+       [
+        "8",
+        0.526
+       ]
+      ],
+      "margin": 0.117,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "407",
+    "verdict": "READ",
+    "note": "",
+    "readme": "407",
+    "y": 863.7,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.842
+       ],
+       [
+        "2",
+        0.568
+       ],
+       [
+        "1",
+        0.471
+       ]
+      ],
+      "margin": 0.274,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.609
+       ],
+       [
+        "9",
+        0.507
+       ],
+       [
+        "3",
+        0.473
+       ]
+      ],
+      "margin": 0.102,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 0.992,
+      "top": [
+       [
+        "4",
+        0.797
+       ],
+       [
+        "5",
+        0.454
+       ],
+       [
+        "1",
+        0.434
+       ]
+      ],
+      "margin": 0.343,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 11,
+   "left": {
+    "reading": "565",
+    "verdict": "READ",
+    "note": "",
+    "readme": "565",
+    "y": 937.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.802
+       ],
+       [
+        "9",
+        0.443
+       ],
+       [
+        "6",
+        0.44
+       ]
+      ],
+      "margin": 0.36,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.671
+       ],
+       [
+        "5",
+        0.53
+       ],
+       [
+        "8",
+        0.472
+       ]
+      ],
+      "margin": 0.141,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.642
+       ],
+       [
+        "8",
+        0.403
+       ],
+       [
+        "2",
+        0.393
+       ]
+      ],
+      "margin": 0.239,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "_75",
+    "verdict": "PARTIAL",
+    "note": "hundreds fully behind the shoulder",
+    "readme": "X75",
+    "y": 932.7,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.819
+       ],
+       [
+        "3",
+        0.552
+       ],
+       [
+        "9",
+        0.51
+       ]
+      ],
+      "margin": 0.267,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "7",
+      "visible": 0.545,
+      "top": [
+       [
+        "7",
+        0.74
+       ],
+       [
+        "2",
+        0.558
+       ],
+       [
+        "5",
+        0.5
+       ]
+      ],
+      "margin": 0.182,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (shoulder)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 12,
+   "left": {
+    "reading": "746",
+    "verdict": "READ",
+    "note": "",
+    "readme": "746",
+    "y": 1006.0,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.687
+       ],
+       [
+        "5",
+        0.535
+       ],
+       [
+        "8",
+        0.497
+       ]
+      ],
+      "margin": 0.152,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.653
+       ],
+       [
+        "1",
+        0.396
+       ],
+       [
+        "9",
+        0.388
+       ]
+      ],
+      "margin": 0.256,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.838
+       ],
+       [
+        "2",
+        0.468
+       ],
+       [
+        "5",
+        0.406
+       ]
+      ],
+      "margin": 0.37,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "__8",
+    "verdict": "PARTIAL",
+    "note": "tens and hundreds fully behind the arm",
+    "readme": "X58",
+    "y": 1001.9,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.817
+       ],
+       [
+        "6",
+        0.551
+       ],
+       [
+        "9",
+        0.532
+       ]
+      ],
+      "margin": 0.266,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": null,
+      "visible": 0.126,
+      "top": [
+       [
+        "0",
+        0.834
+       ],
+       [
+        "9",
+        0.793
+       ],
+       [
+        "5",
+        0.765
+       ]
+      ],
+      "margin": 0.041,
+      "unrecoverable": "opaque clay (arm)"
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (arm)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 13,
+   "left": {
+    "reading": "1021",
+    "verdict": "READ",
+    "note": "",
+    "readme": "1021",
+    "y": 1074.7,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.58
+       ],
+       [
+        "4",
+        0.509
+       ],
+       [
+        "3",
+        0.477
+       ]
+      ],
+      "margin": 0.072,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.577
+       ],
+       [
+        "4",
+        0.518
+       ],
+       [
+        "1",
+        0.398
+       ]
+      ],
+      "margin": 0.059,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.619
+       ],
+       [
+        "0",
+        0.58
+       ],
+       [
+        "3",
+        0.506
+       ]
+      ],
+      "margin": 0.039,
+      "unrecoverable": null
+     },
+     {
+      "slot": 3,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.823
+       ],
+       [
+        "4",
+        0.616
+       ],
+       [
+        "2",
+        0.43
+       ]
+      ],
+      "margin": 0.207,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "__9",
+    "verdict": "PARTIAL",
+    "note": "tens and above behind the arm; the digit COUNT is also undetermined",
+    "readme": "?X59",
+    "y": 1071.5,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.897
+       ],
+       [
+        "0",
+        0.557
+       ],
+       [
+        "4",
+        0.503
+       ]
+      ],
+      "margin": 0.341,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": null,
+      "visible": 0.247,
+      "top": [
+       [
+        "6",
+        0.747
+       ],
+       [
+        "5",
+        0.729
+       ],
+       [
+        "8",
+        0.721
+       ]
+      ],
+      "margin": 0.018,
+      "unrecoverable": "opaque clay (arm)"
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (arm)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 14,
+   "left": {
+    "reading": "759",
+    "verdict": "READ",
+    "note": "",
+    "readme": "759",
+    "y": 1143.8,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.548
+       ],
+       [
+        "5",
+        0.453
+       ],
+       [
+        "8",
+        0.414
+       ]
+      ],
+      "margin": 0.095,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.5
+       ],
+       [
+        "6",
+        0.445
+       ],
+       [
+        "3",
+        0.404
+       ]
+      ],
+      "margin": 0.055,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.765
+       ],
+       [
+        "2",
+        0.508
+       ],
+       [
+        "9",
+        0.425
+       ]
+      ],
+      "margin": 0.256,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "__5",
+    "verdict": "PARTIAL",
+    "note": "tens and hundreds behind the arm",
+    "readme": "X75",
+    "y": 1141.4,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.699
+       ],
+       [
+        "8",
+        0.559
+       ],
+       [
+        "6",
+        0.496
+       ]
+      ],
+      "margin": 0.139,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": null,
+      "visible": 0.323,
+      "top": [
+       [
+        "7",
+        0.798
+       ],
+       [
+        "8",
+        0.703
+       ],
+       [
+        "3",
+        0.649
+       ]
+      ],
+      "margin": 0.094,
+      "unrecoverable": "opaque clay (arm)"
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (arm)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 15,
+   "left": {
+    "reading": "718",
+    "verdict": "READ",
+    "note": "",
+    "readme": "718",
+    "y": 1213.3,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.756
+       ],
+       [
+        "6",
+        0.579
+       ],
+       [
+        "0",
+        0.567
+       ]
+      ],
+      "margin": 0.177,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.838
+       ],
+       [
+        "4",
+        0.58
+       ],
+       [
+        "2",
+        0.416
+       ]
+      ],
+      "margin": 0.258,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.884
+       ],
+       [
+        "2",
+        0.499
+       ],
+       [
+        "9",
+        0.409
+       ]
+      ],
+      "margin": 0.385,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "_38",
+    "verdict": "PARTIAL",
+    "note": "hundreds behind the arm",
+    "readme": "X38",
+    "y": 1211.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.504
+       ],
+       [
+        "8",
+        0.488
+       ],
+       [
+        "5",
+        0.43
+       ]
+      ],
+      "margin": 0.017,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "3",
+      "visible": 0.641,
+      "top": [
+       [
+        "3",
+        0.623
+       ],
+       [
+        "5",
+        0.535
+       ],
+       [
+        "6",
+        0.455
+       ]
+      ],
+      "margin": 0.088,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (arm)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 16,
+   "left": {
+    "reading": "737",
+    "verdict": "READ",
+    "note": "",
+    "readme": "737",
+    "y": 1283.1,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.785
+       ],
+       [
+        "2",
+        0.475
+       ],
+       [
+        "9",
+        0.396
+       ]
+      ],
+      "margin": 0.31,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "3",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.727
+       ],
+       [
+        "8",
+        0.595
+       ],
+       [
+        "2",
+        0.525
+       ]
+      ],
+      "margin": 0.132,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.848
+       ],
+       [
+        "2",
+        0.508
+       ],
+       [
+        "6",
+        0.425
+       ]
+      ],
+      "margin": 0.34,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "_69",
+    "verdict": "PARTIAL",
+    "note": "THE 469 ROW.  6 and 9 are both clearly legible; the leading digit is entirely behind the figure's right arm and only a sliver of ink survives at the clay boundary",
+    "readme": "469",
+    "y": 1282.1,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.801
+       ],
+       [
+        "0",
+        0.553
+       ],
+       [
+        "8",
+        0.514
+       ]
+      ],
+      "margin": 0.248,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.779
+       ],
+       [
+        "8",
+        0.574
+       ],
+       [
+        "5",
+        0.562
+       ]
+      ],
+      "margin": 0.205,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 0.271,
+      "top": [
+       [
+        "1",
+        0.801
+       ],
+       [
+        "4",
+        0.726
+       ],
+       [
+        "5",
+        0.592
+       ]
+      ],
+      "margin": 0.075,
+      "unrecoverable": "opaque clay (right arm)"
+     }
+    ]
+   }
+  },
+  {
+   "row": 17,
+   "left": {
+    "reading": "648",
+    "verdict": "READ",
+    "note": "",
+    "readme": "648",
+    "y": 1353.2,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.637
+       ],
+       [
+        "8",
+        0.48
+       ],
+       [
+        "5",
+        0.459
+       ]
+      ],
+      "margin": 0.157,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.741
+       ],
+       [
+        "9",
+        0.419
+       ],
+       [
+        "1",
+        0.35
+       ]
+      ],
+      "margin": 0.322,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.646
+       ],
+       [
+        "0",
+        0.558
+       ],
+       [
+        "8",
+        0.496
+       ]
+      ],
+      "margin": 0.088,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "428",
+    "verdict": "READ",
+    "note": "hundreds digit recovered by the mask-aware background",
+    "readme": "428",
+    "y": 1353.0,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.812
+       ],
+       [
+        "0",
+        0.501
+       ],
+       [
+        "6",
+        0.489
+       ]
+      ],
+      "margin": 0.312,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.741
+       ],
+       [
+        "7",
+        0.533
+       ],
+       [
+        "1",
+        0.4
+       ]
+      ],
+      "margin": 0.207,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 0.973,
+      "top": [
+       [
+        "4",
+        0.665
+       ],
+       [
+        "9",
+        0.469
+       ],
+       [
+        "1",
+        0.413
+       ]
+      ],
+      "margin": 0.197,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 18,
+   "left": {
+    "reading": "818",
+    "verdict": "READ",
+    "note": "",
+    "readme": "818",
+    "y": 1423.8,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.561
+       ],
+       [
+        "3",
+        0.533
+       ],
+       [
+        "6",
+        0.444
+       ]
+      ],
+      "margin": 0.028,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.732
+       ],
+       [
+        "4",
+        0.498
+       ],
+       [
+        "2",
+        0.408
+       ]
+      ],
+      "margin": 0.234,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.724
+       ],
+       [
+        "6",
+        0.494
+       ],
+       [
+        "5",
+        0.466
+       ]
+      ],
+      "margin": 0.23,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "520",
+    "verdict": "READ",
+    "note": "",
+    "readme": "520",
+    "y": 1424.1,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.779
+       ],
+       [
+        "9",
+        0.524
+       ],
+       [
+        "1",
+        0.515
+       ]
+      ],
+      "margin": 0.255,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.568
+       ],
+       [
+        "7",
+        0.478
+       ],
+       [
+        "1",
+        0.475
+       ]
+      ],
+      "margin": 0.09,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.655
+       ],
+       [
+        "3",
+        0.502
+       ],
+       [
+        "6",
+        0.46
+       ]
+      ],
+      "margin": 0.153,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 19,
+   "left": {
+    "reading": "985",
+    "verdict": "READ",
+    "note": "",
+    "readme": "985",
+    "y": 1494.7,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.659
+       ],
+       [
+        "6",
+        0.505
+       ],
+       [
+        "9",
+        0.428
+       ]
+      ],
+      "margin": 0.155,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.865
+       ],
+       [
+        "6",
+        0.599
+       ],
+       [
+        "0",
+        0.491
+       ]
+      ],
+      "margin": 0.266,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.803
+       ],
+       [
+        "1",
+        0.51
+       ],
+       [
+        "0",
+        0.506
+       ]
+      ],
+      "margin": 0.293,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "621",
+    "verdict": "READ",
+    "note": "",
+    "readme": "621",
+    "y": 1495.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.786
+       ],
+       [
+        "4",
+        0.561
+       ],
+       [
+        "2",
+        0.515
+       ]
+      ],
+      "margin": 0.225,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.727
+       ],
+       [
+        "7",
+        0.531
+       ],
+       [
+        "1",
+        0.53
+       ]
+      ],
+      "margin": 0.196,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.6
+       ],
+       [
+        "5",
+        0.552
+       ],
+       [
+        "8",
+        0.491
+       ]
+      ],
+      "margin": 0.048,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 20,
+   "left": {
+    "reading": "2154",
+    "verdict": "READ",
+    "note": "",
+    "readme": "2154",
+    "y": 1565.9,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.738
+       ],
+       [
+        "3",
+        0.399
+       ],
+       [
+        "2",
+        0.366
+       ]
+      ],
+      "margin": 0.339,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.635
+       ],
+       [
+        "6",
+        0.598
+       ],
+       [
+        "8",
+        0.532
+       ]
+      ],
+      "margin": 0.037,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.761
+       ],
+       [
+        "4",
+        0.522
+       ],
+       [
+        "2",
+        0.44
+       ]
+      ],
+      "margin": 0.239,
+      "unrecoverable": null
+     },
+     {
+      "slot": 3,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.704
+       ],
+       [
+        "7",
+        0.595
+       ],
+       [
+        "1",
+        0.434
+       ]
+      ],
+      "margin": 0.108,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "1307",
+    "verdict": "READ",
+    "note": "",
+    "readme": "1307",
+    "y": 1567.4,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.869
+       ],
+       [
+        "2",
+        0.503
+       ],
+       [
+        "1",
+        0.483
+       ]
+      ],
+      "margin": 0.366,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.838
+       ],
+       [
+        "6",
+        0.562
+       ],
+       [
+        "8",
+        0.541
+       ]
+      ],
+      "margin": 0.277,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "3",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.698
+       ],
+       [
+        "2",
+        0.535
+       ],
+       [
+        "5",
+        0.518
+       ]
+      ],
+      "margin": 0.163,
+      "unrecoverable": null
+     },
+     {
+      "slot": 3,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.698
+       ],
+       [
+        "3",
+        0.473
+       ],
+       [
+        "2",
+        0.446
+       ]
+      ],
+      "margin": 0.224,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 21,
+   "left": {
+    "reading": "841",
+    "verdict": "READ",
+    "note": "all three digits legible on the hi-res frame with the mask-aware background; plain background division washed the units digit out",
+    "readme": "841",
+    "y": 1637.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.618
+       ],
+       [
+        "3",
+        0.51
+       ],
+       [
+        "2",
+        0.426
+       ]
+      ],
+      "margin": 0.107,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.774
+       ],
+       [
+        "9",
+        0.403
+       ],
+       [
+        "2",
+        0.402
+       ]
+      ],
+      "margin": 0.371,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.697
+       ],
+       [
+        "5",
+        0.437
+       ],
+       [
+        "0",
+        0.421
+       ]
+      ],
+      "margin": 0.259,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "540",
+    "verdict": "READ",
+    "note": "",
+    "readme": "540",
+    "y": 1639.5,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.91
+       ],
+       [
+        "8",
+        0.604
+       ],
+       [
+        "9",
+        0.566
+       ]
+      ],
+      "margin": 0.305,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.679
+       ],
+       [
+        "1",
+        0.49
+       ],
+       [
+        "9",
+        0.443
+       ]
+      ],
+      "margin": 0.19,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.804
+       ],
+       [
+        "8",
+        0.513
+       ],
+       [
+        "3",
+        0.47
+       ]
+      ],
+      "margin": 0.291,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 22,
+   "left": {
+    "reading": "71_",
+    "verdict": "PARTIAL",
+    "note": "units digit fully behind the figure's left foot",
+    "readme": "71X",
+    "y": 1709.5,
+    "cells": [
+     {
+      "slot": 0,
+      "read": null,
+      "visible": 0.315,
+      "top": [
+       [
+        "6",
+        0.877
+       ],
+       [
+        "0",
+        0.835
+       ],
+       [
+        "9",
+        0.767
+       ]
+      ],
+      "margin": 0.041,
+      "unrecoverable": "opaque clay (left foot)"
+     },
+     {
+      "slot": 1,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.639
+       ],
+       [
+        "3",
+        0.506
+       ],
+       [
+        "4",
+        0.466
+       ]
+      ],
+      "margin": 0.134,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.825
+       ],
+       [
+        "2",
+        0.512
+       ],
+       [
+        "1",
+        0.476
+       ]
+      ],
+      "margin": 0.313,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "471",
+    "verdict": "READ",
+    "note": "",
+    "readme": "471",
+    "y": 1712.0,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.881
+       ],
+       [
+        "4",
+        0.541
+       ],
+       [
+        "3",
+        0.527
+       ]
+      ],
+      "margin": 0.34,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.849
+       ],
+       [
+        "2",
+        0.476
+       ],
+       [
+        "1",
+        0.433
+       ]
+      ],
+      "margin": 0.373,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.701
+       ],
+       [
+        "1",
+        0.461
+       ],
+       [
+        "9",
+        0.431
+       ]
+      ],
+      "margin": 0.24,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 23,
+   "left": {
+    "reading": "7__",
+    "verdict": "PARTIAL",
+    "note": "tens digit sits on the clay boundary and survives only as an unidentifiable smear; units digit fully behind the foot",
+    "readme": "75X",
+    "y": 1781.9,
+    "cells": [
+     {
+      "slot": 0,
+      "read": null,
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": "opaque clay (left foot)"
+     },
+     {
+      "slot": 1,
+      "read": null,
+      "visible": 0.33,
+      "top": [
+       [
+        "4",
+        0.882
+       ],
+       [
+        "6",
+        0.818
+       ],
+       [
+        "5",
+        0.791
+       ]
+      ],
+      "margin": 0.065,
+      "unrecoverable": "clay boundary; only an unidentifiable smear survives"
+     },
+     {
+      "slot": 2,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.835
+       ],
+       [
+        "2",
+        0.526
+       ],
+       [
+        "1",
+        0.411
+       ]
+      ],
+      "margin": 0.309,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "489",
+    "verdict": "READ",
+    "note": "",
+    "readme": "489",
+    "y": 1784.7,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.797
+       ],
+       [
+        "6",
+        0.551
+       ],
+       [
+        "4",
+        0.494
+       ]
+      ],
+      "margin": 0.246,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.774
+       ],
+       [
+        "0",
+        0.55
+       ],
+       [
+        "6",
+        0.501
+       ]
+      ],
+      "margin": 0.224,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.751
+       ],
+       [
+        "1",
+        0.461
+       ],
+       [
+        "9",
+        0.427
+       ]
+      ],
+      "margin": 0.289,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 24,
+   "left": {
+    "reading": "689",
+    "verdict": "READ",
+    "note": "units 9 is clipped by the clay but unambiguous",
+    "readme": "689",
+    "y": 1854.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "9",
+      "visible": 0.603,
+      "top": [
+       [
+        "9",
+        0.773
+       ],
+       [
+        "5",
+        0.607
+       ],
+       [
+        "8",
+        0.603
+       ]
+      ],
+      "margin": 0.166,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "8",
+      "visible": 0.98,
+      "top": [
+       [
+        "8",
+        0.605
+       ],
+       [
+        "6",
+        0.513
+       ],
+       [
+        "5",
+        0.456
+       ]
+      ],
+      "margin": 0.093,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.846
+       ],
+       [
+        "5",
+        0.603
+       ],
+       [
+        "0",
+        0.518
+       ]
+      ],
+      "margin": 0.243,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "447",
+    "verdict": "READ",
+    "note": "",
+    "readme": "447",
+    "y": 1857.8,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.883
+       ],
+       [
+        "2",
+        0.496
+       ],
+       [
+        "1",
+        0.399
+       ]
+      ],
+      "margin": 0.388,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.827
+       ],
+       [
+        "1",
+        0.514
+       ],
+       [
+        "2",
+        0.431
+       ]
+      ],
+      "margin": 0.312,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.729
+       ],
+       [
+        "1",
+        0.53
+       ],
+       [
+        "9",
+        0.383
+       ]
+      ],
+      "margin": 0.199,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 25,
+   "left": {
+    "reading": "1017",
+    "verdict": "READ",
+    "note": "",
+    "readme": "1017",
+    "y": 1927.6,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "7",
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.873
+       ],
+       [
+        "2",
+        0.584
+       ],
+       [
+        "3",
+        0.409
+       ]
+      ],
+      "margin": 0.289,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.726
+       ],
+       [
+        "4",
+        0.491
+       ],
+       [
+        "3",
+        0.451
+       ]
+      ],
+      "margin": 0.234,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.76
+       ],
+       [
+        "1",
+        0.55
+       ],
+       [
+        "6",
+        0.536
+       ]
+      ],
+      "margin": 0.21,
+      "unrecoverable": null
+     },
+     {
+      "slot": 3,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.822
+       ],
+       [
+        "2",
+        0.489
+       ],
+       [
+        "3",
+        0.475
+       ]
+      ],
+      "margin": 0.334,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "658",
+    "verdict": "READ",
+    "note": "",
+    "readme": "658",
+    "y": 1931.2,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.722
+       ],
+       [
+        "5",
+        0.588
+       ],
+       [
+        "3",
+        0.579
+       ]
+      ],
+      "margin": 0.135,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.796
+       ],
+       [
+        "9",
+        0.511
+       ],
+       [
+        "8",
+        0.474
+       ]
+      ],
+      "margin": 0.285,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.754
+       ],
+       [
+        "8",
+        0.598
+       ],
+       [
+        "5",
+        0.578
+       ]
+      ],
+      "margin": 0.155,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 26,
+   "left": {
+    "reading": "1280",
+    "verdict": "READ",
+    "note": "",
+    "readme": "1280",
+    "y": 2001.1,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "0",
+      "visible": 1.0,
+      "top": [
+       [
+        "0",
+        0.818
+       ],
+       [
+        "8",
+        0.55
+       ],
+       [
+        "9",
+        0.484
+       ]
+      ],
+      "margin": 0.268,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.539
+       ],
+       [
+        "8",
+        0.519
+       ],
+       [
+        "3",
+        0.446
+       ]
+      ],
+      "margin": 0.02,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.828
+       ],
+       [
+        "7",
+        0.456
+       ],
+       [
+        "1",
+        0.423
+       ]
+      ],
+      "margin": 0.373,
+      "unrecoverable": null
+     },
+     {
+      "slot": 3,
+      "read": "1",
+      "visible": 1.0,
+      "top": [
+       [
+        "1",
+        0.807
+       ],
+       [
+        "4",
+        0.498
+       ],
+       [
+        "2",
+        0.485
+       ]
+      ],
+      "margin": 0.309,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "625",
+    "verdict": "READ",
+    "note": "",
+    "readme": "625",
+    "y": 2004.9,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.747
+       ],
+       [
+        "3",
+        0.504
+       ],
+       [
+        "6",
+        0.443
+       ]
+      ],
+      "margin": 0.243,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "2",
+      "visible": 1.0,
+      "top": [
+       [
+        "2",
+        0.7
+       ],
+       [
+        "7",
+        0.569
+       ],
+       [
+        "1",
+        0.442
+       ]
+      ],
+      "margin": 0.131,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.772
+       ],
+       [
+        "5",
+        0.625
+       ],
+       [
+        "8",
+        0.526
+       ]
+      ],
+      "margin": 0.147,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 27,
+   "left": {
+    "reading": "684",
+    "verdict": "READ",
+    "note": "",
+    "readme": "684",
+    "y": 2074.9,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.69
+       ],
+       [
+        "1",
+        0.465
+       ],
+       [
+        "9",
+        0.442
+       ]
+      ],
+      "margin": 0.225,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.552
+       ],
+       [
+        "8",
+        0.498
+       ],
+       [
+        "6",
+        0.466
+       ]
+      ],
+      "margin": 0.054,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.789
+       ],
+       [
+        "1",
+        0.507
+       ],
+       [
+        "5",
+        0.476
+       ]
+      ],
+      "margin": 0.283,
+      "unrecoverable": null
+     }
+    ]
+   },
+   "right": {
+    "reading": "448",
+    "verdict": "READ",
+    "note": "",
+    "readme": "448",
+    "y": 2079.0,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.59
+       ],
+       [
+        "5",
+        0.467
+       ],
+       [
+        "1",
+        0.43
+       ]
+      ],
+      "margin": 0.123,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.748
+       ],
+       [
+        "1",
+        0.457
+       ],
+       [
+        "9",
+        0.376
+       ]
+      ],
+      "margin": 0.291,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.691
+       ],
+       [
+        "1",
+        0.449
+       ],
+       [
+        "2",
+        0.388
+       ]
+      ],
+      "margin": 0.242,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 28,
+   "left": {
+    "reading": "_94",
+    "verdict": "PARTIAL",
+    "note": "the photograph's bottom edge cuts this row; only the top sliver of the hundreds digit is in frame",
+    "readme": "694",
+    "y": 2149.0,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.803
+       ],
+       [
+        "9",
+        0.41
+       ],
+       [
+        "3",
+        0.373
+       ]
+      ],
+      "margin": 0.393,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "9",
+      "visible": 1.0,
+      "top": [
+       [
+        "9",
+        0.528
+       ],
+       [
+        "0",
+        0.44
+       ],
+       [
+        "7",
+        0.407
+       ]
+      ],
+      "margin": 0.087,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": null,
+      "visible": 1.0,
+      "top": [
+       [
+        "7",
+        0.396
+       ],
+       [
+        "2",
+        0.362
+       ],
+       [
+        "1",
+        0.356
+       ]
+      ],
+      "margin": 0.033,
+      "unrecoverable": "outside the photograph's bottom edge"
+     }
+    ]
+   },
+   "right": {
+    "reading": "453",
+    "verdict": "READ",
+    "note": "",
+    "readme": "453",
+    "y": 2153.3,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "3",
+      "visible": 1.0,
+      "top": [
+       [
+        "3",
+        0.721
+       ],
+       [
+        "4",
+        0.589
+       ],
+       [
+        "1",
+        0.49
+       ]
+      ],
+      "margin": 0.133,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "5",
+      "visible": 1.0,
+      "top": [
+       [
+        "5",
+        0.657
+       ],
+       [
+        "6",
+        0.47
+       ],
+       [
+        "3",
+        0.438
+       ]
+      ],
+      "margin": 0.187,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 1.0,
+      "top": [
+       [
+        "4",
+        0.779
+       ],
+       [
+        "9",
+        0.505
+       ],
+       [
+        "1",
+        0.467
+       ]
+      ],
+      "margin": 0.274,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 29,
+   "left": {
+    "reading": null,
+    "verdict": "NOT-PHOTOGRAPHED",
+    "note": "this row's left value lies below the bottom edge of the photograph and was never captured",
+    "readme": null,
+    "y": null
+   },
+   "right": {
+    "reading": "860",
+    "verdict": "READ",
+    "note": "",
+    "readme": "860",
+    "y": 2228.0,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "0",
+      "visible": 0.927,
+      "top": [
+       [
+        "0",
+        0.626
+       ],
+       [
+        "1",
+        0.559
+       ],
+       [
+        "8",
+        0.457
+       ]
+      ],
+      "margin": 0.067,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "6",
+      "visible": 1.0,
+      "top": [
+       [
+        "6",
+        0.639
+       ],
+       [
+        "5",
+        0.494
+       ],
+       [
+        "9",
+        0.471
+       ]
+      ],
+      "margin": 0.145,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "8",
+      "visible": 1.0,
+      "top": [
+       [
+        "8",
+        0.57
+       ],
+       [
+        "3",
+        0.555
+       ],
+       [
+        "5",
+        0.538
+       ]
+      ],
+      "margin": 0.016,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 30,
+   "left": {
+    "reading": null,
+    "verdict": "NOT-PHOTOGRAPHED",
+    "note": "this row's left value lies below the bottom edge of the photograph and was never captured",
+    "readme": null,
+    "y": null
+   },
+   "right": {
+    "reading": "514",
+    "verdict": "READ",
+    "note": "",
+    "readme": "514",
+    "y": 2303.0,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "4",
+      "visible": 0.206,
+      "top": [
+       [
+        "6",
+        0.654
+       ],
+       [
+        "1",
+        0.643
+       ],
+       [
+        "9",
+        0.603
+       ]
+      ],
+      "margin": 0.011,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "1",
+      "visible": 0.715,
+      "top": [
+       [
+        "1",
+        0.605
+       ],
+       [
+        "2",
+        0.563
+       ],
+       [
+        "3",
+        0.51
+       ]
+      ],
+      "margin": 0.042,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "5",
+      "visible": 0.912,
+      "top": [
+       [
+        "5",
+        0.469
+       ],
+       [
+        "4",
+        0.438
+       ],
+       [
+        "1",
+        0.426
+       ]
+      ],
+      "margin": 0.032,
+      "unrecoverable": null
+     }
+    ]
+   }
+  },
+  {
+   "row": 31,
+   "left": {
+    "reading": null,
+    "verdict": "NOT-PHOTOGRAPHED",
+    "note": "this row's left value lies below the bottom edge of the photograph and was never captured",
+    "readme": null,
+    "y": null
+   },
+   "right": {
+    "reading": "496",
+    "verdict": "READ",
+    "note": "",
+    "readme": "496",
+    "y": 2378.3,
+    "cells": [
+     {
+      "slot": 0,
+      "read": "6",
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": null
+     },
+     {
+      "slot": 1,
+      "read": "9",
+      "visible": 0.0,
+      "top": [
+       [
+        "7",
+        -1.0
+       ],
+       [
+        "1",
+        -1.0
+       ],
+       [
+        "3",
+        -1.0
+       ]
+      ],
+      "margin": 0.0,
+      "unrecoverable": null
+     },
+     {
+      "slot": 2,
+      "read": "4",
+      "visible": 0.014,
+      "top": [
+       [
+        "4",
+        0.52
+       ],
+       [
+        "6",
+        0.435
+       ],
+       [
+        "0",
+        0.371
+       ]
+      ],
+      "margin": 0.085,
+      "unrecoverable": null
+     }
+    ]
+   }
+  }
+ ]
+}

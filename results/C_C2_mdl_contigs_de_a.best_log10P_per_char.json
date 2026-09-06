@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C2_mdl_contigs_de_a",
+  "statistic": "best_log10P_per_char",
+  "real_value": -1.6875920928697234,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -2.018295098859608,
+      "sd": 0.05704001823439566,
+      "p": 0.004975124378109453,
+      "z": 5.797736680779449,
+      "maximum": -1.8714855421040575,
+      "minimum": -2.1702385769622476
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -2.555267394262113,
+      "sd": 0.008323762224310444,
+      "p": 0.047619047619047616,
+      "z": 104.24076012866517,
+      "maximum": -2.5410434717472454,
+      "minimum": -2.5738628877040366
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -1.6337040679310573,
+      "sd": 0.05922568349279707,
+      "p": 0.9019607843137255,
+      "z": -0.9098759484172091,
+      "maximum": -1.468504335533721,
+      "minimum": -1.7844990867574748
+    }
+  ],
+  "corpus_provenance": "try_combine_books/out/books/books_combined_#2_6624[49]_63[1].txt",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "ddba719",
+  "extra": {
+    "n_symbols": 2241,
+    "V": 121,
+    "plaintext_head": "aestste lesl nase ssne alle s leelasand seean e tste fur bulls larvey ns sstseststesealenten sesalstaas s else ssteasleeten tees aat lalaus spl alt open prakt welt s hauspiel es solle in ende tat eleu",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 0.9019607843137255,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

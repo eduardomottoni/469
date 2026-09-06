@@ -1,0 +1,36 @@
+=== H1: period-5 frame (and the 2..12 control scan) ===
+  mod  2: chi2=     6.11  worst p=0.7606  REJECTED
+  mod  3: chi2=     8.07  worst p=0.9875  REJECTED
+  mod  4: chi2=    39.99  worst p=0.0848  REJECTED
+  mod  5: chi2=    25.42  worst p=0.9227  REJECTED
+  mod  6: chi2=    37.81  worst p=0.7980  REJECTED
+  mod  7: chi2=    70.13  worst p=0.1796  REJECTED
+  mod  8: chi2=   113.97  worst p=0.0025  SUPPORTED
+  mod  9: chi2=    85.86  worst p=0.2070  REJECTED
+  mod 10: chi2=    78.89  worst p=0.6284  REJECTED
+  mod 11: chi2=    78.12  worst p=0.8429  REJECTED
+  mod 12: chi2=    99.27  worst p=0.5611  REJECTED
+  BH q-values: {2: 0.9875, 3: 0.9875, 4: 0.4663, 5: 0.9875, 6: 0.9875, 7: 0.5692, 8: 0.0274, 9: 0.5692, 10: 0.9875, 11: 0.9875, 12: 0.9875}
+  mod 5 specifically: p=0.9227  q=0.9875
+
+=== H2: base-5 carrier ===
+  hi: h4=0.99350  worst p=0.8229  REJECTED
+      Shuffle                0.99952+-0.00023  z=-26.71 p=0.0025
+      Markov2                0.99427+-0.00118  z=-0.65 p=0.2519
+      Markov3                0.99295+-0.00139  z=+0.40 p=0.6559
+      BlockShuffle20         0.99478+-0.00043  z=-2.98 p=0.0025
+      CopyPasteMutate        0.99316+-0.00250  z=+0.14 p=0.5112
+      CopyPasteMutateFitted  0.98969+-0.00445  z=+0.86 p=0.8229
+  lo: h4=1.62238  worst p=1.0000  REJECTED
+      Shuffle                2.26351+-0.00218  z=-294.68 p=0.0025
+      Markov2                1.89225+-0.00999  z=-27.01 p=0.0025
+      Markov3                1.59788+-0.01057  z=+2.32 p=0.9925
+      BlockShuffle20         1.80973+-0.00485  z=-38.66 p=0.0025
+      CopyPasteMutate        1.83149+-0.01958  z=-10.68 p=0.0025
+      CopyPasteMutateFitted  1.52072+-0.03350  z=+3.03 p=1.0000
+
+=== H3: five-digit words ===
+  book lengths mod 5: {0: 13, 1: 19, 2: 13, 3: 12, 4: 13}
+  n divisible by 5 = 13/70   worst p=1.0000  REJECTED
+
+saved C:\Users\dudu_\Documents\GitHub\469\.claude\worktrees\open-pr-next-steps-5a04cf\experiments\verify_2026\out\g2_summary.json

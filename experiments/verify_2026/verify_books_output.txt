@@ -1,0 +1,67 @@
+========================================================================
+469 CORPUS VERIFICATION
+books.json (70 books, 11263 digits) vs primary + secondary sources
+primary: tibia.fandom.com api.php, retrieved 2026-09-04
+========================================================================
+
+Wiki: Hellgate Library overview links 71 book pages -> 70 distinct digit strings, 11263 digits.
+  NOTE: pages '8550649967 (Book)' and '85506499670 (Book)' carry the SAME 145 digits (the wiki lists one book twice; the page text says '70 books').
+
+------------------------------------------------------------------------
+books.json   vs   tibia.fandom (PRIMARY)
+------------------------------------------------------------------------
+  books                 : 70 vs 70
+  digits                : 11263 vs 11263
+  exact string matches  : 70 / 70
+  same order            : False
+  RESULT: every one of the 70 books in books.json is byte-identical to a book in tibia.fandom (PRIMARY)
+          and vice versa (multiset equality).
+          The two sources list them in DIFFERENT ORDER (content unaffected).
+
+------------------------------------------------------------------------
+books.json   vs   01-books.md
+------------------------------------------------------------------------
+  books                 : 70 vs 71
+  digits                : 11263 vs 11408
+  exact string matches  : 70 / 70
+  same order            : False
+
+  1 book(s) present ONLY in 01-books.md (not in books.json):
+    len 145: 8550649967046726114580036904220464845191188952197712889521959457655236467211911800357576746483494343545217709096734709201285719727830404215857659
+
+------------------------------------------------------------------------
+books.json   vs   elkolorado_bacca
+------------------------------------------------------------------------
+  books                 : 70 vs 72
+  digits                : 11263 vs 11545
+  exact string matches  : 70 / 70
+  same order            : False
+
+  2 book(s) present ONLY in elkolorado_bacca (not in books.json):
+    len 145: 8550649967046726114580036904220464845191188952197712889521959457655236467211911800357576746483494343545217709096734709201285719727830404215857659
+    len 137: 51595646114145190584521765219727830464879636612527578967212778894388727857261185764217614588952196180031651288899751121615127215196805970
+
+------------------------------------------------------------------------
+note on elkolorado_bacca extras
+------------------------------------------------------------------------
+  len 145: 8550649967046726114580036904220464845191188952197712889521959457655236...
+  len 137: 5159564611414519058452176521972783046487963661252757896721277889438872...
+  (expected: the duplicated 145-digit Hellgate book + the Kharos book)
+
+------------------------------------------------------------------------
+books_sorted_unique_with_kharos.json
+------------------------------------------------------------------------
+  71 books, 11400 digits; 1 not present in books.json
+    len 137: 51595646114145190584521765219727830464879636612527578967212778894388727857261185764217614588952196180031651288899751121615127215196805970  <- matches wiki '5159564611 (Book)' EXACTLY
+  books.json is a subset of the with_kharos file: True
+
+========================================================================
+VERDICT: CONFIRMED
+  70/70 books byte-identical to tibia.fandom.com (PRIMARY) : True
+  70/70 books byte-identical to 01-books.md                : True
+  70/70 books byte-identical to elkolorado_bacca            : True
+  digits verified                                          : 11263
+  known, expected extras in secondary sources: the one Hellgate book that
+  the wiki lists twice (145 digits, two bookcases, identical text) and the
+  Kharos book (137 digits, a different library).
+========================================================================

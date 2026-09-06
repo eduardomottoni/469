@@ -1,0 +1,9 @@
+{
+ "url": "https://tibia.fandom.com/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&format=json&titles=5159564611%20(Book)",
+ "page": "https://tibia.fandom.com/wiki/5159564611_(Book)",
+ "retrieved": "2026-09-04",
+ "pageid": 86773,
+ "title": "5159564611 (Book)",
+ "text": "51595646114145190584521765219727830464879636612527578967212778894388727857261185764217614588952196180031651288899751121615127215196805970",
+ "wikitext": "{{Infobox Book|List={{{1|}}}|GetValue={{{GetValue|}}}\n| booktype     = Book (Black)\n| title        = Unknown\n| pagename     = 5159564611 (Book)\n| location     = [[Kharos]]\n| blurb        = 515956461141451905845...\n| author       = \n| returnpage   = Kharos Library\n| relatedpages = [[469]], [[Bonelords]]\n| text         = 51595646114145190584521765219727830464879636612527578967212778894388727857261185764217614588952196180031651288899751121615127215196805970\n| implemented  = 7.8\n}}"
+}

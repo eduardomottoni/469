@@ -1,0 +1,51 @@
+{
+  "experiment": "C_C1_triples_dedup_core_en",
+  "statistic": "best_log10P_per_char",
+  "real_value": -0.9543884082355303,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Markov3_digits",
+      "n": 200,
+      "mean": -1.0595823438857581,
+      "sd": 0.02064424164434229,
+      "p": 0.004975124378109453,
+      "z": 5.095558241494283,
+      "maximum": -1.005446400471595,
+      "minimum": -1.1119941705159198
+    },
+    {
+      "family": "Digits_pi",
+      "n": 20,
+      "mean": -0.8396702409401486,
+      "sd": 0.015686567059551033,
+      "p": 1.0,
+      "z": -7.313146774554063,
+      "maximum": -0.8111203031260124,
+      "minimum": -0.8735441145226212
+    },
+    {
+      "family": "Markov3_symbols",
+      "n": 50,
+      "mean": -0.879680127738851,
+      "sd": 0.024511911645252363,
+      "p": 1.0,
+      "z": -3.0478357452446736,
+      "maximum": -0.812598036095624,
+      "minimum": -0.9299488385663689
+    }
+  ],
+  "corpus_provenance": "books.json|dedup_core(k=25)",
+  "n_candidates_tested": 4,
+  "seed": 0,
+  "runtime_s": 0.0,
+  "code_sha": "5f37fd0",
+  "extra": {
+    "n_symbols": 1293,
+    "V": 374,
+    "plaintext_head": "a t sent are a a after mand lot pa in in blanka refera das shea a a debras rides setts at erra meta a a debras rides setts at erra ma tit der plays see and aaramara floure a a sleeman after a marke se",
+    "note": "surrogate maximum is the stopping criterion; under 3 sigma is noise however good the output looks"
+  },
+  "worst_p": 1.0,
+  "verdict": "INCOMPLETE (missing required null families)"
+}

@@ -1,0 +1,96 @@
+{
+  "experiment": "A2_contigs",
+  "statistic": "n_len2_types",
+  "real_value": 0,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 200,
+      "mean": 0.24,
+      "sd": 0.4608687448721165,
+      "p": 1.0,
+      "z": -0.5207556439232954,
+      "maximum": 2,
+      "minimum": 0
+    },
+    {
+      "family": "Markov2",
+      "n": 200,
+      "mean": 0.94,
+      "sd": 1.018037327409953,
+      "p": 1.0,
+      "z": -0.9233453181834773,
+      "maximum": 4,
+      "minimum": 0
+    },
+    {
+      "family": "Markov3",
+      "n": 200,
+      "mean": 0.21,
+      "sd": 0.4646504062195577,
+      "p": 1.0,
+      "z": -0.4519526878467212,
+      "maximum": 3,
+      "minimum": 0
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 200,
+      "mean": 1.65,
+      "sd": 1.0380269746013346,
+      "p": 1.0,
+      "z": -1.5895540678349906,
+      "maximum": 4,
+      "minimum": 0
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 0.88,
+      "sd": 1.9456618411224496,
+      "p": 1.0,
+      "z": -0.4522882555441028,
+      "maximum": 10,
+      "minimum": 0
+    },
+    {
+      "family": "Digits_pi",
+      "n": 200,
+      "mean": 0,
+      "sd": 0.0,
+      "p": 1.0,
+      "z": 0.0,
+      "maximum": 0,
+      "minimum": 0
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 200,
+      "mean": 0.03,
+      "sd": 0.1705872210923198,
+      "p": 1.0,
+      "z": -0.17586311452816475,
+      "maximum": 1,
+      "minimum": 0
+    }
+  ],
+  "corpus_provenance": "try_combine_books/out/books/books_combined_#2_6624[49]_63[1].txt",
+  "n_candidates_tested": 1,
+  "seed": 900001,
+  "runtime_s": 0.0,
+  "code_sha": "4cd1988",
+  "extra": {
+    "inducer": "mdl_unigram(maxlen=8)",
+    "copypaste_params": {
+      "seed_len": 1800,
+      "p_delete": 0.006,
+      "seed_order": 3,
+      "max_segments": 10
+    },
+    "copypaste_lz_relerr": 0.014801657785672063,
+    "real_lz76": 563
+  },
+  "worst_p": 1.0,
+  "verdict": "INCOMPLETE (missing required null families)"
+}
