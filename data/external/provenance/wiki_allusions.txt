@@ -1,0 +1,1032 @@
+<noinclude>{{review}}</noinclude>
+
+Throughout the lands of Tibia, NPCs, locations, literature, and lore refer and pay homage to other works, literary and otherwise. Some of these allusions are simple references to famous pieces, while others are based more extensively on external sources. 
+{{anchor|Femor|Femor Hills|Femur|Calcanea|Bones|Sternum|Mount Sternum|Fibula|Thais|Tibia}}
+Tibia contains many references to bones, and the game's ones and other body parts are often found throughout the Tibian lands. The islands of [[Fibula]] and [[Calcanea]], the landforms of [[Mount Sternum]] and [[Femor Hills]], [[Villa Scapula]] and even the city of [[Thais]] reference these body structures along with the event creature [[Bones]].
+
+Bones represent just a small portion of references. Elsewhere in the world, allusions to literary works and life are found in many contexts. Some allusions may simply serve as inspirations or passing references, while others are nearly direct derivations of these famous works.
+
+__TOC__
+
+==Brands==
+Many [[Shopkeeper NPCs]] take their names and goods from worldwide retailers. This trend is most noticeable on the island of [[Rookgaard]], where nearly every shopkeeper's name bears a startling similarity to a real-life store. In the city of [[Venore]], the famous [[Dress for Success|Venorean Fashion Warehouse]] is home to many clothing designers whose names are similar to real-life fashion designers. While other cities have their own inspirations regarding NPCs, these two have clear and strong allusions to their respective themes.
+
+{| class="wikitable" style="text-align: center; width: 90%;"
+! Allusion !! Tibian Tie !! Information
+|-
+! {{anchor|Aldi|Al Dee}}[[#Aldi|Aldi]]
+| [[File:Al Dee.gif|link=Al Dee|]]
+| On Rookgaard, the equipment shopkeeper '''Al Dee''' is a reference to the international retailer, '''[http://en.wikipedia.org/wiki/Aldi Aldi]'''.
+|-
+! {{anchor|Aldo}}[[#Aldo|Aldo]]
+| [[File:Aldo.gif|link=Aldo|]]
+| '''Aldo''' sells leather boots and other clothing. This is an allusion to the worldwide shoe seller, '''[http://en.wikipedia.org/wiki/Aldo_Groupe ALDO]'''.
+|-
+! {{anchor|Amazon.com}}[[#Amazon.com|Amazon.com]]
+| [[File:Book (Black).gif|link=Amazon Camp (Venore)|]]
+| In the Venore Amazon Camp, there is a small room under one of the buildings. In this room is a mailbox and a large number of books. This seems to be a reference to the large mail-order book distributor, '''[http://en.wikipedia.org/wiki/Amazon.com Amazon.com]'''.
+|-
+! {{anchor|Armani|Irmana}}[[#Armani|Armani]]
+| [[File:Irmana.gif|link=Irmana|]]
+| '''Irmana''', the tailor assistant to Hugo in the Venore fashion warehouse, is an allusion to '''[http://en.wikipedia.org/wiki/Armani Armani]''', a fashion company.
+|-
+! {{anchor|Calvin Klein|Kalvin}}[[#Calvin Klein|Calvin Klein]]
+| [[File:Kalvin.gif|link=Kalvin|]]
+|
+'''Kalvin''', Hugo's apprentice, is an allusion to '''[http://en.wikipedia.org/wiki/Calvin_Klein Calvin Klein]''', a well-known American fashion designer.
+|-
+! {{anchor|Commodore|Commodore}}[[#Commodore|Commodore]]
+| [[File:Golden_Servant.gif|link=]]
+|
+The phrase ''Error. LOAD 'PROGRAM',8,1'' said by the servants seen during the Their Master's Voice World Change are an allusion to the LOAD command from the '''[http://en.wikipedia.org/wiki/Commodore_64 Commodore 64]''' and '''[http://en.wikipedia.org/wiki/Commodore_128 Commodore 128]''' computer systems which was used to load a program into memory for execution.
+|-
+! {{anchor|Corona|Maria|Maria Corona}}[[#Corona|Corona]]
+| [[File:Maria.gif|link=Maria|]]
+| '''Maria''', the owner of the Hard Rock Tavern, most likely owes her last name to the beer brand '''[http://en.wikipedia.org/wiki/Corona_%28beer%29 Corona]'''.
+|-
+! {{anchor|Edeka}}[[#Edeka|Edeka]]
+| [[File:Black Skull (Item).gif|link=Rookgaard Graveyards|]]
+| A grave at Rookgaard's largest graveyard refers to former shopkeeper '''Edee K.''' having been stabbed by Al Dee, who now runs the only tool shop in town. This is an allusion to the everlasting competition between German discounters '''[http://en.wikipedia.org/wiki/Edeka Edeka]''' and '''[http://en.wikipedia.org/wiki/Aldi Aldi]'''.
+|-
+! {{anchor|Falck|Falk}}[[#Falck|Falck]]
+| [[File:Falk.gif|link=Falk|]]
+| Outside Edron's north gate stands '''Falk''', a guard. He is a reference to Group 4 Falck, a worldwide leader in security solutions, now under the name '''[http://en.wikipedia.org/wiki/Group_4_Falck Falck]'''.
+|-
+! {{anchor|Greyhound|Captain Greyhound}}[[#Greyhound|Greyhound]]
+| [[File:Captain Greyhound.gif|link=Captain Greyhound|]]
+| '''Captain Greyhound''' is an allusion to '''[http://en.wikipedia.org/wiki/Greyhound_Lines Greyhound Lines]''', the famous US bus line.
+|-
+! {{anchor|Hugo Boss|Hugo}}[[#Hugo Boss|Hugo Boss]]
+| [[File:Hugo.gif|link=Hugo|]]
+| '''Hugo''', whose full name is Hugo Chief, is the owner of the Venorean Fashion Warehouse, and is an allusion to '''[http://en.wikipedia.org/wiki/Hugo_Boss Hugo Boss]''', a major fashion house based in Germany.
+|-
+! {{anchor|Iglo|Iglu}Captain Iglues Treasure}}[[#Iglo|Iglo]]
+| [[File:Letter.gif|link=Captain Iglues Treasure Quest|]]
+| Captain Iglues Treasure Quest on Rookgaard is a reference to "Käpt'n Iglo", a German advertising icon for the brand '''[http://en.wikipedia.org/wiki/Iglo Iglo]''', selling frozen food and fish. Iglue's treasure is salmon.
+|-
+! {{anchor|Ikea|Ukea}}[[#Ikea|Ikea]]
+| [[File:Ukea.gif|link=Ukea|]]
+| The furniture seller in Ab'Dendriel is called '''Ukea''', a reference to the international furniture seller '''[http://en.wikipedia.org/wiki/Ikea Ikea]'''.
+|-
+! {{anchor|Jim Beam|Jimbin}}[[#Jim Beam|Jim Beam]]
+| [[File:Jimbin.gif|link=Jimbin|]]
+| The bartender in Kazordoon is '''Jimbin''', whose proximity to alcohol and name makes him a reference to '''[http://en.wikipedia.org/wiki/Jim_Beam Jim Beam]''', the bourbon brand.
+|-
+! {{anchor|Lidl|Lee'Delle}}[[#Lidl|Lidl]]
+| [[File:Lee'Delle.gif|link=Lee'Delle|]]
+| Rookgaard's '''Lee'Delle''' seems to be a reference to the international discount supermarket '''[http://en.wikipedia.org/wiki/Lidl Lidl]'''.
+|-
+! {{anchor|McDonald's|McRonald|Ronald McDonald|Donald McRonald}}[[#McDonald's|McDonald's]]
+| [[File:Donald McRonald.gif|link=Donald McRonald|]]
+| The farmer '''Donald McRonald''' is partly an allusion to Ronald McDonald, the mascot of '''[http://en.wikipedia.org/wiki/McDonald's McDonald's]''', an international fast-food restaurant chain.<br />
+He is also an allusion to [[Allusions#Old MacDonald Had a Farm|Old MacDonald Had a Farm]].
+|-
+! {{anchor|Mercedes|Mercedes-Benz|Mercedes Benz|Elch|A Class|A.Class|A. Class}}[[#Mercedes-Benz|Mercedes-Benz]]
+| [[File:Black Skull (Item).gif|link=Thais Graveyard|]]
+| A pair of gravestones in the Thais Graveyard mention the '''[http://en.wikipedia.org/wiki/Mercedes-Benz_A-Class Mercedes-Benz A-Class]''', a moose, and electronic stability control, a reference to the A-Class's performance on the automobile '''[http://en.wikipedia.org/wiki/Moose_test moose test]'''.
+|-
+! {{anchor|Microsoft}}[[#Microsoft|Microsoft]]
+| [[File:Black Skull (Item).gif|link=http://tibia.wikia.com/wiki/Thais_Graveyard|]]
+| A grave refers to Mr. Bill G. and a window. Bill Gates was the Chief Executive Officer of '''[http://en.wikipedia.org/wiki/Microsoft Microsoft]''', the software company that wrote and maintains the operating system Windows.
+|-
+! {{anchor|Linux}}[[#Linux|Microsoft and Linux]]
+| [[File:Black Skull (Item).gif|link=http://tibia.wikia.com/wiki/Graveyard_of_the_doomed|]]
+|A grave refers to a penguin killing a window, a reference to the competition between Microsoft and '''[http://en.wikipedia.org/wiki/Linux Linux]''', the latter often associated with a penguin.
+|-
+! {{anchor|Norma}}[[#Norma|Norma]]
+| [[File:Norma.gif|link=Norma|]]
+| Shopkeeper '''Norma''' is a reference to the German discounter, '''[http://en.wikipedia.org/wiki/Norma_%28supermarket%29 Norma]'''. She wants to change her name to Marylin, so she's also a reference to Norma Jeane Baker ('''[http://en.wikipedia.org/wiki/Marilyn_Monroe Marilyn Monroe]''').
+|-
+! {{anchor|Obi}}[[#Obi|Obi]]
+| [[File:Obi.gif|link=Obi|]]
+| Shopkeeper '''Obi''' appears to be an allusion to the German home-improvement store of the same name, '''[http://en.wikipedia.org/wiki/OBI_%28store%29 OBI]'''.
+|-
+! {{anchor|Richardson Allen|Allen}}[[#Richardson Allen|Richardson Allen]]
+| [[File:Allen.gif|link=Allen|]]
+| '''Allen Richardson''', owner of furniture shop in Venore seems to be an allusion to '''[http://www.richardsonallen.com/ Richardson Allen]''', an American furniture producer and seller.
+|-
+! {{anchor|Rolex|Xelor|Norbert}}[[#Rolex|Rolex]]
+| [[File:Norbert.gif|link=Norbert|]]
+| Norbert wears a stylish xelor watch. "Xelor" read backwards is '''[http://en.wikipedia.org/wiki/Rolex Rolex]'''.
+|-
+! {{anchor|Rosetta Stone|Rosetta Stone|Commander Stone}}[[#Rosetta Stone|Rosetta Stone]]
+| [[File:Commander Stone.gif|link=Commander Stone|]]
+| Commander Stone talks about his daughter, Rosetta, who is a linguist. Her name and occupation is a reference to the language learning software '''[http://en.wikipedia.org/wiki/Rosetta_Stone_(company) Rosetta Stone]'''.
+|}
+[[#top|Top]]
+
+==Famous and Historical People==
+As many RPGs do, Tibia makes references to historical and contemporary people in a variety of ways. Some [[Guard NPCs]], for example, share their names with fitting celebrities, while some more historical and famous scientists and explorers were alive under similar names and shared their knowledge in some of Tibia's many books. Some other allusions are only mentioned briefly in quotes, but the strength of these connections makes these references clear to those who know to look for them - connections like the desert city of {{anchor|Ankrahmun|Tutankhamun|Tutankhamen}}[[Ankrahmun]], to '''[http://en.wikipedia.org/wiki/Tutankhamun Tutankhamun]''', the most famous of Egyptian pharaohs.
+
+{| class="wikitable" style="text-align: center; width: 90%;"
+! Allusion !! Tibian Tie !! Information
+|-
+! {{anchor|Abbott and Costello|Costello}}[[#Abbott and Costello|Abbott and Costello]]
+| [[File:Costello.gif|link=Costello|]]
+| '''Costello''', the abbot of the White Raven Monastery is probably an allusion to the comedy duo '''[http://en.wikipedia.org/wiki/Abbott_and_Costello Abbott and Costello]'''.
+|-
+! {{anchor|Aleister Crowley|Alistair Cropwell}}[[#Aleister Crowley|Aleister Crowley]]
+| [[File:Book_(Brown).gif|link=Alistair Cropwell|]]
+| '''Alistair Cropwell''' was an explorer who discovered a city full of black magic. He is a reference to the occultist '''[http://en.wikipedia.org/wiki/Aleister_Crowley Aleister Crowley]'''.
+|-
+! {{anchor|Alfred Nobel|Ned Nobel}}[[#Alfred Nobel|Alfred Nobel]]
+| [[File:Ned Nobel.gif|link=Ned Nobel|]]
+| '''Ned Nobel''' sells fireworks and is the son of scientist and dynamite inventor '''[http://en.wikipedia.org/wiki/Alfred_Nobel Alfred Nobel]'''.
+|-
+! {{anchor|Arnold Schwarzenegger|Arnold}}[[#Arnold Schwarzenegger|Arnold Schwarzenegger]]
+| [[File:Arnold.gif|link=Arnold|]]
+| Like the other guards in Venore, '''Arnold''' is a reference to a famous action movie star: '''[http://en.wikipedia.org/wiki/Arnold_Schwarzenegger Arnold Schwarzenegger]'''.
+|-
+! {{anchor|Bozo|Bozo the Clown}}[[#Bozo the Clown|Bozo the Clown]]
+| [[File:Bozo.gif|link=Bozo|]]
+| '''Bozo''', the royal jester in Thais, is an allusion to '''[http://en.wikipedia.org/wiki/Bozo_the_Clown Bozo the Clown]'''.
+|-
+! {{anchor|Charles Darwin|Dave Charlwin}}[[#Charles Darwin|Charles Darwin]]
+| [[File:Book_(Brown).gif|link=Dave Charlwin|]]
+| Author and scientist, '''Dave Charlwin''' is a reference to '''[http://en.wikipedia.org/wiki/Charles_Darwin Charles Darwin]'''. The Unnatural Selection Quest is a further reference to Darwin's work.
+|-
+! {{anchor|Christo}}[[#Christo|Christo]]
+| [[File:Erayo.gif|link=Erayo|]]
+| '''Erayo''' has a task to shroud Thais castle in cloth. The artist '''[http://en.wikipedia.org/wiki/Christo Christo]''' is famous for his artwork along a similar line.
+|-
+! {{anchor|Clive Sinclair|Sinclair}}[[#Clive Sinclair|Clive Sinclair]]
+| [[File:Sinclair.gif|link=Sinclair|]]
+| '''Sinclair''', a scientist of Edron, is an allusion to the inventor '''[[wikipedia:Clive Sinclair|Clive Sinclair]]'''.
+|-
+! {{anchor|Danielle Steel|Daniel Steelsoul}}[[#Danielle Steel|Danielle Steel]]
+| [[File:Daniel Steelsoul.gif|link=Daniel Steelsoul|]]
+| Governor of Edron '''Daniel Steelsoul''' was most likely named after American novelist '''[http://en.wikipedia.org/wiki/Danielle_Steel Danielle Steel]'''.
+|-
+! {{anchor|David Copperfield|David Brassacres|A Strange Fellow}}[[#David Copperfield|David Copperfield]]
+| [[File:A Strange Fellow.gif|link=A Strange Fellow|]]
+| The name of this magician is '''David Brassacres''', an allusion to famous show magician '''[http://en.wikipedia.org/wiki/David_Copperfield_(illusionist) David Copperfield]'''.
+|-
+! {{anchor|Isaac Newton|Isaac Brewton|Newton}}[[#Isaac Newton|Isaac Newton]]
+| [[File:Book_(Brown).gif|link=Isaac Brewton|]]
+| '''Isaac Brewton''' claimed that Satanic forces were responsible for gravity. He is a reference to famous scientist '''[http://en.wikipedia.org/wiki/Isaac_Newton Isaac Newton]'''.
+|-
+! {{anchor|Jack the Ripper|Ron the Ripper}}[[#Jack the Ripper|Jack the Ripper|]]
+| {{Ilink|Ron the Ripper}}
+| The pirate boss '''Ron the Ripper''' is an allusion to the serial killer '''[http://en.wikipedia.org/wiki/Jack_the_Ripper Jack the Ripper]'''.
+|-
+! {{anchor|Jean-Claude Van Damme|Van Damme|Jean-Claude}}[[#Jean-Claude Van Damme|Jean-Claude Van Damme]]
+| [[File:Jean Claude.gif|link=Jean Claude|]]
+| Like the other guards in Venore, '''Jean Claude''' is a reference to a famous action movie star:'''[http://en.wikipedia.org/wiki/Jean_Claude_Van_Damme Jean-Claude Van Damme]'''.
+|-
+! {{anchor|Gaius Marius|General Murius|General Gaius Marius}}[[#Gaius Marius|Gaius Marius]]
+| {{Ilink|General Murius}}
+|
+The minotaur boss '''General Murius''' is an allusion to Roman general and politician '''[http://en.wikipedia.org/wiki/Gaius_Marius Gaius Marius]'''.
+|-
+! {{anchor|Henricus Institoris|Henricus}}[[#Henricus Institoris|Henricus Institoris]]
+| [[File:Henricus.gif|link=Henricus|]]
+| Lord Inquisitioner '''Henricus''' refers to '''[http://en.wikipedia.org/wiki/Henricus_Institoris Henricus Institoris]''', one of the highest-ranked inquisitioners of the 15th century.
+|-
+! {{anchor|Klaus Badelt|Klaus}}[[#Klaus|Klaus]]
+| [[File:Klaus.gif|link=Klaus|]]
+| Pirate '''Klaus''' is an allusion to '''[http://en.wikipedia.org/wiki/Klaus_Badelt Klaus Badelt]''', a famous film scorer who composed the even more famous score for the film '''Pirates of the Caribbean: The Curse of the Black Pearl'''.
+|-
+! {{anchor|Mary I of England|Maryza}}[[#Mary I of England|Mary I of England]]
+| [[File:Maryza.gif|link=Maryza|]]
+| According to Jimbin, his wife '''Maryza''' was given the sobriquet Bloody Mary by humans as she likes to cook with bloody meat. This is a reference to '''[http://en.wikipedia.org/wiki/Mary_I_of_England Mary I of England]''', who was nicknamed Bloody Mary after executing many Protestants.
+|-
+! {{anchor|Mata Hari|Rata'Mari}}[[#Mata Hari|Mata Hari]]
+| [[File:Rata'Mari.gif|link=Rata'Mari|]]
+| '''Rata'Mari''', the undercover spy, is a reference to World War I spy '''[http://en.wikipedia.org/wiki/Mata_Hari Mata Hari]'''.
+|-
+! {{anchor|Neil Armstrong}}[[#Neil Armstrong|Neil Armstrong]]
+| [[File:Angus.gif|link=Angus|]]
+| A quote by Angus, ''And remember: it's a small teleport for you, but a big teleport for all Tibians'', is a take on a quote by astronaut '''[http://en.wikipedia.org/wiki/Neil_Armstrong Neil Armstrong]'''.
+|-
+! {{anchor|Nietzsche}}[[#Nietzsche|Nietzche]]
+| [[File:Black Skull (Item).gif|link=http://tibia.wikia.com/wiki/Thais_Graveyard|]]
+| A pair of gravestones refer to '''[http://en.wikipedia.org/wiki/Nietzsche Nietzsche's]''' famous "God is Dead" statement.
+|-
+! {{anchor|Nikola Tesla|Tesla|Telas}}[[#Nikola Tesla|Nikola Tesla]]
+| [[File:Telas.gif|link=Telas|]]
+| Scientist and inventor '''Telas''' is a reference to and anagram of famous scientist '''[http://en.wikipedia.org/wiki/Nikola_Tesla Nikola Tesla]'''.
+|-
+! {{anchor|Richard Garriott|Lord British}}[[#Richard Garriott|Richard Garriott]]
+| [[File:Black Skull (Item).gif|link=http://tibia.wikia.com/wiki/Thais_Graveyard|]]
+| A gravestone pays homage to Lord B (Lord British), a name taken on by '''[http://en.wikipedia.org/wiki/Richard_Garriott Richard Garriott]''', whose Ultima series greatly influenced Tibia.
+|-
+! {{anchor|Robin Hood|Robin}}[[#Robin Hood|Robin Hood]]
+| [[File:Robin.gif|link=Robin|]]
+| '''Robin''', the huntsman and paladin in Thais, is a strong reference to the famous English outlaw '''[http://en.wikipedia.org/wiki/Robin_Hood Robin Hood]'''.
+|-
+! {{anchor|Rottin Wood|}}
+| [[File:Rottin_Wood.gif|link=Rottin_Wood]]
+| '''Rottin Wood''', a hunter and leader of a band of Married Men is also a strong allusion to Robin Hood, who was said to be the leader of a band of Merry Men.
+|-
+! {{anchor|Saint Boniface|Bonifacius}}[[#Saint Boniface|Saint Boniface]]
+| [[File:Bonifacius.gif|link=Bonifacius|]]
+| '''Bonifacius''', the food seller in Edron, may be named after '''[http://en.wikipedia.org/wiki/Boniface Saint Boniface]''', a missionary who is sometimes credited for starting the tradition of the Christmas tree.
+|-
+! {{anchor|Sarah Emma Edmonds|Emma}}[[#Sarah Emma Edmonds|Sarah Emma Edmonds]]
+| [[File:Emma.gif|link=Emma|]]
+| '''Emma''', the head of the CGB, is a reference to '''[http://en.wikipedia.org/wiki/Sarah_Emma_Edmonds Sarah Emma Edmonds]''', a US Civial War spy for the Union.
+|-
+! {{anchor|Siegfried and Roy}}[[#Siegfried and Roy|Siegfried and Roy]]
+| [[File:Humgolf.gif|link=Humgolf|]]
+| The rotworm trainer Humgolf claims to have sold a rare white worm to '''Frietsiek and Yor''' whose names can be rearranged to relate to the show duo '''[http://en.wikipedia.org/wiki/Siegfried_%26_Roy Siegfried and Roy]'''.
+|-
+! {{anchor|Spartacus|Spartaky}}[[#Spartacus|Spartacus]] and <u>Heracles</u>
+| [[File:Hairycles.gif|link=Hairycles|]]
+| Hairycles says that '''Spartaky''' helped the apes fight for their freedom. This is a reference to '''[http://en.wikipedia.org/wiki/Spartacus Spartacus]''', the leader of a slave revolt in Rome. His own name is a rather obvious reference to [https://en.wikipedia.org/wiki/Heracles '''Heracles'''].
+|-
+! {{anchor|Sun Tzu|Sun Wu|Zunzu|Zun Su}}[[#Sun Tzu|Sun Tzu]]
+| {{Ilink|Battlemaster Zunzu}}
+| Both the lizard boss '''Battlemaster Zunzu''' and the treatises found in Demona by '''Zun Su''' on combat refer to '''[http://en.wikipedia.org/wiki/Sun_Tzu Sun Tzu]''' and his famous ''Art of War''.
+|-
+! {{anchor|Sylvester Stallone|Sylvester}}[[#Sylvester Stallone|Sylvester Stallone]]
+| [[File:Sylvester.gif|link=Sylvester|]]
+| Like the other Venore guards, Sylvester is an allusion to a famous action movie star: '''[http://en.wikipedia.org/wiki/Sylvester_Stallone Sylvester Stallone]'''.
+|-
+! {{anchor|William Kidd|Captain Kid}}[[#William Kidd|William Kidd]]
+| [[File:Pirate Corsair.gif|link=Captain Kid|]]
+| '''Captain Kid''', the former captain without a reputation of the pirates residing in The Cave, is an allusion to '''[https://en.wikipedia.org/wiki/William_Kidd Captain William Kidd]''', one of the world's most notorious pirates.
+|-
+! {{anchor|William Tell|Willem}}[[#William Tell|William Tell]]
+| [[File:Willem.gif|link=Willem|]]
+| '''Willem''', a paladin on the Island of Destiny, loves to shoot apples off other people's heads. This makes him a reference to Swiss folk hero '''[http://en.wikipedia.org/wiki/William_Tell William Tell]''', who once shot an apple off his son's head.
+|-
+! {{anchor|Wyatt Earp|Wyat}}[[#Wyatt Earp|Wyatt Earp]]
+| [[File:Wyat.gif|link=Wyat|]]
+| '''Wyat''', the sheriff of Thais, is an allusion to the famous American sheriff '''[http://en.wikipedia.org/wiki/Wyatt_Earp Wyatt Earp]'''.
+|-
+! {{anchor|Zarathushtra|Zoroaster|Zarabustor}}[[#Zarathushtra|Zarathustra]]
+| {{Ilink|Zarabustor}}
+| The warlock boss '''Zarabustor''' has a name similar to Iranian prophet and inventor of magic '''[http://en.wikipedia.org/wiki/Zarathustra Zarathustra]'''.
+|}
+[[#top|Top]]
+
+==Literature and Mythology==
+Like many roleplaying games, Tibia has strong ties to fantasy literature and classic mythology. The beginners' island, [[Rookgaard]], has strong ties to Norse lore and mythology. The island's name is similar to the realms of '''[http://en.wikipedia.org/wiki/Midgard Midgard]''' and '''[http://en.wikipedia.org/wiki/Asgard Asgard]''', a claim further supported by the presence of a bridge guard and the the Norse-named [[Cipfried]].
+
+J.R.R. Tolkien's Lord of the Rings and associated anthologies, the quintessential sources of modern fantasy inspiration, are featured prominently three of Tibia's earliest and largest cities. The names of the NPCs in [[Ab'Dendriel]] and [[Thais]] might look familiar to players with a knowledge of Tolkien's lore. The dwarven city of [[Kazordoon]] similarly bears a remarkable resemblance to the famous '''[http://en.wikipedia.org/wiki/Moria Khazad-dûm]''', the city ruled by [[Durin]], the king of the Dwarfs.
+
+{| class="wikitable" style="text-align: center; width: 90%;"
+! Allusion !! Tibian Tie !! Information
+|-
+! {{anchor|Alice in Wonderland}}[[#Alice in Wonderland|Alice in Wonderland]]
+| [[File:Hat of the Mad.gif|link=Hat of the Mad|]]
+| The '''Hat of the Mad''' appears to be quite similar to the hat the Mad Hatter is often depicted wearing in '''[http://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland Alice in Wonderland]'''.
+|-
+! {{anchor|Baba Yaga|Yaga the Crone}}[[#Baba Yaga|Baba Yaga]]
+| {{Ilink|Yaga the Crone}}
+| '''Yaga the Crone''' and quotes by her appear to show a strong relationship between her and '''[http://en.wikipedia.org/wiki/Baba_Yaga Baba Yaga]''', a witch in Polish and Russian folklore.
+|-
+! {{anchor|Beauty and the Beast|Beauty and the Mino (Book)}}[[#Beauty and the Beast|Beauty and the Beast]]
+| [[File:Book (Fat Green).gif|link=Beauty and the Mino (Book)|]]
+| The book '''Beauty and the Mino''' is an allusion to the book from  Gabrielle-Suzanne Barbot de Villeneuve '''[https://en.wikipedia.org/wiki/Beauty_and_the_Beast Beauty and the Beast (the original version)]''', and later adapted and widely recognized as a Disney Movie. The Tibian version is empty and from an ''"uknown"'' author.
+|-
+! {{anchor|The Bible|The Tible|The Holy Bible|The Holy Tible|Bible|Tible}}[[#The Bible|The Bible]]
+| [[File:The Holy Tible.gif|link=Holy Tible]]
+| '''The Holy Tible''' owes its name to the '''[http://en.wikipedia.org/wiki/Bible Bible]''', though its praise of the god Banor could have it refer to any set of scriptures.
+|-
+! {{anchor|The Three Little Pigs|The Big Bad One|Big Bad One|Three Little Pigs|The Big Bad Wolf|Little Red Riding Hood}}[[#The Big Bad Wolf|The Big Bad Wolf]]
+| {{Ilink|The Big Bad One}}
+| '''The Big Bad One''' is probably an allusion to the '''[http://en.wikipedia.org/wiki/Big_Bad_Wolf Big Bad Wolf]''' from many fairy tales.
+|-
+! {{anchor|The Old Man and the Sea|Santiago}}[[#The Old Man and the Sea|The Old Man and the Sea]]
+| [[File:Santiago.gif|link=Santiago]]
+| The fisherman '''Santiago''' and his pursuit of a giant fish mark him as an allusion to the protagonist of Ernest Hemingway's '''[http://en.wikipedia.org/wiki/The_Old_Man_and_the_Sea The Old Man and the Sea]''',''' Gregorio Fuentes'''.
+|-
+! {{anchor|The Call of Cthulhu|Cthulhu}}[[#The Call of Cthulhu|The Call of Cthulhu]]
+| {{Ilink|Thul}}
+| '''<nowiki>Thul'</nowiki>'''s name and the general appearance of Quara Constrictors may be inspired by the fictional '''[http://en.wikipedia.org/wiki/Cthulhu Cthulhu]'''.
+|-
+! {{anchor|Canterbury Tales}}[[#Canterbury Tales|Canterbury Tales]]
+| [[File:Taegen.gif|link=Taegen|]]
+| His words ''Pas in boldly tyll thow com to an hall the feyrist undir sky'' are a quotation from '''[https://en.wikipedia.org/wiki/The_Canterbury_Tales The Canterbury Tales]''' by '''[https://en.wikipedia.org/wiki/Geoffrey_Chaucer Geoffrey Chaucer]''', an English writer from the fourteenth century.
+|-
+! {{anchor|Cerberus|Zerbrus|Kerberos}}[[#Cerberus|Cerberus]]
+| [[File:Zerbrus.gif|link=Zerbrus|]]
+| '''Zerbrus''', a Rookgaardian bridge guard, owes his name to the mythological figure of '''[http://en.wikipedia.org/wiki/Cerberus Cerberus]''', a multi-headed dog that guarded the path to the underworld.
+|-
+! {{anchor|A Christmas Carol}}[[#A Christmas Carol|A Christmas Carol]]
+| [[File:Ebenizer.gif|link=Ebenizer|]]
+| The banker '''Ebenizer''' is thought to have been named after the greedy Ebenezer Scrooge from '''[http://en.wikipedia.org/wiki/A_Christmas_Carol A Christmas Carol]'''.
+|-
+! {{anchor|Die 13½ Leben des Käpt'n Blaubär|Captain Bluebear|Bluebear|Käpt'n Blaubär}}[[#Die 13½ Leben des Käpt'n Blaubär|Die 13½ Leben des Käpt'n Blaubär]]
+| [[File:Captain Bluebear.gif|link=Captain Bluebear]]
+| '''Captain Bluebear''' may owe his name to the fictional explorer and captain in the humorous fantasy, novel '''[http://en.wikipedia.org/wiki/The_13_1/2_Lives_of_Captain_Bluebear Die 13½ Leben des Käpt'n Blaubär]'''.
+|-
+! {{anchor|Dorian Gray}}[[#Dorian Gray|Dorian Gray]]
+| [[File:Dorian.gif|link=Dorian|]]
+| '''Dorian''' is an allusion to the protagonist of Oscar Wilde's '''[http://en.wikipedia.org/wiki/The_Picture_of_Dorian_Gray The Picture of Dorian Gray]'''. Wilde's Dorian committed his crimes for beauty, this one for money.
+|-
+! {{anchor|Dracula}}[[#Dracula|Dracula]]
+| [[File:Vladruc.gif|link=Vladruc|]]
+| '''Vladruc''' is an anagram of the name "Dracula". Also, a quote by this vampire, ''Oh yes, the children of the night ... you dwellers in the city cannot enter into the feelings of the hunter'' is taken from the novel '''[http://en.wikipedia.org/wiki/Dracula Dracula]'''.
+|-
+! {{anchor|Armenius|Arminius|}}
+| [[File:Armenius.gif|link=Armenius|]]
+| '''Armenius''' may be a reference to '''[http://en.wikipedia.org/wiki/%C3%81rmin_V%C3%A1mb%C3%A9ry Arminius Vambery]''', thought to have been a reference Bram Stoker used when writing his Dracula novel.
+|-
+! {{anchor|Dune|}}[[#Dune|Dune]]
+| [[File:Muhad.gif|link=Muhad|]]
+| '''Muhad''', whose full name is '''Muhad ib Lisan al-Gaib''', is an allusion to the science fiction franchise '''[http://en.wikipedia.org/wiki/Dune_(franchise) Dune]''', where the Fremen term for off-world prophet is '''Lisan al Gaib'''.
+|-
+! {{anchor|Melange|Spice}}
+| [[File:Glooth Injection Tube.gif|link=Glooth|]]
+| '''Glooth''' is an allusion to the '''[http://en.wikipedia.org/wiki/Melange_(fictional_drug) melange]''' ("spice") playing an important role in the Dune universe. Both are produced by worms and can be used in order to produce a wide variety of products, and are even known to extend life span.
+
+When saying "glooth" to NPC Terrence he responds with ''The glooth must flow. ''This was derived from the similar phrase in Dune, ''The spice must flow.''
+|-
+! {{anchor|Excalibug|Excalibur}}[[#Excalibur|Excalibur]]
+| [[File:Magic Longsword.gif|link=Magic Longsword|]]
+| The famous lost sword '''Excalibug''' is named after '''[http://en.wikipedia.org/wiki/Excalibur Excalibur]''', the sword from Arthurian legend.
+|-
+! {{anchor|The Flying Dutchman|The Flying Venorean}}[[#The Flying Dutchman|The Flying Dutchman]]
+| [[File:Model Ship.gif|link=The Flying Venorean (Book)|]]
+| The literary '''Flying Venorean''' is an allusion to the famous ghost ship '''[http://en.wikipedia.org/wiki/Flying_Dutchman The Flying Dutchman]'''.
+|-
+! {{anchor|Frau Mahlzahn|Ms Mahlzahn}}[[#Frau Mahlzahn|Frau Mahlzahn]]
+| [[File:Dead Human1.gif]]
+| In [[Plains of Havoc/Dragon Lair|PoH's Dragon Lair]] there is a parcel with 3 corpses and a label addressed to "Ms Mahlzahn, Kummerland". '''Frau Mahlzahn''' is a dragon running a school for human children, torturing some of them, in the first story of the book [https://en.wikipedia.org/wiki/Jim_Button_and_Luke_the_Engine_Driver Jim Button and Luke the Engine Driver], published in Germany in 1960.
+|-
+! {{anchor|The Frog Prince|Frog Prince}}[[#The Frog Prince|The Frog Prince]]
+| {{Ilink|The Frog Prince}}
+| The boss monster '''The Frog Prince''' is a famous character in folklore, originating in the brothers Grimm fairytale '''[http://en.wikipedia.org/wiki/The_Frog_Prince_%28story%29 The Frog Prince]'''.
+|-
+! {{anchor|The Grinch|Grinch|Grynch|Grynch Clan Goblin|How the Grinch Stole Christmas}}[[#The Grinch|The Grinch]]
+| [[File:Grynch Clan Goblin.gif|link=Grynch Clan Goblin]]
+| The '''Grynch Clan Goblins''' and their present stealing are references to The Grinch from Dr. Seuss's '''[http://en.wikipedia.org/wiki/How_the_Grinch_Stole_Christmas! How the Grinch Stole Christmas!]'''
+|-
+! {{anchor|The Silence of the Lambs|Hannibal Lecter|Lector
+Lecter|Red Dragon|Hannibal|Hannibal Rising}}[[#Hannibal Lecter|Hannibal Lecter]]
+| [[File:Lector.gif|link=Lector|]]
+| '''Lector''', a butcher whose father was named Hannibal, seems to be inspired by the fictional serial killer '''[http://en.wikipedia.org/wiki/Hannibal_Lecter Hannibal Lecter]'''.
+|-
+! {{anchor|Harry Potter|Fluffy}}[[#Harry Potter|Harry Potter]]
+| {{Ilink|Fluffy}}
+| '''Fluffy''', a three-headed dog, shares his name with a similar creature from the fantasy book '''[http://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone Harry Potter and the Philosopher's Stone]'''.
+|-
+! {{anchor|Heart of Darkness|Marlow}}[[#Heart of Darkness|Heart of Darkness]]
+| [[File:Harlow.gif|link=Harlow|]]
+| '''Harlow''', a ferryman, is an obvious reference to '''Marlow''', the ship captain and main narrator of Joseph Conrad's '''[http://en.wikipedia.org/wiki/Heart_of_Darkness Heart of Darkness]'''.
+|-
+! {{anchor|Heimdall|Dallheim}}[[#Heimdall|Heimdall]]
+| [[File:Dallheim.gif|link=Dallheim|]]
+| '''<nowiki>Dallheim'</nowiki>'''s name is a take on that of '''[http://en.wikipedia.org/wiki/Heimdall Heimdall]''', a Norse god and guard of the bridge between Midgard and Asgard.
+|-
+! {{anchor|Hercules|Hairycles|Heracles}}[[#Hercules|Hercules]]
+| [[File:Hairycles.gif|link=Hairycles|]]
+| The ape leader, '''Hairycles''', is a strong reference to the '''[http://en.wikipedia.org/wiki/Hercules Hercules]''' of Greco-Roman mythology.
+|-
+! {{anchor|Hermes Trismegistus|Trimegis}}[[#Hermes Trismegistus|Hermes Trismegistus]]
+| [[File:Trimegis.gif|link=Trimegis|]]
+| The magician and astrologer '''Trimegis''' may be an allusion to '''[http://en.wikipedia.org/wiki/Hermes_Trismegistus Hermes Trismegistus]'''.
+|-
+! {{anchor|The Hitchhiker's Guide to the Galaxy|Life, the Universe, and Everything|Douglas Adams}}[[#The Hitchhiker's Guide to the Galaxy|The Hitchhiker's Guide to the Galaxy]]
+| [[File:Book (Brown).gif|link=Desert Dungeon Library|]]
+| A pair of books titled '''Important Facts From Galactic History''' volumes I and II contain direct quotes from ''Life, the Universe, and Everything'', a novel in Douglas Adams's '''[http://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy The Hitchhiker's Guide to the Galaxy]''' series.
+|-
+! {{anchor|Babel Fish|Babel Swimmer}}
+| [[File:Babel_Swimmer.gif|link=Babel_Swimmer|]]
+| The mysterious '''Babel Swimmer''' could be a reference to the Babel Fish that appears throughout the series.
+|-
+! {{anchor|Knecht Ruprecht|Ruprecht}}[[#Knecht Ruprecht|Knecht Ruprecht]]
+| [[File:Ruprecht.gif|link=Ruprecht|]]
+| '''Ruprecht''', Santa Claus's assistant, is based on '''[http://en.wikipedia.org/wiki/Knecht_Ruprecht Knecht Ruprecht]''' who accompanies Saint Nicholas in German folklore.
+|-
+! {{anchor|Koschei|Koschei the Deathless}}[[#Koschei|Koschei]]
+| {{Ilink|Koshei the Deathless}}
+| '''[http://en.wikipedia.org/wiki/Koschei Koschei]''' is a figure from Slavic mythology who, like his Tibian counterpart '''Koshei the Deathless''', cannot be directly killed.
+|-
+! {{anchor|Grizzly Adams|The Life and Times of Grizzly Adams}}[[#The Life and Times of Grizzly Adams|The Life and Times of Grizzly Adams]]
+| [[File:Grizzly Adams.gif|link=Grizzly Adams|]]
+| '''Grizzly Adams''' and his pet bear Ben are characters from the novel '''[http://en.wikipedia.org/wiki/The_Life_and_Times_of_Grizzly_Adams The Life and Times of Grizzly Adams]'''.
+|-
+! {{anchor|Mephistopheles|Mephiles|Mephistopheles}}[[#Mephistopheles|Mephistopheles]]
+| {{Ilink|Mephiles}}
+| '''Mephiles''', the Isle of Evil boss is a reference to '''[http://en.wikipedia.org/wiki/Mephistopheles Mephistopheles]''', a demon that originally appeared in literature in the Faust legend, and he has since appeared in other works as a stock character version of the Devil.
+|-
+! {{anchor|Moby-Dick|Moby Dick|Haba|Ahab|Captain Haba|Captain Ahab}}[[#Moby-Dick|Moby-Dick]]
+| [[File:Captain Haba.gif|link=Captain Haba|]]
+| Captain Haba and his search for a sea serpent are analogs of Captain Ahab and his hunt for the whale '''[http://en.wikipedia.org/wiki/Moby-Dick Moby-Dick]'''.
+|-
+! {{anchor|Leeland|Leland Gaunt|Leeland Slim|Useful Things Warehouse|Needful Things}}[[#Needful Things|Needful Things]]
+| [[File:Leeland.gif|link=Leeland|]]
+| '''Leeland''', the owner of the Useful Things Warehouse, is an allusion to '''Leland Gaunt''', the owner of '''[http://en.wikipedia.org/wiki/Needful_Things Needful Things]''', a fictional store and the title of a Stephen King novel.
+|-
+! {{anchor|Cyclops Smith|Odyssey|Polyphemus|Homer}}[[#Odyssey|Odyssey]]
+| [[File:Cyclops Smith.gif|link=Cyclops Smith|]]
+| '''Cyclops Smiths''' sometimes say "Outis emoi g' onoma" ("No one is my name"), which is a quotation in ancient Greek from Homer's '''[http://en.wikipedia.org/wiki/Odyssey Odyssey]''' (book 9, verse 366). These words were originally uttered by Odysseus after he had blinded cyclops Polyphemus.
+|-
+! {{anchor|Redwall}}[[#Redwall|Redwall]]
+| [[File:Corym Vanguard.gif|link=Coryms]]
+| The '''Corym''' are an allusion to '''[http://en.wikipedia.org/wiki/Redwall Redwall]'''. They are a reference to the core of resistance in the Mossflower woods, a group of mice and other small creatures known as the '''Corim'''.
+|-
+! {{anchor|Richelieu|Richelieu; Or the Conspiracy}}[[#Richelieu|Richelieu]]
+| [[File:Poet's Fencing Quill.gif|link=Poet's Fencing Quill|]]
+| The flavor text of the Poet's Fencing Quill reads: ''This feather is mightier than a sword.'', an allusion to the famous line "the pen is mightier than the sword", present in the play '''[http://en.wikipedia.org/wiki/Richelieu_(play) Richelieu; Or the Conspiracy]''' written by popular 19th century playwright '''Edward Bulwer-Lytton'''.
+|-
+! {{anchor|Robinson Crusoe}}[[#Robinson Crusoe|Robinson Crusoe]]
+| [[File:Robson.gif|link=Robson]]
+| '''Robson''' and his assistant '''Lunch''' are an allusion to '''[http://en.wikipedia.org/wiki/Robinson_Crusoe Robinson Crusoe]'''. Not only are the names similar, Robinson also lived in a hut constructed on the island he got stranded on and also named his only friend there after the time they met.
+|-
+! {{anchor|Snow White and the Seven Dwarfs|Snow White}}[[#Snow White and the Seven Dwarfs|Snow White and the Seven Dwarfs]]
+| [[File:Bed (Dark-Haired Beauty).gif|link=Snow White Room]]
+| A room in a Kazordoon mine shows a witch, seven dwarfs, an apple, and a sleeping figure, an allusion to the fairy tale of '''[http://en.wikipedia.org/wiki/Snow_White Snow White]'''.
+|-
+! {{anchor|A Study in Scarlet|}}[[#A Study in Scarlet|A Study in Scarlet]]
+| {{Ilink|Scarlett Etzel}}
+| The achievement [[A Study in Scarlett]] has the same name as the [https://en.wikipedia.org/wiki/A_Study_in_Scarlet classic novel] by Arthur Conan Doyle where Sherlock Holmes and Dr. Watson appear for the first time. 
+|-
+! {{anchor|Tarzan|Zantar}}[[#Tarzan|Tarzan]]
+| [[File:Hairycles.gif|link=Hairycles]]
+| '''Zantar''', a strange hairless ape in loincloth came to Banuta: [https://en.wikipedia.org/wiki/Tarzan Tarzan] of the Apes.
+|-
+! {{anchor|Treasure Island}}[[#Treasure Island|Treasure Island]]
+| [[File:Treasure Map.gif|link=Treasure Island|]]
+| '''Treasure Island''' might be an allusion to the novel '''[http://en.wikipedia.org/wiki/Treasure_Island Treasure Island]''' and the treasure buried there.
+|-
+! {{anchor|Tristan und Isolde|Tristan and Isolde|Tristan|Isolde}}[[#Tristan und Isolde|Tristan und Isolde]]
+| [[File:Tristan.gif|link=Tristan]]
+| '''Tristan''' and his love '''Isolde''' are the primary characters in the famous opera '''[http://en.wikipedia.org/wiki/Tristan_und_Isolde Tristan und Isolde]'''.
+|-
+! {{anchor|Twelfth Night}}[[#Twelfth Night|Twelfth Night]]
+| {{Ilink|Vashresamun}}
+| One of pharaoh '''<nowiki>Vashresamun'</nowiki>'''s quotes, ''If music is the food of death, drop dead'', is a play off of the first words from the play '''[http://en.wikipedia.org/wiki/Twelfth_Night Twelfth Night]''', ''If music be the food of love, play on''.
+|-
+! {{anchor|Where's Waldo?|Waldo|Wally|Where's Wally}}[[#Where's Waldo?|Where's Waldo?]]
+| [[File:Waldo's Post Horn.gif|link=Waldo's Post Horn]]
+| Missing postman '''Waldo''' and a mission to find him may be related to the '''[http://en.wikipedia.org/wiki/Where%27s_Waldo? Where's Waldo?]''' puzzle book series.
+|-
+! {{anchor|Wyrd Sisters|Terry Pratchett}}[[#Wyrd Sisters|Wyrd Sisters]]
+| [[File:Book (Brown).gif|link=Wyrd Sisters (Book)]]
+| The in-game book '''Wyrd Sisters''' by Terry P. is inspired by the novel '''[http://en.wikipedia.org/wiki/Wyrd_Sisters Wyrd Sisters]''' by author Terry Pratchett.
+|-
+! {{anchor|Xena|Xenia}}[[#Xena|Xena]]
+| {{Ilink|Xenia}}
+| The amazon boss '''Xenia '''might be an allusion to the fictional warrior princess '''[http://en.wikipedia.org/wiki/Xena Xena]'''.
+|-
+! {{anchor|Urmahlullu the Weakened|Urmahlullu the Weakened}}[[#Urmahlullu the Weakened|Urmahlullu the Weakened]]
+| {{Ilink|Urmahlullu the Weakened}}
+| '''Urmahlullu the Weakened '''is named after the mythological lion-centaur hybrid creature '''[http://en.wikipedia.org/wiki/Urmahlullu Urmahlullu]'''.
+|}
+
+[[#top|Top]]
+
+===J.R.R. Tolkien Lore===
+{| class="wikitable" style="text-align: center; width: 90%;"
+! Allusion !! Tibian Tie !! Information
+|-
+! {{anchor|Alatar|Morinehtar}}[[#Alatar|Alatar]]
+| [[File:Book (Brown).gif|link=Alatar|]]
+| The mage and author '''Alatar''' might be a reference to '''[http://lotr.wikia.com/wiki/Alatar Alatar]''', one of the two blue wizards in Tolkien lore.
+|-
+! {{anchor|Gorn|Aragorn}}[[#Aragorn|Aragorn]]
+| [[File:Gorn.gif|link=Gorn|]]
+| The equipment shopkeeper '''Gorn''' might be named after '''[http://en.wikipedia.org/wiki/Aragorn Aragorn]''', one of the protagonists of the Lord of the Rings.
+|-
+! {{anchor|Ferumbras|Ferumbras}}[[#Ferumbras|Ferumbras]]
+| {{Ilink|Ferumbras}}
+| The powerful '''Ferumbras''' shares his name with '''[http://en.wikipedia.org/wiki/List_of_male_hobbits#F at least two members]''' of the Took clan.
+|-
+! {{anchor|Finarfin|Arafinwë|Arafinwe}}[[#Finarfin|Finarfin]]
+| [[File:Finarfin.gif|link=Finarfin|]]
+| '''Finarfin''', the banker of Ab'Dendriel, is named after''' [http://lotr.wikia.com/wiki/Finarfin Finarfin]''', the king of the Nordor elves in Valinor and father of Galadriel.
+|-
+! {{anchor|Mordor|Fires of Mordor|The Fires of Mordor|Mt Doom|Mt. Doom|Mount Doom|The Ring of Isildur|The One Ring|One Ring}}[[#Fires of Mordor|Fires of Mordor]]
+| [[File:Lava.gif|link=Pydar|]]
+| When asked about Excalibug, Pydar says that ''it has to be returned to the fire which gave birth to it'', just as the '''[http://lotr.wikia.com/wiki/One_Ring One Ring]''' needs to be returned to the fires of Mount Doom.
+|-
+! {{anchor|Frodo|Frodo Baggins}}[[#Frodo|Frodo]]
+| [[File:Frodo.gif|link=Frodo|]]
+| '''Frodo''', the owner of Frodo's Tavern, owes his name to '''[http://en.wikipedia.org/wiki/Frodo_Baggins Frodo Baggins]''', one of the protagonists of the Lord of the Rings.
+|-
+! {{anchor|Gundralph|Gandalf}}[[#Gandalf|Gandalf]]
+| [[File:Gundralph.gif|link=Gundralph|]]
+| '''Gundralph''', the spell instructor at the Noodles Academy of Modern Magic might be named after '''[http://en.wikipedia.org/wiki/Gandalf Gandalf]''', the famous wizard.
+|-
+! {{anchor|J.R.R. Tolkien|Tolkien|LOTR|The Hobbit}}[[#The Hobbit|The Hobbit]]
+| [[File:Mysterious Voodoo Skull.gif|link=Mysterious Voodoo Skull|]]
+| One of the fortunes of the Mysterious Voodoo Skull, ''Do not meddle in the affairs of dragons, for you are crunchy and taste good with ketchup'', parodies a quote from '''[http://en.wikipedia.org/wiki/The_Hobbit The Hobbit]''', ''Do not meddle in the affairs of wizards, for they are subtle and quick to anger.''
+|-
+! {{anchor|Legolas|Legola}}[[#Legolas|Legolas]]
+| [[File:Legola.gif|link=Legola|]]
+| Legola, leader of the Carlin Paladin Guild, owes her name to '''[http://en.wikipedia.org/wiki/Legolas Legolas]''', one of the protagonists of the Lord of the Rings.
+|-
+!{{anchor|Melian|Melian}}[[#Melian|Melian]]
+| [[File:Melian.gif|link=Melian|]]
+| Altough in Tibia '''Melian '''is''' '''a male NPC, '''[https://en.wikipedia.org/wiki/Melian Melian] '''is the Queen of Doriath, possibly the most important "woman" of the Maia race.
+|-
+! {{anchor|Morgoth|Morgaroth|Melkor|Morgoth Bauglir}}[[#Morgoth|Morgoth]]
+| {{Ilink|Morgaroth}}
+| '''Morgaroth''', an archdemon in the Triangle of Terror, might be named after '''[http://en.wikipedia.org/wiki/Morgoth Morgoth]''', the outcast Vala and antagonist of ''The Silmarillion''.
+|-
+! {{anchor|Sam|Samwise|Samwise Gamgee|Samwise Gardner}}[[#Samwise Gamgee|Samwise Gamgee]]
+| [[File:Sam.gif|link=Sam|]]
+| The weapon shopkeepker '''Sam '''might be named after '''[http://en.wikipedia.org/wiki/Samwise_Gamgee Samwise Gamgee]''', one of the protagonists of the Lord of the Rings.
+|}
+[[#top|Top]]
+
+===Comic Books===
+{| class="wikitable" style="text-align: center; width: 90%;"
+! Allusion !! Tibian Tie !! Information
+|-
+! {{anchor|Bruise Payne}}[[#Batman|Batman]]
+| {{Ilink|Bruise Payne}}
+| The fearsome bat, '''Bruise Payne''', owes its name to Bruce Wayne, the real identity of '''[http://en.wikipedia.org/wiki/Batman Batman]'''.
+|-
+! {{anchor|Hulk|Monstor|The Hulk|Incredible Hulk|The Incredible Hulk}}[[#The Hulk|The Hulk]]
+| {{Ilink|Monstor}}
+| '''Monstor''', an Isle of Evil boss, is a strong reference to '''[http://en.wikipedia.org/wiki/Hulk_%28comics%29 The Hulk]'''.
+|-
+! {{anchor|Batman|Bruce Wayne|Bruce Banner}}[[#Bruce Wayne|Bruce Wayne]] or [[#Bruce Banner|Bruce Banner]]
+| [[File:Bruce.gif|link=Bruce|]]
+| Like other Yalahar guards, '''Bruce''' is likely an allusion to a comic book character. In this case, he possibly shares a name with Bruce Wayne, the real name of '''[http://en.wikipedia.org/wiki/Batman Batman]'''. Alternatively, he could be a reference to another Bruce: Bruce Banner, the real name of '''[http://en.wikipedia.org/wiki/Hulk_%28comics%29 The Hulk]'''.
+|-
+! {{anchor|Barry|Barry Allen|Flash|The Flash}}[[#The Flash|The Flash]]
+| [[File:Barry.gif|link=Barry|]]
+| Like other Yalahar guards, '''Barry''' is likely an allusion to a comic book character. In this case, he possibly shares a name with Barry Allen, the real name of '''[http://en.wikipedia.org/wiki/Flash_(comics) The Flash]'''.
+|-
+! {{anchor|The Green Arrow|Oliver|Oliver Queen|Green Arrow}}[[#The Green Arrow|The Green Arrow]]
+| [[File:Oliver.gif|link=Oliver|]]
+| Like other Yalahar guards, '''Oliver''' is likely an allusion to a comic book character. In this case, he possibly shares a name with Oliver Queen, the real name of '''[http://en.wikipedia.org/wiki/Green_Arrow The Green Arrow]'''.
+|-
+! {{anchor|The Green Lantern|Hal|Hal Jordan|Green Lantern}}[[#The Green Lantern|The Green Lantern]]
+| [[File:Hal.gif|link=Hal|]]
+| Like other Yalahar guards, '''Hal''' is likely an allusion to a comic book character. In this case, he possibly shares a name with Hal Jordan, the real name of '''[http://en.wikipedia.org/wiki/Green_Lantern The Green Lantern]'''.
+|-
+! {{anchor|Tony|Tony Stark|Iron Man}}[[#Iron Man|Iron Man]]
+| [[File:Tony.gif|link=Tony|]]
+| Like other Yalahar guards, '''Tony''' is likely an allusion to a comic book character. In this case, he possibly shares a name with Tony Stark, the real name of '''[http://en.wikipedia.org/wiki/Iron_Man Iron Man]'''.
+|-
+! {{anchor|Reed|Reed Richards|Mr Fantastic|Mr. Fantastic|Mister Fantastic}}[[#Mister Fantastic|Mister Fantastic]]
+| [[File:Reed.gif|link=Reed|]]
+| Like other Yalahar guards, '''Reed''' is likely an allusion to a comic book character. In this case, he possibly shares a name with Reed Richards, the real name of '''[http://en.wikipedia.org/wiki/Mister_Fantastic Mister Fantastic]'''.
+|-
+! {{anchor|Peter|Peter Parker|Spiderman}}[[#Spiderman|Spiderman]]
+| [[File:Peter.gif|link=Peter|]]
+| Like other Yalahar guards, '''Peter''' is likely an allusion to a comic book character. In this case, he possibly shares a name with Peter Parker, the real name of '''[http://en.wikipedia.org/wiki/Spider-Man Spider-Man]'''.
+|}
+[[#top|Top]]
+
+==Film and Television==
+Many [[creatures]] and [[NPCs]] seem to be fans of the silver screen. Dwarfs, in particular, are movie buffs, with different creatures quoting famous lines and the [[Kazordoon Library]] being home to many parodies of James Bond films. While many references to film and television are in the form of quotes, some are manifested in creatures and NPCs as embodiments of their respective allusions.
+
+{| class="wikitable" style="text-align: center; width: 90%;"
+! Allusion !! Tibian Tie !! Information
+|-
+! {{anchor|Apocalypse Now}}[[#Apocalypse Now|Apocalypse Now]]
+| {{Ilink|Mad Technomancer}}
+| A statement by the Mad Technomancer, ''I love the smell of firebombs in the morning'', is similar to a famous line from the movie '''[http://en.wikipedia.org/wiki/Apocalypse_Now Apocalypse Now]'''.
+|-
+! {{anchor|Back to the Future|Jack to the Future|Jack to the Future Quest}}[[#Back to the Future|Back to the Future]]
+| [[File:Jack.gif|link=Jack to the Future Quest]]
+| The name of the Jack to the Future quest has a strikingly similarity to the film '''[http://en.wikipedia.org/wiki/Back_to_the_Future Back to the Future]'''. The movie, like the quest, involves time traveling.
+|-
+! {{anchor|Casablanca}}[[#Casablanca|Casablanca]]
+| [[File:Bonelord.gif|link=Bonelord|]]
+| A statement by Bonelords, ''Here's looking at you'', is a portion of a famous quote from the movie '''[http://en.wikipedia.org/wiki/Casablanca_%28film%29 Casablanca]'''.
+|-
+! {{anchor|Icy Glare|}}
+| [[File:Ursagrodon.gif|link=Icy Glare]]
+| This same line is part of the description of the ''Icy Glare'' achievement.
+|-
+! {{anchor|The Cube}}[[#The Cube|The Cube]]
+| [[File:The_Cube_Effect.gif|link=The Supreme Cube|]]
+| After using [[The Supreme Cube]] during the [[Opticording Sphere]] you will be sent to the '''inside''' of it. There you will have to solve a several puzzles to travel to the next room, all of them shaped as squares, similar to the cubic rooms with deadly traps in the movie '''[https://en.wikipedia.org/wiki/Cube_(film) Cube]'''.
+|-
+! {{anchor|The Day the Earth Stood Still}}[[#The Day the Earth Stood Still|The Day the Earth Stood Still]]
+| [[File:War Golem.gif|link=War Golem|]]
+| A statement by War Golems, ''Azerus Barada Nikto'', is a reference to the famous line ''Klaatu barada nikto'' from the movie '''[http://en.wikipedia.org/wiki/The_Day_the_Earth_Stood_Still_%281951_film%29 The Day the Earth Stood Still]'''.
+|-
+! {{anchor|Dr. Strangelove|Dr Strangelove|Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb}}[[#Dr. Strangelove|Dr. Strangelove]]
+| {{Ilink|Mad Technomancer}}
+| The Mad Technomancer sometimes says ''Gentlemen, you can't fight in here! This is the War Room!'', a direct quote from the movie '''[http://en.wikipedia.org/wiki/Dr._Strangelove Dr. Strangelove]'''.
+|-
+! {{anchor|The Fast and the Furious|Dustrunner|Lightfoot|Fast and the Furious}}[[#The Fast and the Furious|The Fast and the Furious]]
+| [[File:Lightfoot.gif|link=Lightfoot|]]
+| Lighfoot is, along with his fellow racing dog Dustrunner, labeled as '''[http://en.wikipedia.org/wiki/The_Fast_and_the_Furious_%282001_film%29 The Fast and The Furious]''', a film about racing.
+|-
+! {{anchor|Forrest Gump}}[[#Forrest Gump|Forrest Gump]]
+| [[File:Hoggle.gif|link=Hoggle|]]
+| When asked the keyword ''stupid'', Hoggle responds ''My mom always said, stupid is who stupid does'', a quote from the movie '''[http://en.wikipedia.org/wiki/Forrest_Gump Forrest Gump]'''.
+|-
+! {{anchor|Ghostbusters}}[[#Ghostbusters|Ghostbusters]]
+| [[File:The Gate Keeper.gif|link=The Gate Keeper|]]
+| The Gate Keeper, who guards the [[Spirit Grounds]], says he is waiting for the Key Master. The Gatekeeper and Keymaster were roles held by demon-possessed humans in the movie '''[http://en.wikipedia.org/wiki/Ghostbusters Ghostbusters]'''.
+|-
+! {{anchor|Ghostbusters}}
+| [[File:Spirit Cage.gif|link=Research and Development Quest|]]
+| Numerous aspects of Spectulus' and Sinclair's [[Research and Development Quest|research]] and [[Spirithunters Quest|spirit hunting]] including the [[Afraid of no Ghost!]] achievement reference the movie '''[http://en.wikipedia.org/wiki/Ghostbusters Ghostbusters]'''.
+|-
+! {{anchor|The Godfather}}[[#The Godfather|The Godfather]]
+| {{Ilink|Mad Technomancer}}
+| The Mad Technomancer sometimes says ''I'm going to make them an offer they can't refuse'', a direct quote from the movie '''[http://en.wikipedia.org/wiki/The_Godfather The Godfather]'''.
+|-
+! {{anchor|Mr. West|}}
+| [[File:Mr. West.gif|link=Mr. West]]
+| A take on this same quote can sometimes be heard out of the mouth of trade baron Mr. West, viz. ''I'll make them an offer they can't refuse.''
+|-
+! {{anchor|King Kong}}[[#King Kong|King Kong]]
+| [[File:Kongra.gif|link=Forbidden Lands|]]
+| A giant footprint of a holy ape in the Forbidden Lands may be a reference to the famous fictional monkey '''[http://en.wikipedia.org/wiki/King_Kong King Kong]'''.
+|-
+! {{anchor|Labyrinth}}[[#Labyrinth|Labyrinth]]
+| [[File:Hoggle.gif|link=Hoggle|]]
+| The maze of tall grass, the NPC Hoggle, the nearby grave of Didimus, and the nearby shopkeeper Lubo, may be references to the film '''[http://en.wikipedia.org/wiki/Labyrinth_%28film%29 Labyrinth]''' and respective characters of Hoggle, Didymus, and Ludo.
+|-
+! {{anchor|The Man from U.N.C.L.E.|Uncle}}[[#The Man from U.N.C.L.E.|The Man from U.N.C.L.E.]]
+| [[File:Uncle.gif|link=Uncle]]
+| '''Uncle''', the head of AVIN, Venore's secret agency, is an allusion to '''[http://en.wikipedia.org/wiki/The_Man_from_U.N.C.L.E. The Man from U.N.C.L.E.]''' from the 1960's spy television show.
+|-
+! {{anchor|Married With Children|Married... With Children|Al Bundy}}[[#Married... With Children|Married... With Children]]
+| [[File:Aldo.gif|link=Aldo|]]
+| The world-weary shoe salesman '''Aldo''' may be a reference to a similarly disgruntled salesman '''Al Bundy''' from the show '''[http://en.wikipedia.org/wiki/Married..._with_Children Married... With Children]'''.
+|-
+! {{anchor|Skeletor|Teleskor|Masters of the Universe|He Man|He-Man|He-Man and the Masters of the Universe}}[[#Masters of the Universe|Masters of the Universe]]
+| {{Ilink|Teleskor}}
+| The Rookgaard skeleton boss, '''Teleskor''' is a spin on the name '''Skeletor''', the antagonist of He-Man in the '''[http://en.wikipedia.org/wiki/Masters_of_the_Universe Masters of the Universe]''' franchise.
+|-
+! {{anchor|Forest Fury|Grayskull}}
+| [[File:Forest_Fury.gif|link=Forest Furies|]]
+| Forest Furies will sometimes say "By the power of Greenskull!", a reference to He-Man's battle-cry "By the power of Grayskull...".
+|-
+! {{anchor|Forest Fury|King Grayskull}}
+| [[File:Forest_Fury.gif|link=Forest_Furies|]]
+| The Tibian Library entry of the Forest Fury mentions Emana Greenskull as their leader, which phonetically sounds similar as King D'Vann Grayskull, the original owner of the Power Sword, ancestor of Prince Adam and the source of He-Man's powers
+|-
+! {{anchor|Monty Python|Monty Python and the Holy Grail|Holy Hand Grenade|Holy Hand Grenade of Antioch|Armaments, Chapter Two, Verses Nine to Twenty-One|Armaments}}[[#Monty Python|Monty Python]]
+| [[File:Book (Grey).gif|link=Armaments (Book)|]]
+| A book in the desert dungeon refers to the Holy Hand Grenade of Antioch, a weapon from the movie '''[http://en.wikipedia.org/wiki/Monty_Python_and_the_Holy_Grail Monty Python and the Holy Grail]'''.
+|-
+! {{anchor|Demonbunny|Killer Rabbit}}
+| [[File:Rabbit.gif|link=Hugo (Demonbunny)|]]
+| The fearsome, but harmless-looking rabbit, Hugo, may refer to the similarly innocuous, yet lethal rabbit from Monty Python and the Holy Grail, as do Killer Rabbits on the Isle of Evil.
+|-
+! {{anchor|The Riddler|Riddler}}
+| [[File:Riddler.gif|link=Riddler|]]
+| The Riddler asks inane questions such as ''What is your favorite color?'' just like the Bridgekeeper in Monty Python and the Holy Grail. Being sent to Hellgate for answering incorrectly is also similar to being cast into the Gorge of Eternal Peril.
+|-
+! {{anchor|And Now For Something Completely Different|Undead Jester|Undead Jester}}
+| [[File:Undead_Jester.gif|link=Undead Jester|]]
+| Undead Jesters sometimes say ''And now for something completely different!'', which was a catchphrase from Monty Python's Flying Circus and the name of '''[http://en.wikipedia.org/wiki/And_Now_for_Something_Completely_Different a Monty Python film]'''.
+|-
+! {{anchor|Mothra}}[[#Mothra|Mothra]]
+| {{Ilink|Anmothra}}
+| '''Anmothra''', the moth-like incarnation of Devovorga, could be an allusion to the fictional Japanese character '''[http://en.wikipedia.org/wiki/Mothra Mothra]'''.
+|-
+! {{anchor|My Little Pony: Friendship is Magic}}[[#My Little Pony: Friendship is Magic|My Little Pony: Friendship is Magic]]
+| [[File:Horse.gif|link=|Horse]]
+| The name of the 15th mission of '''The Gravedigger of Drefia Quest''' is a reference to the tagline of a cartoon by the ''My Little Pony'' franchise: '''[http://en.wikipedia.org/wiki/My_Little_Pony:_Friendship_is_Magic My Little Pony: Friendship is Magic]'''.
+|-
+! {{anchor|Nightmare on Elm Street|Street Sign|Street Sign}}[[#A Nightmare on Elm Street|A Nightmare on Elm Street]]
+| [[File:Street Sign.gif|link=Streets of Venore|]]
+| The intersecting roads '''Dream Street''' and '''Elm Street''' in Venore may be an allusion to the '''[http://en.wikipedia.org/wiki/A_Nightmare_on_Elm_Street Nightmare on Elm Street]''' series of horror films.
+|-
+! {{anchor|Kevin|Kevin Postner|Kevin Costner|The Postman}}[[#The Postman|The Postman]]
+| [[File:Kevin.gif|link=Kevin|]]
+| '''Kevin Postner''', the Postmaster General of the Tibian Postal Service, is an allusion to Kevin Costner and his role in the movie '''[http://en.wikipedia.org/wiki/The_Postman_%28film%29 The Postman]'''.
+|-
+! {{anchor|The Count|Sesame Street|The Weakened Count}}[[#Sesame Street|Sesame Street]]
+| {{Ilink|The Weakened Count}}
+| '''The Count''' and his weakened form are allusions to '''Count von Count''' from the show '''[http://en.wikipedia.org/wiki/Sesame_Street Sesame Street]''' as illustrated by his statement ''1... 2... 2... Uh, can't concentrate'' when weakened.
+|-
+! {{anchor|The Simpsons|Simpsons|Seymour}}[[#The Simpsons|The Simpsons]]
+| [[File:Seymour.gif|link=Seymour|]]
+| Librarian and master of the Rookgaard Academy, '''Seymour''' may be an allusion to the principal '''Seymour Skinner''' from the show '''[http://en.wikipedia.org/wiki/The_Simpsons The Simpsons]'''.
+|-
+! {{anchor|Willie}}
+| [[File:Willie.gif|link=Willie|]]
+| The foulmouthed farmer '''Willie''' might be a reference to the groundskeeper with the same name and a foul temper in this same show.
+|-
+! {{anchor|Harsky|Stutch|Starsky|Hutch|Starsky and Hutch|Harsky and Hutch}}[[#Starsky and Hutch|Starsky and Hutch]]
+| [[File:Harsky.gif|link=Harsky|]]
+| '''Harsky''' and his partner '''Stutch''', guards of King Tibianus, are an allusion to the police drama '''[http://en.wikipedia.org/wiki/Starsky_and_Hutch Starsky and Hutch]'''.
+|-
+! {{anchor|Star Trek|Borg}}[[#Star Trek|Star Trek]]
+| [[File:Demon.gif|link=Demon|]]
+| A phrase spoken by Demons, ''<nowiki>Your resistance is futile!'</nowiki>'' owes its origins to the famous phrase ''Resistance is futile'', spoken by the Borg in '''[http://en.wikipedia.org/wiki/Star_Trek Star Trek]'''.
+|-
+! {{anchor|Final Frontier}}
+| [[File:Vladruc.gif|link=Vladruc|]]
+| Vladruc claims that ''Necromancers boldly go, where no one has gone before'', as the crew of the Enterprise boldly goes into space, the final frontier.
+|-
+! {{anchor|Star Wars|Yoda}}[[#Star Wars|Star Wars]]
+| [[File:Mysterious Voodoo Skull.gif|link=Mysterious Voodoo Skull|]]
+| A fortune by the Mysterious Voodoo Skull is ''Do or do not. There is no try.'' Yoda gives Luke Skywalker this advice in '''[https://en.wikipedia.org/wiki/Star_Wars_Episode_V:_The_Empire_Strikes_Back the second Star Wars film]'''.
+|-
+! {{anchor|Tales from the Crypt}}[[#Tales from the Crypt|Tales from the Crypt]]
+| [[File:Book (Brown).gif|link=Tales from the Crypt (Book)|]]
+| This book, written in-game by an unknown necromancer, shares its name with the famous fantasy/horror show, '''[http://en.wikipedia.org/wiki/Tales_from_the_Crypt_%28TV_series%29 Tales from the Crypt]'''.
+|-
+! {{anchor|Teenage Mutant Ninja Turtles|TMNT}}[[#Teenage Mutant Ninja Turtles|Teenage Mutant Ninja Turtles]]
+| [[File:Tortoise.gif]]
+| The weapons, tortoises, and rat in a locked room in the Liberty Bay sewer make up an allusion to the '''[http://en.wikipedia.org/wiki/Teenage_Mutant_Ninja_Turtles Teenage Mutant Ninja Turtles]'''.
+|-
+! {{anchor|Titanic}}[[#Titanic|Titanic]]
+|[[File:Feverish Citizen.gif|link=Feverish Citizen|]]
+|Feverish Citizens, which can be occasionally seen in Venore, say one of the famous Jack Dawson's quotes from the movie '''[[wikipedia:Titanic_(1997_film)|Titanic]]''', "I am the king of the world!"
+|-
+!{{anchor|Woody the Woodpecker|Woody|Woody Woodpecker}}[[#Woody Woodpecker|Woody Woodpecker]]
+|[[File:Iwar.gif|link=Iwar|]]
+|The furniture shopkeeper '''Iwar Woodpecker''', may be an allusion to the cartoon character and show '''[[wikipedia:Woody_Woodpecker|Woody Woodpecker]]'''.
+|}
+[[#top|Top]]
+
+===James Bond Films ===
+{| class="wikitable" style="text-align: center; width: 90%;"
+!Allusion!!Tibian Tie!!Information
+|-
+!{{anchor|007}}[[#007|007]]
+|[[File:Book (Brown).gif|link=Spycraft Guide VII (Book)|]]
+|A book in Dark Cathedral mentions spying and 007, '''[http://en.wikipedia.org/wiki/James_Bond_%28character%29 James Bond]''' 's agent number.
+|-
+!{{anchor|Die Another Day}}[[#Die Another Day|Die Another Day]]
+|[[File:Dwarf Henchman.gif|link=Dwarf Henchman|]]
+|Like his other quotes, the Dwarf Henchman references the Bond film '''[http://en.wikipedia.org/wiki/Die_Another_Day Die Another Day]'''.
+|-
+!{{anchor|Dr No|Dr. No|Dr Perhaps|Dr. Perhaps|Doctor Perhaps}}[[#Dr. No|Dr. No]]
+| {{Ilink|Doctor Perhaps}}
+|The Isle of Evil boss '''Doctor Perhaps''' is named after the Bond film and villain '''[http://en.wikipedia.org/wiki/Dr._No_%28film%29 Dr. No]'''.
+|-
+!{{anchor|For Your Eyes Only}}[[#For Your Eyes Only|For Your Eyes Only]]
+|[[File:Dwarf Henchman.gif|link=Dwarf Henchman|]]
+|Like his other quotes, the Dwarf Henchman references the Bond film '''[http://en.wikipedia.org/wiki/For_Your_Eyes_Only_%28film%29 For Your Eyes Only]'''.
+|-
+!{{anchor|From Russia with Love|From Thais with Love}}[[#From Russia with Love|From Russia with Love]]
+|[[File:Book (Brown).gif|link=Secret Service Quest|]]
+|The '''From Thais with Love''' mission in the Secret Service Quest is named after '''[http://en.wikipedia.org/wiki/From_Russia_with_Love_%28film%29 From Russia with Love]'''.
+|-
+!{{anchor|GoldenEye|Golden mine}}[[#GoldenEye|GoldenEye]]
+|[[File:Book (Brown).gif|link=Golden Mine (Book)|]]
+|The dwarven book '''Golden Mine''' is named after '''[http://en.wikipedia.org/wiki/GoldenEye GoldenEye]'''.
+|-
+!{{anchor|Goldfinger}}[[#Goldfinger|Goldfinger]]
+|[[File:Book (Brown).gif|link=Goldfinger (Book)|]]
+|The dwarven book '''Goldfinger''' is named after '''[http://en.wikipedia.org/wiki/Goldfinger_%28film%29 Goldfinger]''' as is one of the missions in the Secret Service Quest.
+|-
+!{{anchor|James Bond}}[[#James Bond|James Bond]]
+|[[File:Black Skull (Item).gif|link=Thais Graveyard|]]
+|One James B. lost the license to live and is buried in the Thais Graveyard, a reference to '''[http://en.wikipedia.org/wiki/James_Bond_%28character%29 James Bond]''' and his license to kill.
+|-
+!{{anchor|License to Kill}}[[#License to Kill|License to Kill]]
+|[[File:Humgolf.gif|link=Humgolf|]]
+|Humgolf claims one needs a 007 drilling license to purchase a worm. Dwarf Henchmen also reference the film '''[http://en.wikipedia.org/wiki/Licence_to_Kill License to Kill]''' as does a mission in the Secret Service Quest.
+|-
+!{{anchor|Live and Let Die}}[[#Live and Let Die|Live and Let Die]]
+|[[File:Dwarf Henchman.gif|link=Dwarf Henchman|]]
+|Like his other quotes, the Dwarf Henchman references the Bond film '''[http://en.wikipedia.org/wiki/Live_and_Let_Die_%28film%29 Live and Let Die]'''.
+|-
+!{{anchor|Penny|Miss Moneypenny|Moneypenny}}[[#Miss Moneypenny|Miss Moneypenny]]
+|[[File:Penny.gif|link=Penny|]]
+|'''Penny''', the secretary of the Isle of Solitude, may be an allusion to '''[http://en.wikipedia.org/wiki/Miss_Moneypenny Miss Moneypenny]''', M's secretary in the Bond films.
+|-
+!{{anchor|The World is not Enough|The Mine Is Not Enough}}[[#The World is not Enough|The World is not Enough]]
+|[[File:Book (Brown).gif|link=The Mine Is Not Enough (Book)|]]
+|The dwarven book '''The Mine Is Not Enough''' is named after '''[http://en.wikipedia.org/wiki/The_World_Is_Not_Enough The World Is Not Enough]'''.
+|-
+!{{anchor|The Mine Never Dies|Tomorrow Never Dies}}[[#Tomorrow Never Dies|Tomorrow Never Dies]]
+|[[File:Book (Brown).gif|link=The Mine Never Dies (Book)|]]
+|The dwarven book '''The Mine Never Dies''' is named after '''[http://en.wikipedia.org/wiki/Tomorrow_Never_Dies Tomorrow Never Dies]'''.
+|-
+!{{anchor|You Only Mine Twice|You Only Live Twice}}[[#You Only Live Twice|You Only Live Twice]]
+|[[File:Book (Brown).gif|link=You Only Mine Twice (Book)|]]
+|The dwarven book '''You Only Mine Twice''' is named after '''[http://en.wikipedia.org/wiki/You_Only_Live_Twice_%28film%29 You Only Live Twice]'''.
+|}
+
+[[#top|Top]]
+
+==Music and Art==
+Tibia isn't all that dull! While there may not be sound, certain elements of the game try to capture the essence of their favorite real-life songs and artwork. From famous singers disguised as simple shopkeepers to famous bands performing at the local tavern, the music scene on Tibia isn't as empty as it is silent.
+{| class="wikitable" style="text-align: center; width: 90%;"
+!Allusion!!Tibian Tie!!Information
+|-
+!{{anchor|Britney Spears}}[[#Britney Spears|Britney Spears]]
+|[[File:Dark Apprentice.gif|link=Dark Apprentice|]]
+|A saying by Dark Apprentices, ''Oops, I did it again!'', is the name of a famous song by '''[http://en.wikipedia.org/wiki/Britney_Spears Britney Spears]'''.
+|-
+!{{anchor|Elvis|Elvith|Elvis Presley}}[[#Elvis Presley|Elvis Presley]]
+|[[File:Elvith.gif|link=Elvith|]]
+|The name and profession of '''Elvith''' the music shopkeeper are an allusion to the famous singer '''[http://en.wikipedia.org/wiki/Elvis_Presley Elvis Presley]'''.
+|-
+!{{anchor|Gnomelvis|}}
+|[[File:Gnomelvis.gif|link=Gnomelvis]]
+| '''Gnomelvis''', a musical gnome, is also an allusion to "The King".
+|-
+!{{anchor|Guns N' Roses|Guns and Roses|GNR|GN'R|Crossbows and Tulips|Cossbows N' Tulips}}[[#Guns N' Roses|Guns N' Roses]]
+|[[File:Lute.gif|link=Hard Rock Tavern|]]
+|A blackboard at the Hard Rock Tavern states that '''Crossbows N' Tulips''' is performing, an allusion to the band '''[http://en.wikipedia.org/wiki/Guns_N%27_Roses Guns N' Roses]'''.
+|-
+!{{anchor|Lou Toose|Henri de Toulouse-Lautrec}}[[#Henri de Toulouse-Lautrec|Henri de Toulouse-Lautrec]]
+|[[File:Lou Toose.gif|link=Lou Toose|]]
+|The name and profession of painter '''Lou Toose''' are an allusion to the French artist '''[https://en.wikipedia.org/wiki/Henri_de_Toulouse-Lautrec Henri de Toulouse-Lautrec]'''.
+|-
+!{{anchor|Killing in the Name|Killing in the Name}}[[#Killing in the Name|Killing in the Name]]
+|[[File:Grizzly Adams.gif|link=http://tibia.wikia.com/wiki/Killing_in_the_Name_of..._Quest|]]
+|The quest ''Killing in the Name of...'' is an allusion to a song by '''[http://en.wikipedia.org/wiki/Rage_Against_the_Machine Rage Against the Machine]'''.
+|-
+!{{anchor|Vad Inchi|Leonardo da Vinci}}[[#Leonardo da Vinci|Leonardo da Vinci]]
+|[[File:Vad Inchi.gif|link=Vad Inchi|]]
+|The name and profession of painter '''Vad Inchi''' are an allusion to the Italian artist '''[https://en.wikipedia.org/wiki/Leonardo_da_Vinci Leonardo da Vinci]'''.
+|-
+!{{anchor|Of Wolves and Bears|Metallica}}[[#Metallica|Metallica]]
+|
+[[File:Outfit_Druid_Male_Addon_3.gif|link=Druid Outfits|]]
+|The achievement received for completing the Druid Outfits Quest is named '''Of Wolves and Bears''', a reference to Metallica's song "Of Wolf and Man" from their '''[http://en.wikipedia.org/wiki/Metallica_(album) self-titled]''' album released in 1991
+|-
+!{{anchor|My Chemical Romance|Vengoth}}[[#My Chemical Romance|My Chemical Romance]]
+|[[File:Grave.gif|link=Grave|]]
+|There is a [[Grave]] in [[Vengoth]] that reads "''Shut your eyes. Kiss me goodbye. And sleep.''", which is part of the song '''Sleep'' by the rock band '''''<nowiki/>''[https://en.wikipedia.org/wiki/My_Chemical_Romance My Chemical Romance]'<nowiki/>''.
+|-
+!{{anchor|Mona Lisa|Mina Losa}}[[#Mona Lisa|Mona Lisa]]
+|[[File:The Famous Mina Losa Painting.gif|link=The Famous Mina Losa Painting|]]
+|The '''Mina Losa''' painting acquired in The Thieves Guild Quest is an allusion to the famous '''[[wikipedia:Mona_Lisa|Mona Lisa]]''' painting.
+|-
+!{{anchor|Smells Like Mummy's Spirit|Nirvana}}[[Allusions#Nirvana|Nirvana]]
+|[[File:Little_Bowl_of_Myrrh.gif|link=Little Bowl of Myrrh]]
+|'''Little Bowl of Myrrh's''' description says "''It smells like mummy's spirit."'', an allusion to the famous song "''Smells Like Teen Spirit''" by '''[[wikipedia:Nirvana|Nirvana]]'''.
+|-
+!{{anchor|Old MacDonald Had a Farm|MacDonald|}}[[#Old MacDonald Had a Farm|Old MacDonald Had a Farm]]
+|[[File:Donald McRonald.gif|link=Donald McRonald|]]
+|The farmer '''Donald McRonald''' is partly an allusion to the farmer in the famous nursery rhyme [http://en.wikipedia.org/wiki/Old_MacDonald_Had_a_Farm Old MacDonald Had a Farm].<br />
+He is also an allusion to [[Allusions#McDonald's|McDonald's]].
+|-
+!{{anchor|Prince|Artist Formerly Known as Prince|The Artist Formerly Known as Prince}}[[#Prince|Prince]]
+|[[File:Bozo.gif|link=Bozo|]]
+|Oswald claims that '''Bozo''' is ''The artist formerly known as the prince''. The musician '''[http://en.wikipedia.org/wiki/Prince_%28musician%29 Prince]''' once went by ''the artist formerly known as prince''.
+|-
+!{{anchor|Queen|Another One Bites the Dust}}[[#Queen|Queen]]
+|{{Ilink|Morguthis}}
+|The pharaoh '''Morguthis''' sometimes says, ''Another one to bite the dust'', an allusion to the song ''Another One Bites the Dust'' by '''[http://en.wikipedia.org/wiki/Queen_(band) Queen]'''.
+|-
+!{{anchor|A Kind of Magic|}}
+|[[File:Salbra.gif|link=Salbra]]
+| Combat instructor '''Salbra''' on the Island of Destiny sometimes says "''It's a kind of magic!''", a direct quote from the song ''A Kind of Magic'' by the very same band. In addition, the pharaoh '''Rahemos''' has this quote at his disposal as well.
+|-
+!{{anchor|Stone Temple Parrot|Stone Temple Pilots}}[[#Stone Temple Pilots|Stone Temple Pilots]]
+|[[File:Stone_Temple_Parrot.gif|link=Stone Temple Parrot]]
+|The name of ship captain '''Stone Temple Parrot''' is an obvious reference to the band '''[http://en.wikipedia.org/wiki/Stone_Temple_Pilots Stone Temple Pilots]'''.
+|-
+![[Allusions#The Offspring|The Offspring]]
+|[[File:Noodles.gif|link=Noodles]]
+|'''Noodles''', the King Tibianus' dog, shares his name with the stage name of Kevin 'Noodles' Wasserman, the lead guitarist of '''[http://en.wikipedia.org/wiki/The_Offspring The Offspring]'''.
+|-
+![[Allusions#Boy George|Boy George]]
+|[[File:Piñata Dragon.gif|link=Piñata Dragon]]
+|One of '''Piñata Dragon's''' sounds is {{Sound|Do you really want to hurt me?}}, which is the title of a famous '''[https://en.wikipedia.org/wiki/Do_You_Really_Want_to_Hurt_Me song]''' by '''boy george''' .
+|-
+!{{anchor|||||The Treachery of Images}}[[Lever|This is not a lever]]
+|[[File:Lever2.gif|linkLever]]
+|There's an art piece at the [[Museum of Tibian Arts]] that shows a ''This is not a lever!'' message when used, a clear reference to [[Wikipedia:The_Treachery_of_Images|The Treachery of Images]] painting by René Magritte, in which a Pipe is painted above the saying ''This is not a pipe.''
+|-
+!{{anchor|||||T. Rex}}[[Tirecz|Tirecz]]
+|[[File:Tirecz.gif|Tirecz]]
+|The last boss of [[The New Frontier Quest]] sounds like '''T.Rex''', a rock band with a song called [[Wikipedia:Children of the Revolution (song)|Children of the Revolution]] , which is the name of the following quest after New Frontier.
+|}
+[[#top|Top]]
+
+==Other Games==
+Although Tibia was originally greatly inspired by the Ultima series, it has managed to reference a few other popular games, mainly in passing references, but sometimes with dedications of whole areas of the game.
+{| class="wikitable" style="text-align: center; width: 90%;"
+!Allusion!!Tibian Tie!!Information
+|-
+!{{anchor|Avar Tar|Avatar}}[[#Avatar|Avatar]]
+|[[File:Avar Tar.gif|link=Avar Tar]]
+|'''Avar Tar''', the Edron hero always on a quest for King Tibianus, is a reference to '''The Avatar''', the protagonist of the [https://en.wikipedia.org/wiki/Ultima_(series) '''Ultima Series'''].
+|-
+!{{anchor|The Bard's Tale|Bard's Tale}}[[#The Bard's Tale|The Bard's Tale]]
+|[[File:Note Pinned on the Wall.gif|link=Note Pinned on the Wall|]]
+|The strange text, '''IRKM DESMET DAEM''', found on a note on a wall in a Rookgaard cellar is also found in a '''[http://shrines.rpgclassics.com/pc/bardstale1/dungeon_scarletbard.shtml dungeon]''' in the original The Bard's Tale video game.
+|-
+!{{anchor|Castle of the Winds}}[[#Castle of the Winds|Castle of the Winds]]
+|[[File:Map (Colour).gif|link=Castle of the Winds|]]
+|The Ab'Dendriel guildhall '''Castle of the Winds''' might be an allusion to the rogue-like computer game '''[http://en.wikipedia.org/wiki/Castle_of_the_Winds Castle of the Winds]'''.
+|-
+!{{anchor|Castlemania|Castlevania|Julius|Julius Belmont}}[[#Castlevania|Castlevania]]
+|[[File:Julius.gif|link=Julius|]]
+|Vampire hunter '''Julius''' may be an allusion to the vampire hunter of the same name from the '''[http://en.wikipedia.org/wiki/Castlevania Castlevania]''' series. Vengoth Castle bears some resemblance to the video games' castles and the related [[Castlemania]] achievement lends some additional strength to the allusion.
+|-
+!{{anchor|Chrono Trigger|Chrono Trigger}}[[#Chrono Trigger|Chrono Trigger]]
+|[[File:Lavos Armor.gif|link=Lavos Armor|]]
+|The '''Lavos Armor''' is a direct reference to '''Lavos''', the arch enemy from the SNES game '''[http://en.wikipedia.org/wiki/Chrono_Trigger Chrono Trigger]''', who dwells in the depths of the Earth.
+|-
+!
+|[[File:Kollos.gif|link=Kollos|]]
+|The insectoid '''Kollos''' has a clear resamblance with Lavos and its spawns.
+|-
+!{{anchor|C&C|Command and Conquer|CnC}}[[#Command and Conquer|Command and Conquer]]
+|[[File:Black Skull (Item).gif|link=Thais Graveyard|]]
+|A gravestone in the Thais Graveyard refers to the programmer of C&C, the computer game series '''[http://en.wikipedia.org/wiki/Command_and_Conquer Command and Conquer]'''.
+|-
+!{{anchor|Dance Dance Revolution|DDR|Dance Dance Evolution}}[[#Dance Dance Revolution|Dance Dance Revolution]]
+|[[File:Tribal Crest.gif|link=Unnatural Selection Quest|]]
+|A mission during the Unnatural Selection Quest is called '''Dance Dance Evolution''', an allusion to the video game series '''[http://en.wikipedia.org/wiki/Dance_Dance_Revolution Dance Dance Revolution]'''.
+|-
+!{{anchor|The Elder Scrolls V: Skyrim|The Elder Scrolls V: Skyrim}}[[#The Elder Scrolls V: Skyrim|The Elder Scrolls V: Skyrim]]
+|[[File:Commander Stone.gif|link=Commander Stone]]
+|Commander Stone asked for his job replies ''After I accidentally shot a fellow adventurer an arrow in his knee I had to leave for some safe place far away in a hurry'''.''''' This is an allusion to a line spoken by every guard in '''[http://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim Skyrim]''': ''I used to be an adventurer like you, then I took an arrow in the knee.''
+|-
+!{{anchor|Adventurer|}}
+|[[File:Adventurer.gif|link=Adventurer]]
+|When you hit an Adventurer by using a bow he will exclaim ''Arrrgh! Not my knee!''. This is also an allusion to the line above.
+|-
+!{{anchor|Shanoya|}}
+|[[File:Shanoya.gif|link=Shanoya]]
+|Combat instructor Shanoya on the Island of Destiny sometimes says "''Master the bow to shoot an arrow in the knee!''". Again, this is an allusion to the line above.
+|-
+  !{{anchor|Ghost & Ghouls/Goblins|}}[[Allusions#Ghost & Ghouls/Goblins|Ghost & Ghouls/Goblins]]
+|[[File:Goblin.gif|link=Goblin]]
+|There is a raid in the sourthern Darama Desert (around Ankrahmun) that includes skeletons, ''ghosts, ghouls and '' '''''goblins''''', being the desert an unusual place for them, and the three creatures' names may be an allusion to the Capcom's  ''[https://en.wikipedia.org/wiki/Ghosts_%27n_Goblins Knight Arthur]''series, which includes games like Ghosts & Ghouls and Ghosts and Goblins.
+|-
+!{{anchor|Gothic|}}[[Allusions#Gothic|Gothic]]
+|[[File:Yberius.gif|link=Yberius]]
+|The Venore templekeeper '''Yberius''' is a reference to '''Y'Berion''', who is a Guru and the leader of the Brotherhood of Sleeper in the first part of the '''[http://en.wikipedia.org/wiki/Gothic_(video_game) Gothic] '''series.
+|-
+!{{anchor|Half Life|Half-Life|Half Life 2|Half-Life 2|Gordon Freeman|Dr Kleiner|Dr. Kleiner}}[[#Half-Life|Half-Life]]
+|[[File:Old Piece of Paper.gif|link=Awaiting Gordon (Book)|]]
+|A piece of paper relates a message from '''Dr. Kleiner''' to '''Gordon''' about teleporters. Dr. Kleiner and Gordon are characters from the popular '''[http://en.wikipedia.org/wiki/Half-Life_%28video_game%29 Half-Life]''' series and both are scientists who work with teleporter technology.
+|-
+!{{anchor|Mario|}}[[#Mario|Mario]]
+|[[File:Statue (Guard).gif|link=Statue (Guard)|]]
+|In the Realm of Dreams, "someone" is sleeping in the room. A statue by the Gate of Expertise reads: ''Another Castle''. This references '''[https://en.wikipedia.org/wiki/Mario_(franchise) Mario]'s''' well-known phrase ''the princess is in another castle''.
+|-
+!{{anchor|Mortal Kombat|Mortal Combat|Fatality|Flawless Victory}}[[#Mortal Kombat|Mortal Kombat]]
+|{{Ilink|Fatality}}
+|'''Fatality''' and ''Flawless Victory!'', a quote by the demon [[Ghazbaran]], are phrases from the video game series '''[http://en.wikipedia.org/wiki/Mortal_Kombat Mortal Kombat]'''. Additionally, the mission in The New Frontier Quest Fatality appears in is called '''Mortal Combat'''.
+|-
+!{{anchor|Pacman|Pac-Man}}[[#Pac-Man|Pac-Man]]
+|[[File:Ghost.gif|link=Pacman Room|]]
+|
+A secret room in one of Ankrahmun's tombs has the same layout as a level from the arcade game '''[http://en.wikipedia.org/wiki/Pac-Man Pac-Man]''', complete with teleporters, fruits, and ghosts.
+|-
+!{{anchor|Monkey Island Game Series|Monkey Island Game Series}}[[#Monkey Island Game Series|Monkey Island Game Series]]
+|[[File:Annihilation_Bear.gif|link=Annihilation Bear|]]
+|
+''I braved the Annihilator and all I got is this lousy teddy bear'' is an allusion to '''[http://en.wikipedia.org/wiki/The_Secret_of_Monkey_Island The Secret of Monkey Island]<nowiki>'</nowiki>'''s legendary treasure: a T-Shirt. When you look at it, you can read: ''"I found the Legendary Lost Treasure of Mêlée Island and All I Got Was this Stupid T-Shirt."''
+|-
+!
+|[[File:Pirate_Marauder.gif|link=Mac Noodles|]]
+|The abandoned restaurant sitting south of the Dwarven Bridge, was set up by a pirate named Rapp Scallion, who died before his business could begin. This is a reference to the pirate cook '''[https://monkeyisland.fandom.com/wiki/Rapp_Scallion Rapp Scallion]''', one of the piece of map owners in Monkey Island II.
+|-
+!
+|[[File:Book (Brown).gif|link=Inhabitants_Log_(Book)]]
+|A book in the Royal Archives of Thais writes about an inhabitant named '''Threpwood Guybrush''', a reference to Guybrush Threepwood, the main character of the Monkey Island Series.
+|-
+!
+|{{Ilink|Grand Master Oberon}}
+|The fight against [[Grand Master Oberon]] is also a debate of which the answers are found in [[The Grand Master of Verbal Debate]] book collection. This fight idea seems to be based on the [https://monkeyisland.wikia.com/wiki/Insult_Sword_Fighting Insult Sword Fighting] of the [https://monkeyisland.wikia.com/wiki/Monkey_Island_Wiki Monkey Island Series], specially since one of the Tibia insults/answers (Volume II) is identical to a pair of the Monkey Island game.
+|-
+!{{anchor|Golden Axe Video Game|Golden Axe Video Game}}[[#Golden Axe Video Game|Golden Axe Video Game]]
+|{{Ilink|Golden Axe}}
+|The quest item [[Golden Axe]] is an allusion to a classic Arcade game with the same name. The allusions are present in its weight (19.89 oz, the game was released in 1989) and in its ''flavor text'': ''Forged and wielded by a long forgotten '''dwarf''' with a heart as black as an '''adder'''.'', which are references to the protagonist (dwarf) and main antagonist (Death Adder) of the game.
+|-
+!{{anchor|The Witcher|The Witcher}}[[#The Witcher|The Witcher]]
+|[[File:Achievement_Grade_Symbol.gif]]
+|The achievement [[Bewitcher]] has a description that refers to a character in The Witcher series. The desciption of the achievement is "You literally put everything in that cauldron except lilac and gooseberries.". In the series the character Yennefer of Vengerberg uses a perfume that is often described as "smelling of  lilac and gooseberry".
+|}
+[[#top|Top]]
+
+==Places, Organizations, and Constructs==
+It is often said that art imitates life. As such, several areas and organizations in Tibia show strong resemblances to real-life counterparts.
+{| class="wikitable" style="text-align: center; width: 90%;"
+!Allusion!!Tibian Tie!!Information
+|-
+!{{anchor|ABIN|AVIN|Agency of Venorean Interest Negotiators}}[[#ABIN|ABIN]]
+|[[File:Assassin.gif|link=AVIN|]]
+|The '''Agency of Venorean Interest Negotiators (AVIN)''' is an allusion to the Brazilian intelligence agency, '''[http://en.wikipedia.org/wiki/Brazilian_Intelligence_Agency ABIN]'''.
+|-
+!{{anchor|Alcatraz|Dwacatra}}[[#Alcatraz|Alcatraz]]
+|[[File:Dwarf Guard.gif|link=Dwacatra|]]
+|The dwarven prison island of '''Dwacatra '''is named after the famous prison island of '''[http://en.wikipedia.org/wiki/Alcatraz_Island Alcatraz]'''.
+|-
+!{{anchor|Big Ben|A Sweaty Cyclops}}[[#Big Ben|Big Ben]]
+|
+[[File:A Sweaty Cyclops.gif|link=A Sweaty Cyclops|]]
+|'''<nowiki>A Sweaty Cyclops'</nowiki>'''s nickname is '''Big Ben''', a reference to the famous London bell and its clock tower, '''[http://en.wikipedia.org/wiki/Big_Ben Big Ben]'''.
+|-
+!{{anchor|TBI|FBI|Federal Bureau of Investigation|Tibian Bureau of Investigation}}[[#FBI|FBI]]
+|[[File:Assassin.gif|link=TBI|]]
+|The '''Tibian Bureau of Investigation''' is an allusion to the American intelligence agency, the '''[http://en.wikipedia.org/wiki/Federal_Bureau_of_Investigation FBI]'''.
+|-
+!{{anchor|Fortress of Solitude|Isle of Solitude}}[[#Fortress of Solitude|Fortress of Solitude]]
+|[[File:Gamemaster.gif|link=Isle of Solitude|]]
+| The '''Isle of Solitude''', an island that acts as the Gamemaster headquarters, is an allusion to the '''[http://en.wikipedia.org/wiki/Fortress_of_Solitude Fortress of Solitude]''', Superman's headquarters in the Superman series of DC comics.
+|-
+!{{anchor|Hard Rock Cafe|Hard Rock Tavern}}[[#Hard Rock Cafe|Hard Rock Cafe]]
+|[[File:Lute.gif|link=Hard Rock Tavern|]]
+|The Venorean '''Hard Rock Tavern''' is an allusion to the rock and roll themed '''[http://en.wikipedia.org/wiki/Hard_Rock_Cafe Hard Rock Cafe]'''.
+|-
+!{{anchor|KGB|CGB|Carlin Girls Brigade}}[[#KGB|KGB]]
+|[[File:Assassin.gif|link=CGB|]]
+|The '''Carlin Girls Brigade''' is an allusion the the Soviet Union's intelligence agency, the '''[http://en.wikipedia.org/wiki/KGB KGB]'''.
+|-
+!{{anchor|Senja|Folda|Vega|Norway|Norwegian Islands}}[[#Norwegian Islands|Norwegian Islands]]
+|[[File:Map (Colour).gif|link=Ice Islands|]]
+|The ice islands of '''Senja''', '''Folda''', and '''Vega''' share their names with the real-life Norwegian Islands '''[http://en.wikipedia.org/wiki/Senja Senja]''', '''[http://en.wikipedia.org/wiki/Folda Folda]''', and '''[http://en.wikipedia.org/wiki/Vega_Island Vega]'''.
+|-
+!{{anchor|Titanic|Tibianic}}[[#Titanic|Titanic]]
+|[[File:Model Ship.gif|link=Tibianic|]]
+|The Greenshore guildhall, the '''Tibianic''' is named after the famous ship the '''[http://en.wikipedia.org/wiki/RMS_Titanic Titanic]'''.
+|}
+[[#top|Top]]
+
+{{seealso|Breaking the Fourth Wall|usage=article}}
+[[Category:Tibia]]
+[[Category:Lists]]

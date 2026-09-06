@@ -1,0 +1,76 @@
+{
+  "experiment": "G5_H5_zero_at_book_edge",
+  "statistic": "n_books_edge_zero",
+  "real_value": 14.0,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 400,
+      "mean": 10.345,
+      "sd": 3.0026613195630305,
+      "p": 0.1396508728179551,
+      "z": 1.217253499815924,
+      "maximum": 23.0,
+      "minimum": 1.0
+    },
+    {
+      "family": "Markov2",
+      "n": 400,
+      "mean": 10.1125,
+      "sd": 2.7981857961900944,
+      "p": 0.10473815461346633,
+      "z": 1.389293021676071,
+      "maximum": 21.0,
+      "minimum": 3.0
+    },
+    {
+      "family": "Markov3",
+      "n": 400,
+      "mean": 9.835,
+      "sd": 2.873634458312331,
+      "p": 0.11471321695760599,
+      "z": 1.4493840676054808,
+      "maximum": 19.0,
+      "minimum": 1.0
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 400,
+      "mean": 10.5625,
+      "sd": 3.180580725276439,
+      "p": 0.17206982543640897,
+      "z": 1.0807774733342859,
+      "maximum": 22.0,
+      "minimum": 2.0
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 400,
+      "mean": 10.215,
+      "sd": 3.1966818734431497,
+      "p": 0.16209476309226933,
+      "z": 1.1840402485603525,
+      "maximum": 20.0,
+      "minimum": 3.0
+    },
+    {
+      "family": "CopyPasteMutateFitted",
+      "n": 400,
+      "mean": 10.16,
+      "sd": 3.115188597821965,
+      "p": 0.13466334164588528,
+      "z": 1.2326701512341174,
+      "maximum": 21.0,
+      "minimum": 1.0
+    }
+  ],
+  "corpus_provenance": "books.json",
+  "n_candidates_tested": 2,
+  "seed": 469,
+  "runtime_s": 8.66380524635315,
+  "code_sha": "ee0bb48",
+  "extra": {},
+  "worst_p": 0.17206982543640897,
+  "verdict": "REJECTED"
+}

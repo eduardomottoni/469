@@ -1,0 +1,76 @@
+{
+  "experiment": "G2_H3_booklen_mod5",
+  "statistic": "n_books_len_div5",
+  "real_value": 13.0,
+  "direction": "greater",
+  "nulls": [
+    {
+      "family": "Shuffle",
+      "n": 400,
+      "mean": 13.0,
+      "sd": 0.0,
+      "p": 1.0,
+      "z": 0.0,
+      "maximum": 13.0,
+      "minimum": 13.0
+    },
+    {
+      "family": "Markov2",
+      "n": 400,
+      "mean": 13.0,
+      "sd": 0.0,
+      "p": 1.0,
+      "z": 0.0,
+      "maximum": 13.0,
+      "minimum": 13.0
+    },
+    {
+      "family": "Markov3",
+      "n": 400,
+      "mean": 13.0,
+      "sd": 0.0,
+      "p": 1.0,
+      "z": 0.0,
+      "maximum": 13.0,
+      "minimum": 13.0
+    },
+    {
+      "family": "BlockShuffle20",
+      "n": 400,
+      "mean": 13.0,
+      "sd": 0.0,
+      "p": 1.0,
+      "z": 0.0,
+      "maximum": 13.0,
+      "minimum": 13.0
+    },
+    {
+      "family": "CopyPasteMutate",
+      "n": 400,
+      "mean": 13.0,
+      "sd": 0.0,
+      "p": 1.0,
+      "z": 0.0,
+      "maximum": 13.0,
+      "minimum": 13.0
+    },
+    {
+      "family": "CopyPasteMutateFitted",
+      "n": 400,
+      "mean": 13.0,
+      "sd": 0.0,
+      "p": 1.0,
+      "z": 0.0,
+      "maximum": 13.0,
+      "minimum": 13.0
+    }
+  ],
+  "corpus_provenance": "books.json",
+  "n_candidates_tested": 1,
+  "seed": 469,
+  "runtime_s": 8.570115089416504,
+  "code_sha": "ee0bb48",
+  "extra": {},
+  "worst_p": 1.0,
+  "verdict": "REJECTED"
+}

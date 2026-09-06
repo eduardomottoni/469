@@ -1,0 +1,21 @@
+R578_PR        V10   en     n=  578 tok=  578 V=  10 real= -2.2833 acc=0.879 z_shuf= -0.47 z_mk3= -1.41 z_cpmf= -0.17
+   naaa annasaans n aannasa sanns asa annasnssnassaannnna  nnsaanaa   n aaassanassaaaaassaa aansaaas sa snnsaaaas
+R578_PR        V100  en     n=  578 tok=  289 V= 100 real= -1.0259 acc=0.178 z_shuf= +1.48 z_mk3= -2.13 z_cpmf= +1.33
+   ps it a data at a estatians saaron at aid as aad i saladass ta atti an i as all santed are da was are so maas 
+R1535_mc6_u    V10   en     n= 1535 tok= 1535 V=  10 real= -2.1272 acc=0.984 z_shuf= +6.61 z_mk3= -1.38 z_cpmf= +0.74
+    aasas a snhas  hh a saas   asan s ss nh s sas sshaas hs sshaa aasssn assasans asasas s nhahanaas n   s n nhsa
+R1535_mc6_u    V100  en     n= 1535 tok=  767 V= 100 real= -1.4480 acc=0.992 z_shuf= +3.19 z_mk3= -2.78 z_cpmf= +0.89
+   m iaa a ama is tn s r ints ant a as is iss i nosis is inst sae pintra ma ssaairinatos danaranadonnama in sat i
+R2058_mc8_u    V10   en     n= 2058 tok= 2058 V=  10 real= -2.0771 acc=0.983 z_shuf=+10.28 z_mk3= -0.45 z_cpmf= +0.71
+    snasa s aasaa  ss s anaa   nana a aa as a asa aasnsa sa aasaa snaaaa naananaa nanana a assssansa a   a a asan
+R2058_mc8_u    V100  en     n= 2058 tok= 1029 V= 100 real= -1.5155 acc=0.994 z_shuf= +5.96 z_mk3= -3.74 z_cpmf= -0.26
+    saas a a anatinias naalia alisas ssaar aa a asaas as as n ma spaaa minst ss ato s anes a s sa nanass nnts a i
+R2713_mc12_u   V10   en     n= 2713 tok= 2713 V=  10 real= -2.0475 acc=1.000 z_shuf=+14.25 z_mk3= -0.15 z_cpmf= +0.02
+   a as sa annissaaiia asassaaaanananasnanianas sassia saisassissa assnnaassanansaananasasani i na sanaaasananisa
+R2713_mc12_u   V100  en     n= 2713 tok= 1356 V= 100 real= -1.5250 acc=0.994 z_shuf=+14.41 z_mk3= -2.11 z_cpmf= -1.89
+   nssne s ana as inal mas ie a i nsansaidaii a ssean an assis s i stas im ine aieas asm sastense  amnetra estann
+R2058_mc8_u    V10   de_ae  n= 2058 tok= 2058 V=  10 real= -2.1274 acc=0.659 z_shuf=+12.53 z_mk3= +0.01 z_cpmf= +0.54
+   e en ne etrtsneette enesneeeeteretenterteten nennte netnenntsse enntreenneterneetetenenert t re nereeenerertne
+R2058_mc8_u    V100  de_ae  n= 2058 tok= 1029 V= 100 real= -1.5042 acc=0.491 z_shuf= +6.68 z_mk3= -2.91 z_cpmf= +0.29
+   si ent a seine ein ten enen en eineier errnnte eneanete leer tie gnerneresnierehern etin aes ensenennerse a si
+wrote solve_results.json

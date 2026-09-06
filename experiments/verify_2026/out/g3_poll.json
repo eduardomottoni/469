@@ -1,0 +1,18 @@
+{
+  "A_plaintext": "These aren't the words you're looking for.",
+  "B_romanised": "ROQOHN OLJENT JEH DAKN KWEH DH JHLOSK",
+  "B_glosses": {
+    "roqohn": "nonbeliever/not obeying",
+    "oljent": "defy/defies",
+    "jeh": "the/that/this",
+    "dakn": "narrow",
+    "kweh": "path",
+    "dh": "to",
+    "jhlosk": null
+  },
+  "C": "663 902073 7223 67538 467 80097",
+  "C_known_plaintext": false,
+  "alphabet_source": "in-game book Jekhr_Basics",
+  "n_alphabet": 26,
+  "n_glossary": 116
+}

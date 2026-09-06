@@ -5,3 +5,11 @@ experiments/e_c_homophonic/results_c/*.log
 
 # Derived language-model binaries: rebuildable from build_lm.py, ~150MB
 data/external/*.npz
+
+# verification round 2026-09: derived image-processing intermediates.
+# Regenerate with experiments/verify_2026/fb_deskew.py + fb_enhance.py
+experiments/verify_2026/fb_out/
+experiments/verify_2026/*.npy
+data/external/provenance/fb/crop_*.png
+data/external/provenance/fb/fb_flat.png
+data/external/provenance/fb/fb_unmirrored.png
